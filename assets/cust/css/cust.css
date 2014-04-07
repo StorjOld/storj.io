@@ -58,7 +58,7 @@ hr { margin-bottom: 58px; }
 }
 .btn-default:hover {
 	background-color: #fff;
-	color: #b7b7b7;
+	color: rgb(95, 129, 227);
 	border-color: inherit;
 }
 
@@ -130,8 +130,7 @@ hr { margin-bottom: 58px; }
 .asset h3 {
 	color: #373737;
 	margin: 25px 0 15px;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 22px;
 }
 .asset p {
 	font-size: 15px;
@@ -145,9 +144,9 @@ hr { margin-bottom: 58px; }
 	width: 105px;
 }
 
-.asset-ico-a { color: #fff; background: #5ac6d5; }
-.asset-ico-b { color: #fff; background: #edc754; }
-.asset-ico-c { color: #fff; background: #A19BEB; }
+.asset-ico-a { color: #fff; background: rgb(95, 129, 227); }
+.asset-ico-b { color: #fff; background: rgb(95, 129, 227); }
+.asset-ico-c { color: #fff; background: rgb(95, 129, 227); }
 
 /* Sroll to cta */
 
