@@ -69,7 +69,7 @@ hr {
 .btn-default:hover {
 	background-color: #fff;
 	color: rgb(95, 129, 227);
-	border-color: inherit;
+	border-color: white;
 }
 
 .btn-primary {
@@ -234,6 +234,10 @@ hr {
 	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.form-control {
+	background: white
 }
 
 .node-preview {
