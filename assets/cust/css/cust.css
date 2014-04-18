@@ -177,12 +177,33 @@ hr {
 .scroll-to-cta a i { display: block; }
 
 
+
+/* Whitepaper
+================================= */
+
+.whitepaper {
+	padding: 50px 0;
+	background: rgb(245, 245, 245);
+}
+
+.whitepaper h2 {
+	color: #444;
+	font-size: 24px;
+	font-weight: 300;
+	margin-bottom: 0;
+	line-height: 44px;
+}
+
+.whitepaper .btn {
+	color: #444;
+	border-color: #444;
+}
+
+
 /* Features
 ================================= */
 
 .features {
-	border-bottom: 1px solid #e3e3e3;
-	border-top: 1px solid #e3e3e3;
 	padding-bottom: 65px;
 	padding-top:40px;
 }
@@ -249,7 +270,6 @@ hr {
 
 .footer {
 	padding: 80px 0 35px;
-	border-top: 1px solid #e3e3e3;
 }
 
 .footer { font-size: .95em; }
@@ -294,6 +314,14 @@ hr {
 		margin-top:2em;
 	}
 	.jumbotron h1 { font-size: 56px; }
+
+	.whitepaper {
+		text-align: center;
+	}
+
+	.whitepaper .btn {
+		margin-top: 1em;
+	}
 }
 
 @media (max-width: 768px) {
