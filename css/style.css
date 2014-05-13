@@ -146,6 +146,14 @@ a {
   color: #107fc9;
 }
 
+.btn-white:focus {
+  color: #fff;
+}
+
+.btn-white:hover.btn-white:focus{
+  color: #107fc9;
+}
+
 .btn-blue,
 .btn-blue:hover,
 .btn-blue:active {
