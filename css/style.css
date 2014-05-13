@@ -328,10 +328,6 @@ a {
   -o-transition: all 0.5s ease-in-out;
 }
 
-.whitepaper-section:hover {
-  background-position: auto -250px;
-}
-
 .whitepaper-button {
   top: 86px;
 }
@@ -585,7 +581,7 @@ a {
 
   .btn, .btn:hover, .btn:active {
     width: 95%;
-    padding: 25px 0px;
+    padding: 25px 0;
     font-size: 14px;
   }
 }
