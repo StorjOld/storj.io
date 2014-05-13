@@ -1,326 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Replace the description, keywords and author content with those that suit your product/ service -->
-    <meta name="description" content="Take back control of your data. Secure and autonomous decentralized storage.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Take back control of your data. Secure, autonomous, blockchain based, decentralized storage.">
     <meta name="keywords" content="storj, storj.io, decentralized storage, decentralized, storage, data, network, blockchain">
     <meta name="google-site-verification" content="R5u7lqzFhKoFiaEXbxfFSJ-CT9UyK-AqVWwd1g_zMeg" />
-    <meta name="robots" content="index, follow">
 
-    <title>Storj - Decentralized Storage.</title>
+    <title>Storj - The Future of Cloud Storage</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="assets/cust/css/cust.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <!-- Load this instead, on live site
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png">
-    <meta name="msapplication-square70x70logo" content="assets/favicon/mstile-70x70.png">
-    <meta name="msapplication-square144x144logo" content="assets/favicon/mstile-144x144.png">
-    <meta name="msapplication-square150x150logo" content="assets/favicon/mstile-150x150.png">
-    <meta name="msapplication-square310x310logo" content="assets/favicon/mstile-310x310.png">
-    <meta name="msapplication-wide310x150logo" content="assets/favicon/mstile-310x150.png">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png">
+    <meta name="msapplication-square144x144logo" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png">
+    <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png">
+    <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png">
 
-      <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script src="js/pace.min.js" type="text/javascript"></script>
 
-    ga('create', 'UA-49085346-1', 'storj.io');
-    ga('send', 'pageview');
-
-    </script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body id="home" class="cornflowerblue"> <!-- The "cornflowerblue" class adds a stylish blue color scheme -->
 
-    <!-- Navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container page-scroll">
-        <a class="main-logo navbar-left" href="#home"></a>
-        <p class="navbar-text navbar-right">
-          <span class="hidden-xs">
-            More info? <a class="btn btn-default" href="#signup">Sign up</a>
-          </span>
-          <a href="#" class="btn btn-default btn-lg visible-xs">
-            <i class="fa fa-sign-in"></i>
-          </a>
-        </p>
-      </div>
-    </div> <!-- End navbar -->
+  <body>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-      <div class="container">
-
-        <!-- Intro -->
-        <div class="row">
-          <div class="col-sm-12 col-md-6 text-left">
-            <h1>Decentralized storage network.</h1>
-            <p class="page-scroll">
-              <a class="btn btn-default" href="#features">Learn More</a>
-            </p>
+    <div class="cover-wrapper">
+      <div class="cover-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner cover">
+            <a href="index.html"><img src="img/cover-logo@2x.png" alt="Storj" class="cover-logo"></a>
+            <p class="cover-intro">The future of cloud storage is</p>
+            <h3 class="cover-animated">Blockchain-Based</h3>
+            <h1 class="cover-heading">
+              MetaDisk
+              <span class="cover-credit">Powered<br>by Storj</span>
+            </h1>
+            <p class="cover-description">The world's first blockchain-based decentralized storage network.<br>It's time to take back control of your data.</p>
+            <a href="#learn-more" class="btn btn-lg btn-white btn-c2a">Learn more</a>
+            <a href="#sign-up" class="btn btn-lg btn-white btn-c2a">Sign Up Now</a>
           </div>
-          <div class="col-sm-12 col-md-6 text-right">
-            <img src="assets/cust/img/node-preview.png" class="img-responsive node-preview" alt="Storj Node Preview">
-          </div>
-        </div> <!-- End intro -->
-
-        <!-- Scroll-to-cta prompt -->
-        <div class="row">
-          <p class="page-scroll scroll-to-cta">
-            <a href="#signup">
-              Get early VIP invite and updates<i class="fa fa-angle-double-down fa-lg animated"></i>
-            </a>
-          </p>           
-        </div> <!-- End scroll-to-cta prompt -->
-
-      </div>
-    </div> <!-- End Jumbotron -->
-
-    <!-- Main Content -->
-    <div class="container">
-
-      <!-- Assets (How to's) -->
-      <div class="row assets text-center">
-        <div class="col-sm-3">
-          <div class="asset">
-            <span class="fa fa-chain asset-ico-a"></span>
-            <h3>Blockchain Based</h3>
-            <p>Secure and autonomous. Features you want when securing your data.</p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="asset">
-            <span class="fa fa-file-text asset-ico-b"></span>
-            <h3>Your Files, Your Data</h3>
-            <p>Take back control of your data. Why trust someone else to keep your data safe and secure?</p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="asset">
-            <span class="fa fa-rocket asset-ico-c"></span>
-            <h3>Launching Soon</h3>
-            <p>We are putting the finishing touches on our alpha software.</p>
-          </div>
-        </div>
-      </div> <!-- End assets -->
-
-    </div>
-
-    <div class="container-fluid whitepaper">
-      <div class="container">
-        <div class="col-md-10 col-sm-12 col-xs-12">
-          <span>PDF Article</span>
-          <h2>Whitepaper - Storj: Decentralized Autonomous File Storage</h2>
-        </div>
-        <div class="col-md-2 col-sm-12 col-xs-12">
-          <a class="btn btn-default" href="assets/paper/storj.pdf">Read More</a>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="navigation row">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
 
-      <!-- Features -->
-      <div id="features" class="features">
+    <div class="why-section container" id="learn-more">
+      <div class="row">
+         <div class="col-md-8 col-md-offset-2">
+           <h1 class="title">Why Storj?</h1>
+           <div class="divider"></div>
+           <h3 class="subtitle">Meh, Dropbox and Google Drive work just fine. Why should I care about this newfangled "decentralized storage" with a weird name?</h3>
+         </div>
+       </div> 
 
-        <!-- Section header -->
-        <div class="row section-header">
-          <div class="col-sm-10 col-sm-offset-1">
-            <h1>Why Storj?</h1>
-            <p class="lead">
-              Meh, Dropbox and Google Drive work just fine. Why should I care about this newfangled "decentralized storage"
-              with a weird name?
-            </p>
-          </div>
-        </div> <!-- End section header -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="why-icons why-save"></div>
+          <h3 class="title-sm">Earn<br>Money</h3>
+          <div class="divider-full"></div>
+          <p class="text-why">Our numbers show that you are overpaying for data storage by 10-100x.</p>
+          <p class="text-why">When you pay for data storage you also are paying for employees, servers, and profit margins. We eliminate those costs by automating the entire network.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="why-icons why-secure"></div>
+          <h3 class="title-sm">Secure and<br>Autonomous</h3>
+          <div class="divider-full"></div>
+          <p class="text-why">When you have central sources of data, security breaches occur <a href="http://arstechnica.com/security/2012/07/dropbox-confirms-it-got-hacked-will-offer-two-factor-authentication/" target="_blank">[1]</a> <a href="http://thehackernews.com/2013/03/script-exceution-flaw-in-google-drive.html" target="_blank">[2]</a>.</p>
+          <p class="text-why">Because our network is decentralized, we don't have this problem. There is no database to breach, no cache of data to hack. Don't trust us? You don't have to.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="why-icons why-token"></div>
+          <h3 class="title-sm">Token and<br>Blockchain</h3>
+          <div class="divider-full"></div>
+          <p class="text-why">Bitcoin is the <a href="http://money.cnn.com/2013/05/23/technology/enterprise/bitcoin-supercomputers/">largest computing network</a> in the world. Why just use that for money?</p>
+          <p class="text-why">So, we built a decentralized storage with the same technology. Some day soon, you will even be able to sell your unused storage space to our network.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="why-icons why-free"></div>
+          <h3 class="title-sm">Free and<br>Open Source</h3>
+          <div class="divider-full"></div>
+          <p class="text-why">We are currently preparing our code for the alpha launch. At launch, our code will be open-sourced under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+          <p class="text-why">Feel free to experiment, hack, add features, verify, and bug test our code.</p>
+        </div>
+      </div>
+    </div>
 
-        <!-- First row of features -->
+    <div class="whitepaper-section">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <h3><i class="fa fa-money"></i> Save Money</h3>
-            <p>
-            Our numbers show you
-            are overpaying for data storage by 10-100x. When you pay for data storage you also are paying for employees,
-            servers, and profit margins. We eliminate those costs by automating the entire network. 
-            </p>
-          </div>
-          <div class="col-sm-6">
-            <h3><i class="fa fa-lock"></i> Autonomous & Secure, by Design</h3>
-            <p>
-            When you have central sources of data, security breaches occur 
-            <a href="http://arstechnica.com/security/2012/07/dropbox-confirms-it-got-hacked-will-offer-two-factor-authentication/">[1]</a>
-            <a href="http://thehackernews.com/2013/03/script-exceution-flaw-in-google-drive.html">[2]</a>. Because our network is decentralized, we don't have this problem. There is no database to breach, no cache of data to hack. 
-            Don't trust us, you don't have to.
-            </p>
-          </div>
-        </div> <!-- End first row of features -->
+          <a href="paper/storj.pdf" class="btn btn-white whitepaper-button">Read the whitepaper</a>
+        </div>  
+      </div>
+    </div>
 
-        <!-- Second row of features -->
-        <div class="row">
-          <div class="col-sm-6">
-            <h3><i class="fa fa-users"></i> Token &amp; Blockchain Driven</h3>
-            <p>
-              Bitcoin is the <a href="http://money.cnn.com/2013/05/23/technology/enterprise/bitcoin-supercomputers/">
-              largest computing network</a> in the world. Why just use that for money? So, we built a decentralized
-              storage with the same technology. <b>Some day soon, you will even be able to sell your unused storage 
-              space to our network.</b>
-            </p>
-          </div>
-          <div class="col-sm-6">
-            <h3><i class="fa fa-code"></i> Free, Open Source</h3>
-            <p>
-              We are currently preparing our code for the alpha launch. At launch our code will be open sourced under the 
-              <a href="http://opensource.org/licenses/MIT">MIT License</a>. Feel free to experiment, hack, add features,
-              verify, and bug test our code.  </p>
-          </div>
-        </div> <!-- End second row of features --> 
-
-      </div> <!-- End features -->
-
-      <!-- Signup area (main call-to-action) -->
-      <div id="signup">
-
-        <!-- Section header -->
-        <div class="row section-header">
-          <div class="col-sm-10 col-sm-offset-1">
-            <h1>Would you like to know more?</h1>
-            <p class="lead">
-              We are putting the finishing touches on our alpha software. Sign up for the newsletter to get updates 
-              on our progress, info on the project, and early access to the alpha when it is production ready. 
-            </p>
-          </div>
-        </div> <!-- End section header -->
-
-        <!-- Signup panel area -->
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-
-            <!-- Panel -->
-            <div class="panel panel-default">
-              <div class="row panel-body">
-                <div class="col-xs-10 col-xs-offset-1" id="mc_embed_signup">
-
-                  <!-- Signup form -->
-                  <form class="form-inline text-center validate" role="form" action="http://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=0b1509efa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                    <p>Sign up for early VIP invite, info, and updates:</p>
-                    <div class="row">
-                      <div class="form-group col-sm-7">
-                        <label name="EMAIL" class="required email sr-only" id="mce-EMAIL" for="mce-EMAIL">Email address</label>
-                        <input type="email" value="" name="EMAIL" class=" form-control input-lgrequired email" id="mce-EMAIL">
-                      </div>
-                      <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;"><input type="text" name="b_edba9fc4ce8b9095a31859cba_0b1509efa2" value=""></div>
-                      <div class="col-sm-5">
-                          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary btn-lg"></div>
-                      </div>
-                      
-                    </div>
-                    <p class="no-spam">*We will never share, rent, or sell your email address to anyone, ever.</p>
-                  </form> <!-- End signup form -->
-
-                </div>
-              </div>
-            </div> <!-- End panel -->
-
-          </div>
-        </div> <!-- End signup panel area -->
-
-      </div> <!-- End signup area -->
-
-      <!-- Footer -->
-      <div class="footer"> 
-        <div class="row">
-          <div class="col-sm-6 col-xs-12">
-            <img class="footer-logo" src="assets/cust/img/logos/footer-logo.png" alt="logo">
-            <p>
-              The world's first blockchain based decentralized storage network. It's time to take
-              back control of your data. 
-            </p>
-            <p class="copyright">&copy; 2014 Storj</p>
-          </div>
-          <div class="col-sm-2 col-xs-4">
-            <ul class="link-list">
-              <li class="heading">Contact</li>
-              <li><a href="mailto:hello@storj.io">hello@storj.io</a></li>
-              <li><a href="skype:?chat&blob=4tCu5BVrREdw019nYYk9vIhifrLoiFv3JbjN9edbzgSJBQqS76pFc70EPh_7kHkkIH-nQokYJhw_d0Lz16zYcI1bxH_t-OYQciRzQ1RF4Uln3mTJWIRXV2qBrUwdKIWSsDKrPd8qaTMgn5jGiu0sclFsVQgD0OhpyrhTkikH7Rd6r3rQsezGWsLIaPtZOk4vLcx52vuET70uTEOmsjuWjA3qzYjoKu8UkJ1d6dcud854">Skype Group</a></li>
-            </ul>       
-          </div>
-          <div class="col-sm-2 col-xs-4">
-            <ul class="link-list">
-              <li class="heading">Press</li>
-              <li><a href="http://bitscan.com/articles/genuine-and-decentralized-cloud-storage-storj">BitScan</a></li>
-              <li><a href="http://www.infoworld.com/t/encryption/bitcoin-finally-pays-in-secure-cloud-storage-240386">InfoWorld</a></li>
-              <li><a href="http://www.cryptocoinsnews.com/news/storj-next-generation-cloud-storage-through-the-blockchain/2014/04/11">Cryptocoins News</a></li>
-              <li><a href="http://www.thecleverest.com/storj-dropbox-for-the-future/">The Cleverest</a></li>
-              <li><a href="http://www.backupreview.com/storj-is-this-the-future-of-cloud-storage/">Backup Review</a></li>
-            </ul>  
-          </div>
-          <div class="col-sm-2 col-xs-4">
-            <ul class="link-list">
-              <li class="heading">Info</li>
-              <li><a href="https://bitcointalk.org/index.php?topic=555159.0">BitcoinTalk Thread</a></li>
-              <li><a href="assets/paper/storj.pdf">Whitepaper</a></li>	
-              <li><a href="http://reddit.com/r/storj">Reddit</a></li>
-            </ul>  
+    <div class="what-section container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="title">What is Storj?</h1>
+          <div class="divider"></div>
+          <h3 class="subtitle">Storj is an open source project actively developing a completely decentralized, secure and efficient cloud storage service that integrates a peer-to-peer protocols based on Bitcoin.</h3>
+        </div>
+      </div> 
+      <div class="inner row"></div>
+      <div class="row">
+        <div class="col-md-6 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 inner">
+          <a href=""><h3 class="title-sm text-left">The Problem of<br>Centralized Data Storage</h3></a>
+          <div class="divider-full"></div>
+          <p class="text-what">It's no secret that the last few years have seen turmoil for the security and privacy of web users. There have been record setting data security breaches from private enterprise databases. The amount of personal data of all kinds stored by private enterprises and national governments is at never before seen levels, with critically faulty security protection guarding it.
+          </p>
+          <p class="text-what text-more collapse">Enormous file hosting sites like Megaupload have been shut down, depriving customers access to the cloud storage they paid for.  Startling revelations have been published showing that Government spy agencies monitor anyone’s internet activity in real time and access any files or data they have put on seemingly secure cloud storage hosts like Dropbox or OneDrive routinely, for undisclosed reasons, in secret, without any due process of law, in clear violation of the rule of law worldwide. <br><br>
+          People are afraid of using the internet, and rightly so. People are afraid of companies that offer them cloud storage, knowing that information is power, and that power is being abused.
+          The problem boils down to one of centralization of data storage for millions of people in single locations, the transmission of data in plain text, and centralized data administration firms who are required by law to breach their own customers’ privacy.
+          </p>
+          <div class="text-left">
+            <div class="text-left read-more-block" data-toggle="collapse" data-target=".text-more"><p class="read-more-link">Read More</p></div>
           </div>
         </div>
-      </div> <!-- End footer -->
+        <div class="col-md-6 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 inner">
+          <a href=""><h3 class="title-sm text-left">The Solution of<br>Decentralized Data Storage</h3></a>
+          <div class="divider-full"></div>
+          <p class="text-what">Storj is a Decentralized Autonomous File Storage Network.  The network runs on a protocol, cryptocurrency, and suite of decentralized applications that allow users to store data in a secure and decentralized manner. It uses Bitcoin’s features of a public transaction ledger, public/private key encryption, and cryptographic hash functions for security.
+          </p>
+          <p class="text-what text-more collapse">Storj nodes, or average computers running the software, sell resources used to store and transfer information for Storjcoins or other cryptocurrencies. This allows users to run the software and be incentivised for sharing their unused hard drive space and bandwidth.  Since many millions of computing device users have unused computing resources, that are going to waste, a way to convert those resources into a digital cash reward should quickly become popular.<br><br>
+          By using the Bitcoin model, we can create a data storage system that can’t be censored, monitored, or suffer downtime. Furthermore, it will be 10 to 100 times cheaper, faster, and more secure than traditional cloud storage services. If you would like more technical info we encourage you to read our whitepaper.
+          </p>
+          <div class="text-left read-more-block" data-toggle="collapse" data-target=".text-more" class="read-more-link"><p class="read-more-link">Read More</a></div>
+        </div>
+      </div>
+    </div>
 
-    </div> <!-- End main content -->
+    <div class="press-section">
+        <a href="http://bitscan.com/articles/genuine-and-decentralized-cloud-storage-storj" target="_blank" class='press-icons press-bitscan'></a>
+        <a href="http://www.backupreview.com/storj-is-this-the-future-of-cloud-storage/" target="_blank" class='press-icons press-backupreview'></a>
+        <a href="http://www.thecleverest.com/storj-dropbox-for-the-future/" target="_blank" class='press-icons press-cleverest'></a>
+        <a href="http://www.infoworld.com/t/encryption/bitcoin-finally-pays-in-secure-cloud-storage-240386" target="_blank" class='press-icons press-infoworld'></a>
+        <a href="http://www.cryptocoinsnews.com/news/storj-next-generation-cloud-storage-through-the-blockchain/2014/04/11" target="_blank" class='press-icons press-ccnews'></a>
+    </div>
 
-    <!-- JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-    <!-- jQuery -->
-    <script src="assets/cust/js/jquery.min.js"></script>
-    <!-- Load this instead on live site <script src="http://code.jquery.com/jquery.min.js"></script> -->
+    <div class="c2a-section" id="sign-up">
+      <div class="container">
+        <form class="form-inline text-center validate" role="form" action="http://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=0b1509efa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1 class="title">Would you like to know more?</h1>
+              <div class="divider"></div>
+              <h3 class="subtitle">We are putting the finishing touches on our alpha software. Sign up for the newsletter to get updates on our progress, info on the project, and early access to the alpha when it is production ready.</h3>
+            </div>
+          </div> 
+          <div class="row inner">
+            <input type="email" name="EMAIL" id="mce-EMAIL" class="email" placeholder="Enter your email..." spellcheck="false">
+            <div style="position: absolute; left: -10000px;"><input type="text" name="b_edba9fc4ce8b9095a31859cba_0b1509efa2" value=""></div>
+            <span class="promise">*We will never share, rent, or sell your email address to anyone, ever.</span>
+          </div>
+          <div class="row inner">
+            <input type="submit" value="Get in Now" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-white">
+          </div>
+        </form>
+      </div>
+    </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <div class="footer container"> 
+      <div class="row">
+        <a href="index.html"><img src="img/footer-logo@2x.png" alt="Storj" class="footer-logo"></a>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+          <a class="footer-links" href="mailto:hello@storj.io">Email</a>
+          <a class="footer-links" href="skype:?chat&blob=4tCu5BVrREdw019nYYk9vIhifrLoiFv3JbjN9edbzgSJBQqS76pFc70EPh_7kHkkIH-nQokYJhw_d0Lz16zYcI1bxH_t-OYQciRzQ1RF4Uln3mTJWIRXV2qBrUwdKIWSsDKrPd8qaTMgn5jGiu0sclFsVQgD0OhpyrhTkikH7Rd6r3rQsezGWsLIaPtZOk4vLcx52vuET70uTEOmsjuWjA3qzYjoKu8UkJ1d6dcud854">Skype</a>
+          <a class="footer-links" href="assets/paper/storj.pdf">Whitepaper</a>
+          <a class="footer-links" href="http://reddit.com/r/storj">Reddit</a>
+          <a class="footer-links" href="https://bitcointalk.org/index.php?topic=555159.0">BitcoinTalk</a>
+      </div>
+    </div>
 
-    <!-- jQuery Easing -->
-    <script src="assets/cust/js/jquery.easing.min.js"></script>
-    <!-- Load this instead on live site 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/smoothscroll.js" type="text/javascript"></script>
 
-    <!-- Custom JavaScript -->
-    <script src="assets/cust/js/cust.js"></script>
-  </body>
+    <script>
+      $(function() {
+        $('.btn-c2a').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+        $(".read-more").on("click",function(){
+          $(".text-more").fadeIn();
+        });
+      });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-49085346-1', 'storj.io');
+      ga('send', 'pageview');
+    </script>
+
+  </body> 
 </html>
