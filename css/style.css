@@ -273,6 +273,11 @@ a {
   letter-spacing: 1px;
   line-height: 26px;
 }
+.cover-preview {
+  display: block;
+  width: 100%;
+  margin: 100px auto;
+}
 
 /*
  * Why
@@ -539,11 +544,21 @@ a {
     background: url('../img/press-icons@2x.jpg') no-repeat top left;
     background-size: 221px 545px; 
   } 
+
+  .cover-wrapper {
+    background-image: url("../img/bg-header@2x.jpg");
+  }
 }
 
 /*
  * Responsiveness
 */
+
+@media only screen and (max-width: 767px) {
+  .cover-wrapper {
+    background-image: url("../img/bg-header-mobile@2x.jpg");
+  }
+}
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
   .cover-heading {
