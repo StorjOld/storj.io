@@ -130,6 +130,7 @@ a {
   color: #107fc9;
   background: #fff;
   border: 2px solid #fff;
+  border-bottom: 4px solid #DADADA;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -143,7 +144,8 @@ a {
   transition: all 270ms;
 }
 .btn-solid:hover {
-  padding: 30px 60px;
+  border-bottom: 4px solid #fff;
+  color: #0F67A2;
 }
 
 .btn-white,
@@ -315,14 +317,6 @@ a {
   display: block;
   width: 100%;
   margin: 100px auto;
-}
-.cover-promise {
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.78);
-  display: block;
-  margin: 20px 0;
 }
 
 /*
@@ -509,8 +503,8 @@ a {
   color: #fff !important;
   width: 546px;
   height: 72px;
-  background-color: #1f7fc0;
-  border: 2px solid #308fce;
+  background: rgba(0,0,0,.32);
+  border: 2px solid #6fb1dd;
   padding-left: 25px;
   margin-top: 20px;
   -webkit-border-radius: 3px;
@@ -523,9 +517,11 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.email:focus {
-  background: #2077b0;
-  border-color: #7bb9e2;
+.email:hover {
+  background: rgba(0,0,0,.38);
+}
+.email:active, .email:focus {
+  background: rgba(0,0,0,.44);
 }
 .email::-webkit-input-placeholder {
    color: #bfd5eb;
@@ -539,25 +535,13 @@ a {
 .email:-ms-input-placeholder {  
    color: #bfd5eb;  
 }
-.cover-email {
-  border-color: #6fb1dd;
-  background: rgba(0,0,0,.32);
-}
-.cover-email:hover {
-  background: rgba(0,0,0,.38);
-}
-.cover-email:active, .cover-email:focus {
-  background: rgba(0,0,0,.44);
-}
-
 .promise {
   font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  color: #bfd5eb;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.78);
   display: block;
-  margin-top: 20px;
-  letter-spacing: 2.2px;
+  margin: 20px 0;
 }
 
 /*
