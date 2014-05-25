@@ -117,6 +117,35 @@ a {
  * Buttons
  */
 
+.btn-solid,
+.btn-solid:hover,
+.btn-solid:active,
+.btn-solid:focus {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 25px 60px;
+  color: #107fc9;
+  background: #fff;
+  border: 2px solid #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  width: 546px;
+  -webkit-transition: all 270ms;
+  -moz-transition: all 270ms;
+  -ms-transition: all 270ms;
+  -o-transition: all 270ms;
+  transition: all 270ms;
+}
+.btn-solid:hover {
+  padding: 30px 60px;
+}
+
 .btn-white,
 .btn-white:hover,
 .btn-white:active {
@@ -206,13 +235,22 @@ a {
   vertical-align: top;
 }
 .cover-container {
-  margin: 45px auto;
+  margin: 50px auto;
 }
 .cover {
   padding: 0 20px;
 }
 .cover-logo {
-  margin: 20px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.cover-logo:hover, .cover-logo:focus, .cover-logo:active {
+  color: #fff;
+}
+.cover-logo-icon {
+  margin-bottom: 10px;
   width: 54px;
   height: 59px;
   -webkit-transition: 0.4s ease-in-out;
@@ -221,7 +259,7 @@ a {
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
-.cover-logo:hover {
+.cover-logo-icon:hover {
   padding:2px;
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -245,11 +283,11 @@ a {
 } 
 .cover-heading {
   font-family: 'Lato', sans-serif;
-  font-size: 136px;
+  font-size: 34px;
   font-weight: 900;
-  letter-spacing: -6px;
   color: #fff;
-  margin: 5px 0 10px 33px;
+  margin: 45px 0 35px;
+  line-height: 42px;
 }
 .cover-credit {
   font-family: 'Lato', sans-serif;
@@ -277,6 +315,14 @@ a {
   display: block;
   width: 100%;
   margin: 100px auto;
+}
+.cover-promise {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.78);
+  display: block;
+  margin: 20px 0;
 }
 
 /*
@@ -493,6 +539,16 @@ a {
 .email:-ms-input-placeholder {  
    color: #bfd5eb;  
 }
+.cover-email {
+  border-color: #6fb1dd;
+  background: rgba(0,0,0,.32);
+}
+.cover-email:hover {
+  background: rgba(0,0,0,.38);
+}
+.cover-email:active, .cover-email:focus {
+  background: rgba(0,0,0,.44);
+}
 
 .promise {
   font-family: 'Lato', sans-serif;
@@ -561,10 +617,6 @@ a {
 }
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
-  .cover-heading {
-    font-size: 106px;
-  }
-
   .cover-credit {
     line-height: 11px;
     top: 16px;
@@ -572,6 +624,10 @@ a {
   }
 
   .email {
+    width: 85%;
+  }
+
+  .cover-button {
     width: 85%;
   }
 }
@@ -594,6 +650,10 @@ a {
     width: 95%;
   }
 
+  .cover-button {
+    width: 95%;
+  }
+
   .btn, .btn:hover, .btn:active {
     width: 95%;
     padding: 25px 0;
@@ -609,12 +669,6 @@ a {
 
   .cover-intro {
     font-size: 22px;
-  }
-
-  .cover-heading {
-    font-size: 64px;
-    margin-left: 0;
-    letter-spacing: -4px;
   }
 
   .cover-animated {
