@@ -319,6 +319,23 @@ a {
   margin: 100px auto;
 }
 
+.storjtalk-promo {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+}
+
+.storjtalk-promolink {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 10px 20px 10px 25px;
+  display: block;
+}
+
 /*
  * Why
  */
