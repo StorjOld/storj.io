@@ -288,8 +288,9 @@ a {
   font-size: 34px;
   font-weight: 900;
   color: #fff;
-  margin: 45px 0 35px;
+  margin: 35px 0 20px;
   line-height: 42px;
+  letter-spacing: 0.2px;
 }
 .cover-credit {
   font-family: 'Lato', sans-serif;
@@ -327,13 +328,24 @@ a {
   background: white;
 }
 
+.cover-future {
+  font-size: 10px;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 15px;
+}
+
 .storjtalk-promolink {
   font-family: 'Lato', sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 30px;
   padding: 10px 20px 10px 25px;
-  display: block;
+  display: none;
 }
 
 .storjtalk-promolink:hover {
@@ -519,15 +531,16 @@ a {
 
 .email {
   font-family: 'Lato', sans-serif;
-  font-size: 21px;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
   color: #fff !important;
   width: 546px;
   height: 72px;
   background: rgba(0,0,0,.32);
   border: 2px solid #6fb1dd;
-  padding-left: 25px;
   margin-top: 20px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -563,7 +576,7 @@ a {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.78);
   display: block;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 /*
@@ -654,6 +667,7 @@ a {
 
   .email {
     width: 95%;
+    font-size: 15px;
   }
 
   .cover-button {
@@ -669,10 +683,6 @@ a {
 
 
 @media only screen and (max-width: 640px) {
-  .cover-container {
-    margin: 15px auto;
-  }
-
   .cover-intro {
     font-size: 22px;
   }
@@ -686,7 +696,6 @@ a {
     padding: 25px 0px;
     font-size: 12px;
   }
-
 }
 
 @media only screen and (max-width: 991px) {
