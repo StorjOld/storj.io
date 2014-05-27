@@ -336,6 +336,11 @@ a {
   display: block;
 }
 
+.storjtalk-promolink:hover {
+  font-weight: 600;
+}
+
+
 /*
  * Why
  */
