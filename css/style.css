@@ -237,7 +237,7 @@ a {
   vertical-align: top;
 }
 .cover-container {
-  margin: 50px auto;
+  margin: 50px auto 0;
 }
 .cover {
   padding: 0 20px;
@@ -639,9 +639,15 @@ a {
 @media only screen and (max-width: 767px) {
   .cover-wrapper {
     background-image: url("../img/bg-header-mobile@2x.jpg");
+    min-height: 960px;
   }
   .cover-menu-link {
     margin: 0 10px;
+  }
+  .cover-preview {
+    margin: 20px auto 0;
+    position: absolute;
+    bottom: 0;
   }
 }
 
