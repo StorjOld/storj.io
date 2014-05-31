@@ -662,7 +662,7 @@ a {
     width: 85%;
   }
 
-  .cover-button {
+  .btn-signup, .btn-signup:hover {
     width: 85%;
   }
 }
@@ -686,7 +686,7 @@ a {
     font-size: 15px;
   }
 
-  .cover-button {
+  .btn-signup {
     width: 95%;
   }
 
