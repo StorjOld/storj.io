@@ -247,6 +247,9 @@ a {
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   font-weight: 400;
+  display: inline-block;
+  margin: 0 30px;
+  padding: 0 30px;
 }
 .cover-logo:hover, .cover-logo:focus, .cover-logo:active {
   color: #fff;
@@ -339,19 +342,24 @@ a {
   margin-top: 15px;
 }
 
-.storjtalk-promolink {
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 30px;
-  padding: 10px 20px 10px 25px;
-  display: none;
+.cover-menu-link {
+  color: #DAE4FF;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  margin: 0 60px;
+  vertical-align: top;
+  font-size: 14px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 
-.storjtalk-promolink:hover {
-  font-weight: 600;
+.cover-menu-link:hover {
+  color: #fff;
+  border: 2px solid #fff;
 }
-
 
 /*
  * Why
@@ -632,6 +640,9 @@ a {
   .cover-wrapper {
     background-image: url("../img/bg-header-mobile@2x.jpg");
   }
+  .cover-menu-link {
+    margin: 0 10px;
+  }
 }
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
@@ -678,6 +689,14 @@ a {
     padding: 25px 0;
     font-size: 14px;
   }
+  .cover-menu-link {
+    margin: 0;
+    padding: 15px;
+  }
+  .cover-logo {
+    margin: 0;
+    padding: 0 15px;
+  }
 }
 
 
@@ -700,5 +719,11 @@ a {
 @media only screen and (max-width: 991px) {
   .what-section .divider-full {
     margin-top: 3em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .cover-menu-link {
+    display: none;
   }
 }
