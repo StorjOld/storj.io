@@ -481,39 +481,39 @@ a {
   transition: all 0.4s;
 } 
 
-.press-icons.press-bitscan {
-  background-position: 0px 0px; width: 168px; height: 50px;
+.press-bitscan {
+  background-position: 0 0; width: 168px; height: 50px;
 } 
-.press-icons.press-bitscan:hover {
-  background-position: 0px -55px; width: 168px; height: 50px;
-} 
-
-.press-icons.press-backupreview {
-  background-position: 0px -440px; width: 222px; height: 50px;
-} 
-.press-icons.press-backupreview:hover {
-    background-position: 0px -495px; width: 222px; height: 50px;
+.press-bitscan:hover {
+  background-position: 0 -55px; width: 168px; height: 50px;
 } 
 
-.press-icons.press-cleverest {
-  background-position: 0px -220px; width: 215px; height: 50px;
+.press-backupreview {
+  background-position: 0 -440px; width: 222px; height: 50px;
 } 
-.press-icons.press-cleverest:hover {
-  background-position: 0px -275px; width: 215px; height: 50px;
-} 
-
-.press-icons.press-infoworld {
-    background-position: 0px -330px; width: 162px; height: 50px;
-} 
-.press-icons.press-infoworld:hover {
-    background-position: 0px -385px; width: 162px; height: 50px;
+.press-backupreview:hover {
+    background-position: 0 -495px; width: 222px; height: 50px;
 } 
 
-.press-icons.press-ccnews {
-  background-position: 0px -110px; width: 190px; height: 50px;
+.press-cleverest {
+  background-position: 0 -220px; width: 215px; height: 50px;
 } 
-.press-icons.press-ccnews:hover {
-  background-position: 0px -165px; width: 190px; height: 50px;
+.press-cleverest:hover {
+  background-position: 0 -275px; width: 215px; height: 50px;
+} 
+
+.press-infoworld {
+    background-position: 0 -330px; width: 162px; height: 50px;
+} 
+.press-infoworld:hover {
+    background-position: 0 -385px; width: 162px; height: 50px;
+} 
+
+.press-ccnews {
+  background-position: 0 -110px; width: 190px; height: 50px;
+} 
+.press-ccnews:hover {
+  background-position: 0 -165px; width: 190px; height: 50px;
 } 
 
 
@@ -711,7 +711,7 @@ a {
 
   .btn, .btn:hover, .btn:active {
     width: 95%;
-    padding: 25px 0px;
+    padding: 25px 0;
     font-size: 12px;
   }
 }
