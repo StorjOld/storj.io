@@ -639,15 +639,13 @@ a {
 @media only screen and (max-width: 767px) {
   .cover-wrapper {
     background-image: url("../img/bg-header-mobile@2x.jpg");
-    min-height: 960px;
+    min-height: 0;
   }
   .cover-menu-link {
     margin: 0 10px;
   }
   .cover-preview {
     margin: 20px auto 0;
-    position: absolute;
-    bottom: 0;
   }
 }
 
