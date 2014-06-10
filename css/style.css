@@ -626,6 +626,40 @@ a {
     background: url('../img/press-icons@2x.jpg') no-repeat top left;
     background-size: 221px 545px; 
   } 
+  .press-bitscan {
+    background-position: 0 0; width: 168px; height: 50px;
+  } 
+  .press-bitscan:hover {
+    background-position: 0 -55px; width: 168px; height: 50px;
+  } 
+
+  .press-backupreview {
+    background-position: 0 -440px; width: 222px; height: 50px;
+  } 
+  .press-backupreview:hover {
+      background-position: 0 -495px; width: 222px; height: 50px;
+  } 
+
+  .press-cleverest {
+    background-position: 0 -220px; width: 215px; height: 50px;
+  } 
+  .press-cleverest:hover {
+    background-position: 0 -275px; width: 215px; height: 50px;
+  } 
+
+  .press-infoworld {
+      background-position: 0 -330px; width: 162px; height: 50px;
+  } 
+  .press-infoworld:hover {
+      background-position: 0 -385px; width: 162px; height: 50px;
+  } 
+
+  .press-ccnews {
+    background-position: 0 -110px; width: 190px; height: 50px;
+  } 
+  .press-ccnews:hover {
+    background-position: 0 -165px; width: 190px; height: 50px;
+  }   
 
   .cover-wrapper {
     background-image: url("../img/bg-header@2x.jpg");
