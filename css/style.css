@@ -728,14 +728,13 @@ border-color: #107fc9;
     background-repeat: no-repeat;
   }
   .apps-driveminer {
-    background: url('../img/preview-driveminer@2x.png') no-repeat;
+    background: url('../img/preview-driveminer@2x.png');
     background-size: 484px 540px;
     background-repeat: no-repeat;
   }
   .press-icons {
     background: url('../img/press-icons@2x.jpg') no-repeat top left;
     background-size: 221px 545px; 
-    background-repeat: no-repeat;
   } 
   .press-bitscan {
     background-position: 0 0; width: 168px; height: 50px;
