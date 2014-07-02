@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 
     <!-- Favicons -->
@@ -46,130 +46,112 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
   </head>
 
   <body>
 
-    <div class="cover-wrapper">
+    <div class="cover-wrapper" id="about">
       <div class="cover-wrapper-inner">
-        <div class="cover-container">
-          <div class="inner cover">
-            <a class="cover-menu-link" href="http://blog.storj.io">Blog</a>
-            <a href="index.html" class="cover-logo"><img src="img/cover-logo@2x.png" alt="Storj" class="cover-logo-icon"><br>Storj.io</a>
-            <a class="cover-menu-link" href="http://storjtalk.org">Forum</a>
-            <h3 class="cover-future">The Future of Cloud Storage</h3>
-            <h1 class="cover-heading">
-              The world's first blockchain-based<br>
-              decentralized storage network.
-            </h1>
+        <div class="cover-container container">
+          <nav class="navbar row" role="navigation">
+            <a href="index.html" class="cover-logo col-xs-6 col-sm-4"><img src="img/cover-logo@2x.png" alt="Storj" class="cover-logo-icon">Storj.io</a>
+            <div class="navbar-menu col-sm-8 hidden-xs">
+              <a class="navbar-link page-scroll" href="#about">About</a>
+              <a class="navbar-link page-scroll" href="#apps">Apps</a>
+              <a class="navbar-link" href="http://blog.storj.io">Blog</a>
+              <a class="navbar-link" href="http://storjtalk.org">Forum</a>
+              <a class="navbar-link page-scroll" href="#contact">Contact</a>
+            </div>
+          </nav>
 
-            <form class="form-inline text-center validate" role="form" action="http://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=0b1509efa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-              <div class="row">
-                <input type="email" name="EMAIL" id="mce-EMAIL" class="email" placeholder="Enter your email here" spellcheck="false">
-                <div style="position: absolute; left: -10000px;"><input type="text" name="b_edba9fc4ce8b9095a31859cba_0b1509efa2" value=""></div>
-                <span class="promise">- AND -</span>
-              </div>
-              <div class="row">
-                <input type="submit" value="Sign Up for Early Access" name="subscribe" id="signup-header" class="btn btn-lg btn-solid btn-signup">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h1 class="cover-heading">
+                Decentralized<br>Cloud Storage
+              </h1>
+              <h2 class="cover-description">
+                Storj is based on the bitcoin blockchain technology<br>
+                and using peer-to-peer protocol to provide to most<br>
+                secure, private and efficient cloud storage.
+              </h2>
+              <form class="form-inline validate" role="form" action="http://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=0b1509efa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                <div class="input-group">
+                  <input type="email" name="EMAIL" id="mce-EMAIL" class="email form-control" placeholder="Enter your email here" spellcheck="false" autofocus>
+                  <span class="input-group-btn">
+                    <input type="submit" value="Get an Invite" name="subscribe" id="signup-header" class="btn btn-signup">
+                  </span>
+                </div>
                 <span class="promise">*We will never share, rent, or sell your email address to anyone, ever.</span>
+                <div style="position: absolute; left: -10000px;"><input type="text" name="b_edba9fc4ce8b9095a31859cba_0b1509efa2" value=""></div>
+              </form>
+            </div>
+
+            <div class="col-md-6 col-xs-12 cover-features">
+              <div class="cover-feature">
+                <div class="cf-icon cf-icon-0"></div>
+                <div class="cf-text">
+                  <h3 class="cover-feature-heading">Bitcoin Hackaton Winner</h3>
+                  <h4 class="cover-feature-subheading">at Texas Bitcoin Conference 2014.</h4>
+                </div>
               </div>
-            </form>
+              <div class="cover-feature">
+                <div class="cf-icon cf-icon-1"></div>
+                <div class="cf-text">
+                  <h3 class="cover-feature-heading">Users earn money</h3>
+                  <h4 class="cover-feature-subheading">for their extra hard drive space.</h4>
+                </div>
+              </div>
+              <div class="cover-feature">
+                <div class="cf-icon cf-icon-2"></div>
+                <div class="cf-text">
+                  <h3 class="cover-feature-heading">10-100x more cost effective</h3>
+                  <h4 class="cover-feature-subheading">than the traditional cloud.</h4>
+                </div>
+              </div>
+              <div class="cover-feature">
+                <div class="cf-icon cf-icon-3"></div>
+                <div class="cf-text">
+                  <h3 class="cover-feature-heading">Secure, private &amp; fast network</h3>
+                  <h4 class="cover-feature-subheading">using P2P technology &amp; encryption.</h4>
+                </div>
+              </div>           
+            </div>
           </div>
-
-          <img src="img/preview@2x.png" class="cover-preview visible-xs"/>
         </div>
       </div>
     </div>
 
-    <div class="navigation row">
-      <div class="container">
-        <div class="row"></div>
-      </div>
-    </div>
-
-    <div class="why-section container" id="learn-more">
-      <div class="row">
-         <div class="col-md-8 col-md-offset-2">
-           <h1 class="title">Why Storj?</h1>
-           <div class="divider"></div>
-           <h3 class="subtitle">What benefits does decentralized storage offer over traditional services such as Dropbox or Google Drive?</h3>
-         </div>
-       </div> 
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="why-icons why-save"></div>
-          <h3 class="title-sm">Earn<br>Money</h3>
-          <div class="divider-full"></div>
-          <p class="text-why">Do you have spare hard drive space collecting dust? With Storj you'll be able to earn money just by hosting files for the network on your computer.</p>
-          <p class="text-why">How much you earn is based on the amount of storage space you provide. Files are encrypted and kept separate from your normal files, so running Storj won’t affect your normal usage.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="why-icons why-secure"></div>
-          <h3 class="title-sm">Secure and Decentralized</h3>
-          <div class="divider-full"></div>
-          <p class="text-why">With traditional cloud storage services, a single company controls and manages your data.</p>
-          <p class="text-why">Storj is decentralized, which means that no one person or company manages the data. It also makes your data safer because we don’t have a large database of customer information for hackers to crack <a href="http://arstechnica.com/security/2012/07/dropbox-confirms-it-got-hacked-will-offer-two-factor-authentication/" target="_blank">[1]</a> <a href="http://thehackernews.com/2013/03/script-exceution-flaw-in-google-drive.html" target="_blank">[2]</a> .</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="why-icons why-token"></div>
-          <h3 class="title-sm">Token and<br>Blockchain</h3>
-          <div class="divider-full"></div>
-          <p class="text-why">Bitcoin is the <a href="http://money.cnn.com/2013/05/23/technology/enterprise/bitcoin-supercomputers/">largest computing network</a> in the world. Why just use that for money?</p>
-          <p class="text-why">We built a decentralized storage application using the same technology. We use a <a href="https://en.bitcoin.it/wiki/Block_chain">blockchain</a> to manage millions of computers without a central server or database. We also use <a href="https://en.wikipedia.org/wiki/Cryptocurrency">cryptocurrencies</a> to instantly reward and maintain the network. </p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <div class="why-icons why-free"></div>
-          <h3 class="title-sm">Free and<br>Open Source</h3>
-          <div class="divider-full"></div>
-          <p class="text-why">Our code is currently open-sourced under <a href="http://opensource.org/licenses/MIT">The MIT License</a>.</p>
-          <p class="text-why">Feel free to experiment, hack, add features, verify, and bug test our code. We'd love to hear about any new ideas or suggestions you may have.</p>
-          <p class="text-why">The core of the Storj platform is still in development, but feel free to check out our first peice of decentralized software, <a href="http://metadisk.org">Metadisk</a>.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="whitepaper-section">
+    <div class="apps-section" id="apps">
       <div class="container">
         <div class="row">
-          <a href="http://node1.storj.io/api/download/b7a1999ca8f50b3b9ee2ec5c950e7aa1c198f38ccec5cd428fc2c782b91eb884?key=400ec779ce0c93fb3edcb719c84f5cd0c8ea39409d3c2bee98ce7d7c6bae1086&token=dAuZVAIR3qyz5mmu" class="btn btn-solid whitepaper-button">View the Deck (.pdf)</a>
-        </div>  
-      </div>
-    </div>
-
-    <div class="what-section container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1 class="title">What is Storj?</h1>
-          <div class="divider"></div>
-          <h3 class="subtitle">Storj is an open source project actively developing a completely decentralized, secure, and efficient cloud storage service that integrates a peer-to-peer protocol based on Bitcoin.</h3>
-        </div>
-      </div> 
-      <div class="inner row"></div>
-      <div class="row">
-        <div class="col-md-6 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 inner">
-          <a href=""><h3 class="title-sm text-left">The Problem of<br>Centralized Data Storage</h3></a>
-          <div class="divider-full"></div>
-          <p class="text-what">It's no secret that the last few years have been chaotic regarding the security and privacy of web users. There has been a record setting amount of data security breaches from private enterprise databases. The amount of personal data stored by private enterprises and national governments is at never before seen levels, and the security protecting it is often critically flawed.
-          </p>
-          <p class="text-what text-more collapse">Enormous file hosting sites like Megaupload have been shut down, depriving customers access to the cloud storage they paid for.  Startling revelations have been published showing that government spy agencies can monitor anyone’s internet activity in real time and can access files or data put on seemingly secure cloud storage hosts like Dropbox and OneDrive. This is usually done for undisclosed reasons, in secret, and without any due process of law which is a clear violation of worldwide internet users' privacy. <br><br>
-          People are afraid of using the internet, and rightly so. People are afraid of companies that offer them cloud storage, knowing that information is power, and that power is being abused.
-          The problem boils down to one of centralization of data storage, the transmission of data in plain text, and centralized data administration firms who are required by law to breach their own customers’ privacy.
-          </p>
-          <div class="text-left">
-            <div class="text-left read-more-block" data-toggle="collapse" data-target=".text-more"><p class="read-more-link">Read More</p></div>
+          <div class="col-xs-12">
+            <h1 class="section-heading">Apps</h1>
+            <h3 class="section-subheading">Powered by Storj</h3>
+          </div>
+        </div> 
+        <div class="row div-sm"></div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 ">
+            <h3 class="title">Metadisk</h3>
+            <p class="description">To truly own your data on the cloud was impossible until now. Using our web application Metadisk, you can upload your data to the Storj network and never worry about your privacy and security.</p>
+            <a href="http://metadisk.org/" class="btn btn-blue">Learn More</a>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 ">
+            <div class="apps-metadisk"></div>
           </div>
         </div>
-        <div class="col-md-6 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 inner">
-          <a href=""><h3 class="title-sm text-left">The Solution of<br>Decentralized Data Storage</h3></a>
-          <div class="divider-full"></div>
-          <p class="text-what">Storj is a Decentralized Autonomous File Storage Network.  The network runs on a protocol, cryptocurrency, and a suite of decentralized applications which allow users to store data in a secure and decentralized manner. It uses Bitcoin’s features of a public transaction ledger, public/private key encryption, and cryptographic hash functions for security.
-          </p>
-          <p class="text-what text-more collapse">Storj nodes, or average computers running the software, sell resources used to store and transfer information and are rewarded with Storjcoins or other cryptocurrencies. This allows users to run the software and be incentivised for sharing their unused hard drive space and bandwidth.  Since many millions of computing device users have unused computing resources, that are going to waste, a way to convert those resources into a digital cash reward should quickly become popular.<br><br>
-          By using the Bitcoin model, we can create a data storage system that can’t be censored, monitored, or suffer from downtime. Furthermore, it will be 10 to 100 times cheaper, faster, and more secure than traditional cloud storage services. If you would like more technical information, we encourage you to read our whitepaper.
-          </p>
-          <div class="text-left read-more-block" data-toggle="collapse" data-target=".text-more" class="read-more-link"><p class="read-more-link">Read More</p></div>
+        <div class="row div-lg"></div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-5 col-md-push-7 col-lg-6 col-lg-push-6">
+            <h3 class="title">DriveMiner</h3>
+            <p class="description">Do you have unused hard disk space on your computer and internet bandwidth?</p>
+            <p class="description">Put your computer to work for you with our desktop application DriveMiner, and earn money by being a part of the Storj network.</p>
+            <p class="description">Just run our app DriveMiner and choose the amount of free hard disk space you want to provide.</p>
+            <a href="http://storjtalk.org/index.php?board=16.0" class="btn btn-blue">Learn More</a>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-7 col-md-pull-5 col-lg-6 col-lg-pull-6">
+            <div class="apps-driveminer"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -177,45 +159,68 @@
     <div class="press-section">
         <a href="http://bitscan.com/articles/genuine-and-decentralized-cloud-storage-storj" target="_blank" class='press-icons press-bitscan'></a>
         <a href="http://www.backupreview.com/storj-is-this-the-future-of-cloud-storage/" target="_blank" class='press-icons press-backupreview'></a>
-        <a href="http://www.thecleverest.com/storj-dropbox-for-the-future/" target="_blank" class='press-icons press-cleverest'></a>
+        <a href="http://www.thecleverest.com/storj-dropbox-for-the-future/" target="_blank" class='press-icons press-cleverest hidden-md'></a>
         <a href="http://www.infoworld.com/t/encryption/bitcoin-finally-pays-in-secure-cloud-storage-240386" target="_blank" class='press-icons press-infoworld'></a>
         <a href="http://www.cryptocoinsnews.com/news/storj-next-generation-cloud-storage-through-the-blockchain/2014/04/11" target="_blank" class='press-icons press-ccnews'></a>
     </div>
 
-    <div class="c2a-section" id="sign-up">
+    <div class="contact" id="contact">
       <div class="container">
-        <form class="form-inline text-center validate" role="form" action="http://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=0b1509efa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <h1 class="title">Would you like to know more?</h1>
-              <div class="divider"></div>
-              <h3 class="subtitle">We are putting the finishing touches on our alpha software. Sign up for the newsletter to get updates on our progress, info on the project, and early access to the alpha when it is production ready.</h3>
-            </div>
-          </div> 
-          <div class="row inner">
-            <input type="email" name="EMAIL" id="mce-EMAIL" class="email" placeholder="Enter your email here" spellcheck="false">
-            <div style="position: absolute; left: -10000px;"><input type="text" name="b_edba9fc4ce8b9095a31859cba_0b1509efa2" value=""></div>
-            <span class="promise">- AND -</span>
-            <input type="submit" value="Sign Up for Newsletter" name="subscribe" id="signup-footer" class="btn btn-lg btn-solid btn-signup">
-            <span class="promise">*We will never share, rent, or sell your email address to anyone, ever.</span>
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="section-heading">Contact</h1>
           </div>
-        </form>
+        </div> 
+        <div class="div-sm"></div>
+        <div class="row">
+          <div class="col-md-6 contact-questions">
+              <h1 class="title">Questions?</h1>
+              <h3 class="description">Don’t hesitate to reach us by <a href="mailto:hello@storj.io">email</a>,
+                check our <a href="http://storjtalk.io/">forum</a> discussions,
+                join our public <a href="skype:?chat&blob=4tCu5BVrREdw019nYYk9vIhifrLoiFv3JbjN9edbzgSJBQqS76pFc70EPh_7kHkkIH-nQokYJhw_d0Lz16zYcI1bxH_t-OYQciRzQ1RF4Uln3mTJWIRXV2qBrUwdKIWSsDKrPd8qaTMgn5jGiu0sclFsVQgD0OhpyrhTkikH7Rd6r3rQsezGWsLIaPtZOk4vLcx52vuET70uTEOmsjuWjA3qzYjoKu8UkJ1d6dcud854">Skype group</a>,
+                view our presentation <a href="http://node1.storj.io/api/download/b7a1999ca8f50b3b9ee2ec5c950e7aa1c198f38ccec5cd428fc2c782b91eb884?key=400ec779ce0c93fb3edcb719c84f5cd0c8ea39409d3c2bee98ce7d7c6bae1086&token=dAuZVAIR3qyz5mmu">pitch deck</a>,
+                read the Storj <a href="http://blog.storj.io/">blog</a>
+                or follow <a href="http://reddit.com/r/storj">/r/storj</a> at reddit.</h3>
+              <div class="social-links">
+                <a class="social social-twitter" href="https://twitter.com/storjproject" target="_blank"></a>
+                <a class="social social-reddit" href="http://reddit.com/r/storj" target="_blank"></a>
+                <a class="social social-facebook" href="https://www.facebook.com/storjproject" target="_blank"></a>
+                <a class="social social-gplus" href="https://plus.google.com/+StorjIo2014/about" target="_blank"></a>
+                <a class="social social-skype" href="skype:?chat&blob=4tCu5BVrREdw019nYYk9vIhifrLoiFv3JbjN9edbzgSJBQqS76pFc70EPh_7kHkkIH-nQokYJhw_d0Lz16zYcI1bxH_t-OYQciRzQ1RF4Uln3mTJWIRXV2qBrUwdKIWSsDKrPd8qaTMgn5jGiu0sclFsVQgD0OhpyrhTkikH7Rd6r3rQsezGWsLIaPtZOk4vLcx52vuET70uTEOmsjuWjA3qzYjoKu8UkJ1d6dcud854"></a>
+              </div>
+          </div>
+          <div class="col-md-6 contact-newsletter">
+            <h1 class="title">Newsletter</h1>
+            <h3 class="description">Sign up for the newsletter to get updates on our progress, additional info on the project, and early access to our applications.</h3>
+            <form class="form-inline validate" role="form" action="http://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=0b1509efa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+              <div class="input-group">
+                <input type="email" name="EMAIL" id="mce-EMAIL" class="email form-control" placeholder="Enter your email here" spellcheck="false" autofocus>
+                <span class="input-group-btn">
+                  <input type="submit" value="Stay in touch" name="subscribe" id="signup-header" class="btn btn-signup">
+                </span>
+              </div>
+              <span class="promise">*We will never share, rent, or sell your email address to anyone, ever.</span>
+              <div style="position: absolute; left: -10000px;"><input type="text" name="b_edba9fc4ce8b9095a31859cba_0b1509efa2" value=""></div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="footer container"> 
-      <div class="row">
-        <a href="index.html"><img src="img/footer-logo@2x.png" alt="Storj" class="footer-logo"></a>
-      </div>
-      <div class="divider"></div>
-      <div class="row">
-          <a class="footer-links" href="mailto:hello@storj.io">Email</a>
-          <a class="footer-links" href="http://reddit.com/r/storj">Reddit</a>
-          <a class="footer-links" href="http://storjtalk.org">StorjTalk</a>
-          <a class="footer-links" href="https://bitcointalk.org/index.php?topic=555159.0">BitcoinTalk</a>
-          <a class="footer-links" href="skype:?chat&blob=4tCu5BVrREdw019nYYk9vIhifrLoiFv3JbjN9edbzgSJBQqS76pFc70EPh_7kHkkIH-nQokYJhw_d0Lz16zYcI1bxH_t-OYQciRzQ1RF4Uln3mTJWIRXV2qBrUwdKIWSsDKrPd8qaTMgn5jGiu0sclFsVQgD0OhpyrhTkikH7Rd6r3rQsezGWsLIaPtZOk4vLcx52vuET70uTEOmsjuWjA3qzYjoKu8UkJ1d6dcud854">Skype</a>
-          <a class="footer-links" href="http://node1.storj.io/api/download/b7a1999ca8f50b3b9ee2ec5c950e7aa1c198f38ccec5cd428fc2c782b91eb884?key=400ec779ce0c93fb3edcb719c84f5cd0c8ea39409d3c2bee98ce7d7c6bae1086&token=dAuZVAIR3qyz5mmu">Deck</a>
-          <a class="footer-links" href="http://blog.storj.io/">Blog</a>
+    <div class="footer">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <a href="index.html" class="footer-logo"><img src="img/footer-logo.png" alt="Storj" class="footer-logo-icon">2014 © Storj</a>
+          </div>
+          <div class="col-sm-8 col-xs-12 footer-menu">
+            <a class="footer-link page-scroll" href="#about">About</a>
+            <a class="footer-link page-scroll" href="#apps">Apps</a>
+            <a class="footer-link" href="http://blog.storj.io">Blog</a>
+            <a class="footer-link" href="http://storjtalk.org">Forum</a>
+            <a class="footer-link page-scroll" href="#contact">Contact</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -231,12 +236,11 @@
 
       ga('create', 'UA-49085346-1', 'storj.io');
       ga('send', 'pageview');
-
     </script>
 
     <script>
       $(function() {
-        $('.btn-c2a').bind('click', function(event) {
+        $('.page-scroll').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top
