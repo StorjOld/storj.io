@@ -602,7 +602,7 @@ border-color: #107fc9;
 }
 
 .contact-questions .description a {
-  border-bottom: 1px dotted;
+  border-bottom: 1px dashed;
   padding-bottom: 2px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
