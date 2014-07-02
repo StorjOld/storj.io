@@ -442,6 +442,15 @@ a {
   display: inline-block;
 }
 
+.users-earn-money {
+  color: #fff;
+  border-bottom: 2px dashed #fff;
+}
+.users-earn-money:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
 
 /*
  * Apps
