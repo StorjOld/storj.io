@@ -990,7 +990,7 @@ border-color: #107fc9;
     padding: 5px 0 5px;
   }
   .cover-feature-heading {
-    font-size: 14px;
+    font-size: 12px;
   }
   .cover-feature-subheading {
     font-size: 12px;
@@ -1007,7 +1007,7 @@ border-color: #107fc9;
     width: 100%;
   } 
   .promise {
-    font-size: 11px;
+    font-size: 10px;
   }
   .cf-icon {
     margin-right: 10px;
@@ -1021,8 +1021,9 @@ border-color: #107fc9;
   }
   .description {
     padding: 5px 10px 5px 0;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
+    line-height: 28px;
   }
   .apps-section {
     padding: 20px 10px 50px;
@@ -1037,11 +1038,15 @@ border-color: #107fc9;
     background-size: contain;
     height: 200px;
   }
+  .apps-driveminer {
+    background-size: contain;
+    height: 300px;
+  }
   .div-sm {
     padding: 10px;
   }
   .div-lg {
-    padding: 30px;
+    padding: 20px;
   }
   .press-section {
     padding: 30px 0;
