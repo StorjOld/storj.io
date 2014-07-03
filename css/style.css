@@ -877,14 +877,35 @@ border-color: #107fc9;
 }
 
 @media only screen and (max-width: 480px) {
+  .cover-container {
+    margin: 40px auto 0;
+  }
+  .cover-wrapper-inner {
+    padding-bottom: 0;
+  }
+  .cover-logo {
+    width: 100%;
+  }
   .cover-heading {
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 0;
+    margin-top: 5px;
     line-height: 42px;
   }
   .cover-subheading {
     font-size: 21px;
     line-height: 26px;
+  }
+  .cover-description {
+    font-size: 15px;
+  }
+  .cover-features {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: #107fc9;
+  }
+  .cover-feature {
+    padding: 5px 0 5px;
   }
   .cover-feature-heading {
     font-size: 14px;
@@ -892,21 +913,13 @@ border-color: #107fc9;
   .cover-feature-subheading {
     font-size: 12px;
   }
-  .cover-feature {
-    padding: 5px 0 5px;
-  }
   .email {
     font-size: 12px;
-  }
-  .cover-logo {
-    width: 100%;
+    height: 61px;
   }
   .btn-signup {
     padding: 20px 10px;
     font-size: 12px;
-  }
-  .email {
-    height: 61px;
   }
  .input-group {
     width: 100%;
@@ -917,7 +930,49 @@ border-color: #107fc9;
   .cf-icon {
     margin-right: 10px;
   }
+  .title {
+    margin-bottom: 10px;
+  }
   .description {
     padding: 5px 10px 5px 0;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .apps-section {
+    padding: 20px 10px 50px;
+  }
+  .apps-section .btn {
+    margin-top: 5px;
+    width: 100%;
+    font-size: 14px;
+    padding: 20px 0;
+  }
+  .apps-metadisk {
+    background-size: contain;
+    height: 200px;
+  }
+  .div-sm {
+    padding: 10px;
+  }
+  .div-lg {
+    padding: 30px;
+  }
+  .press-section {
+    padding: 30px 0;
+  }
+  .contact {
+    padding: 50px 10px;
+  }
+  .contact .btn-signup {
+    padding: 22px 15px;
+  }
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-link {
+    display: block;
   }
 }
