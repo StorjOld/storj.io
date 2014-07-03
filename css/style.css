@@ -120,73 +120,6 @@ a {
   outline: none;
 }
 
-.btn-solid,
-.btn-solid:hover,
-.btn-solid:active,
-.btn-solid:focus {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  padding: 25px 60px;
-  color: #107fc9;
-  background: #fff;
-  border: 2px solid #fff;
-  border-bottom: 4px solid #DADADA;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 270ms;
-  -moz-transition: all 270ms;
-  -ms-transition: all 270ms;
-  -o-transition: all 270ms;
-  transition: all 270ms;
-}
-.btn-solid:hover {
-  border-bottom: 4px solid #fff;
-  color: #0F67A2;
-}
-
-.btn-white,
-.btn-white:hover,
-.btn-white:active {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  padding: 25px 60px;
-  color: white;
-  background: none;
-  border: 2px solid #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 270ms;
-  -moz-transition: all 270ms;
-  -ms-transition: all 270ms;
-  -o-transition: all 270ms;
-  transition: all 270ms;
-}
-
-.btn-white:hover {
-  background: #fff;
-  color: #107fc9;
-}
-
-.btn-white:focus {
-  color: #fff;
-}
-
-.btn-white:hover.btn-white:focus{
-  color: #107fc9;
-}
-
 .btn-blue,
 .btn-blue:hover,
 .btn-blue:active {
@@ -196,9 +129,8 @@ a {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 25px 35px;
-  color: #107fc9;
-  background: none;
-  border: 3px solid #107fc9;
+  color: #fff;
+  background: #3498DB;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -497,7 +429,7 @@ a {
   background: url('../img/press-icons.jpg') no-repeat top left;
   display: inline-block;
   cursor: pointer;
-  margin: 20px;
+  margin: 18px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -564,13 +496,13 @@ a {
 
 .contact .btn-signup {
   color: #fff;
-  background: #107fc9;
+  background: #3498DB;
   border: 0;
   padding: 25px 0;
 }
 
 .contact .btn-signup:hover {
-  background: #3498DB;
+  background: #107fc9;
 }
 
 .contact .email {
