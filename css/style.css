@@ -716,12 +716,6 @@ border-color: #107fc9;
 */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-device-pixel-ratio: 2) {
-  .cover-wrapper {
-    background-image: url("../img/bg-header@2x.jpg");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-  }
   .apps-metadisk {
     background: url('../img/preview-metadisk@2x.png');
     background-size: 461px 290px;
