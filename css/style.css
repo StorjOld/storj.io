@@ -343,8 +343,9 @@ a {
   color: #fff !important;
   height: 72px;
   background: #107fc9;
-  background: rgba(16, 127, 201, 0.70);
+  background: rgba(0, 0, 0, 0.15);
   border: 2px solid #fff;
+  border-right: 0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -357,11 +358,11 @@ a {
 }
 .email:hover {
   background: #107fc9;
-  background: rgba(16, 127, 201, 0.80);
+  background: rgba(0, 0, 0, 0.30);
 }
 .email:active, .email:focus {
   background: #107fc9;
-  background: rgba(16, 127, 201, 0.90);
+  background: rgba(0, 0, 0, 0.50);
 }
 .email:focus {
   border-color: #107fc9;
