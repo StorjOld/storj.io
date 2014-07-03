@@ -898,4 +898,26 @@ border-color: #107fc9;
   .email {
     font-size: 12px;
   }
+  .cover-logo {
+    width: 100%;
+  }
+  .btn-signup {
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+  .email {
+    height: 61px;
+  }
+ .input-group {
+    width: 100%;
+  } 
+  .promise {
+    font-size: 11px;
+  }
+  .cf-icon {
+    margin-right: 10px;
+  }
+  .description {
+    padding: 5px 10px 5px 0;
+  }
 }
