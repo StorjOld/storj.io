@@ -965,6 +965,7 @@ border-color: #107fc9;
   }
   .cover-wrapper-inner {
     padding-bottom: 0;
+    background: rgba(16, 127, 201, 0.5);
   }
   .cover-logo {
     width: 100%;
@@ -983,9 +984,7 @@ border-color: #107fc9;
     font-size: 15px;
   }
   .cover-features {
-    padding-top: 30px;
     padding-bottom: 20px;
-    background: #107fc9;
   }
   .cover-feature {
     padding: 5px 0 5px;
@@ -1012,6 +1011,10 @@ border-color: #107fc9;
   }
   .cf-icon {
     margin-right: 10px;
+  }
+  .cf-text {
+    vertical-align: top;
+    padding-top: 5px;
   }
   .title {
     margin-bottom: 10px;
