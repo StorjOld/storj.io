@@ -233,7 +233,7 @@ a {
 }
 
 .navbar-link {
-  color: #CAC8E7;
+  color: #EEE;
   display: inline-block;
   text-transform: uppercase;
   padding: 20px 5px;
@@ -838,10 +838,92 @@ border-color: #107fc9;
 }
 
 @media only screen and (min-width: 560px) and (max-width: 990px) {
+  .cover-heading {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .cover-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+  }
   .input-group {
-    width: 80%;
+    width: 100%;
+  }
+  .email {
+    font-size: 14px;
+    height: 71px;
+  }
+  .btn-signup {
+    padding: 25px 5px;
+    font-size: 12px;
+  }
+  .cf-text {
+    vertical-align: top;
+    padding-top: 5px;
+  }
+  .cf-icon {
+    margin-right: 10px;
+  }
+  .cover-feature-heading {
+    font-size: 14px;
+  }
+  .cover-feature-subheading {
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  .apps-section {
+    padding: 40px 20px 0;
+  }
+  .div-sm {
+    padding: 10px;
+  }
+  .div-lg {
+    padding: 30px;
+  }
+  .title {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+    padding-right: 0;
+  }
+  .apps-metadisk {
+    background-size: contain;
+  }
+  .apps-driveminer {
+    background-size: contain;
+  }
+  .apps-section .btn {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .press-section {
+    padding: 50px 0;
+  }
+  .contact {
+    padding: 70px 20px;
+  }
+  .contact-newsletter {
+    margin-top: 0;
+  }
+  .contact .btn-signup {
+    padding: 27px 10px;
+    font-size: 12px;
+  }
+  .footer {
+    padding: 50px 20px;
   }
 }
+
 
 @media only screen and (max-width: 768px) {
   .cover-heading {
