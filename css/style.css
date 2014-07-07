@@ -590,7 +590,10 @@ a {
   background-image: url('../img/social-skype.png');
   background-size: 40px 40px;
 }
-
+.social-tumblr {
+  background-image: url('../img/social-tumblr.png');
+  background-size: 40px 40px;
+}
 
 /*
  * Footer
