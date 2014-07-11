@@ -421,15 +421,15 @@ a {
 */
 
 .press-section {
-  padding: 76px 0;
+  padding: 50px 0;
   border-top: 1px solid #f6f6f6;
   text-align: center;
 }
 .press-icons {
-  background: url('../img/press-icons.jpg') no-repeat top left;
   display: inline-block;
   cursor: pointer;
-  margin: 18px;
+  margin: 20px;
+  vertical-align: middle;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -437,40 +437,60 @@ a {
   transition: all 0.4s;
 } 
 
-.press-bitscan {
-  background-position: 0 0; width: 168px; height: 50px;
-} 
-.press-bitscan:hover {
-  background-position: 0 -55px; width: 168px; height: 50px;
-} 
+  .press-bitscan {
+    background: url('../img/press-bitscan.jpg') no-repeat top left;
+    background-size: 166px 50px;
+    width: 166px;
+    height: 50px;
+  } 
+  .press-bitscan:hover {
+    background: url('../img/press-bitscan-hover.jpg') no-repeat top left;
+    background-size: 166px 50px;
+  } 
 
-.press-backupreview {
-  background-position: 0 -440px; width: 222px; height: 50px;
-} 
-.press-backupreview:hover {
-    background-position: 0 -495px; width: 222px; height: 50px;
-} 
+  .press-backupreview {
+    background: url('../img/press-backupreview.jpg') no-repeat top left;
+    background-size: 221px 50px;
+    width: 221px;
+    height: 50px;
+  } 
+  .press-backupreview:hover {
+    background: url('../img/press-backupreview-hover.jpg') no-repeat top left;
+    background-size: 221px 50px;
+  } 
 
-.press-cleverest {
-  background-position: 0 -220px; width: 215px; height: 50px;
-} 
-.press-cleverest:hover {
-  background-position: 0 -275px; width: 215px; height: 50px;
-} 
+  .press-cointelegraph {
+    background: url('../img/press-cointelegraph.jpg') no-repeat top left;
+    background-size: 150px 100px;
+    width: 150px;
+    height: 100px;
+  } 
+  .press-cointelegraph:hover {
+    background: url('../img/press-cointelegraph-hover.jpg') no-repeat top left;
+    background-size: 150px 100px; 
+  } 
 
-.press-infoworld {
-    background-position: 0 -330px; width: 162px; height: 50px;
-} 
-.press-infoworld:hover {
-    background-position: 0 -385px; width: 162px; height: 50px;
-} 
+  .press-infoworld {
+    background: url('../img/press-infoworld.jpg') no-repeat top left;
+    background-size: 162px 50px;
+    width: 162px;
+    height: 50px;
+  } 
+  .press-infoworld:hover {
+    background: url('../img/press-infoworld-hover.jpg') no-repeat top left;
+    background-size: 162px 50px;
+  } 
 
-.press-ccnews {
-  background-position: 0 -110px; width: 190px; height: 50px;
-} 
-.press-ccnews:hover {
-  background-position: 0 -165px; width: 190px; height: 50px;
-} 
+  .press-ccnews {
+    background: url('../img/press-ccnews.jpg') no-repeat top left;
+    background-size: 189px 50px;
+    width: 189px;
+    height: 50px;
+  } 
+  .press-ccnews:hover {
+    background: url('../img/press-ccnews-hover.jpg') no-repeat top left;
+    background-size: 189px 50px;
+  }  
 
 
 /*
@@ -662,45 +682,7 @@ a {
     background: url('../img/preview-driveminer@2x.png');
     background-size: 484px 540px;
     background-repeat: no-repeat;
-  }
-  .press-icons {
-    background: url('../img/press-icons@2x.jpg') no-repeat top left;
-    background-size: 221px 545px; 
   } 
-  .press-bitscan {
-    background-position: 0 0; width: 168px; height: 50px;
-  } 
-  .press-bitscan:hover {
-    background-position: 0 -55px; width: 168px; height: 50px;
-  } 
-
-  .press-backupreview {
-    background-position: 0 -440px; width: 222px; height: 50px;
-  } 
-  .press-backupreview:hover {
-      background-position: 0 -495px; width: 222px; height: 50px;
-  } 
-
-  .press-cleverest {
-    background-position: 0 -220px; width: 215px; height: 50px;
-  } 
-  .press-cleverest:hover {
-    background-position: 0 -275px; width: 215px; height: 50px;
-  } 
-
-  .press-infoworld {
-      background-position: 0 -330px; width: 162px; height: 50px;
-  } 
-  .press-infoworld:hover {
-      background-position: 0 -385px; width: 162px; height: 50px;
-  } 
-
-  .press-ccnews {
-    background-position: 0 -110px; width: 190px; height: 50px;
-  } 
-  .press-ccnews:hover {
-    background-position: 0 -165px; width: 190px; height: 50px;
-  }   
 }
 
 /*
