@@ -737,8 +737,12 @@ a {
   .apps-metadisk {
     margin-top: 40px;
     margin-bottom: 0;
+    background-size: contain;
+    height: 250px;
   }
   .apps-driveminer {
+    background-size: contain;
+    height: 440px;
     margin-top: 40px;
   }  
   .contact-newsletter {
@@ -797,7 +801,7 @@ a {
     margin-bottom: 0;
   }
   .apps-section {
-    padding: 40px 20px 0;
+    padding: 40px 20px 80px;
   }
   .div-sm {
     padding: 10px;
@@ -819,6 +823,7 @@ a {
   }
   .apps-driveminer {
     background-size: contain;
+    height: 420px;
   }
   .apps-section .btn {
     margin-top: 10px;
@@ -944,7 +949,7 @@ a {
     line-height: 28px;
   }
   .apps-section {
-    padding: 20px 10px 50px;
+    padding: 20px 10px 60px;
   }
   .apps-section .btn {
     margin-top: 5px;
@@ -954,11 +959,11 @@ a {
   }
   .apps-metadisk {
     background-size: contain;
-    height: 200px;
+    height: 260px;
   }
   .apps-driveminer {
     background-size: contain;
-    height: 300px;
+    height: 350px;
   }
   .div-sm {
     padding: 10px;
