@@ -406,14 +406,19 @@ a {
 
 .apps-driveminer {
   background: url('../img/preview-driveminer.png');
-  background-size: 484px 540px;
+  background-size: 484px 432px;
   background-repeat: no-repeat;
-  height: 540px;
+  height: 432px;
   margin-top: 40px;
 }
 
 .apps-section .btn {
   margin-top: 20px;
+}
+
+.separator {
+  margin: 100px 0 70px;
+  border-bottom: 1px dashed #ccc;
 }
 
 /*
@@ -680,7 +685,7 @@ a {
   }
   .apps-driveminer {
     background: url('../img/preview-driveminer@2x.png');
-    background-size: 484px 540px;
+    background-size: 484px 432px;
     background-repeat: no-repeat;
   } 
 }
@@ -711,6 +716,9 @@ a {
   }
   .description {
     padding:5px 20px 5px 0;
+  }
+  .separator {
+    margin: 60px 0 30px;
   }
 }
 
@@ -756,7 +764,9 @@ a {
     margin: 0 10px;
     font-size: 12px;
   }
-
+  .separator {
+    margin: 40px 0 20px;
+  }
 }
 
 @media only screen and (min-width: 560px) and (max-width: 990px) {
@@ -879,7 +889,24 @@ a {
     text-align: left;
     margin-top: 30px;
   }
-
+  .description {
+    padding: 5px 10px 5px 0;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 28px;
+  }
+  .apps-section {
+    padding: 20px 10px 60px;
+  }
+  .contact {
+    padding: 50px 10px;
+  }
+  .div-sm {
+    padding: 15px;
+  }
+  .footer {
+    padding: 50px 25px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -959,11 +986,11 @@ a {
   }
   .apps-metadisk {
     background-size: contain;
-    height: 260px;
+    height: 220px;
   }
   .apps-driveminer {
     background-size: contain;
-    height: 350px;
+    height: 300px;
   }
   .div-sm {
     padding: 10px;
