@@ -45,13 +45,22 @@ a {
   margin-bottom: 25px;
 }
 
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-size: 24px;
+  color: #cacaca;
+  line-height: 28px;
+}
+
 .description {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #9a9a9a;
   line-height: 36px;
-  padding:5px 80px 5px 0;
 }
 
 .section-heading {
@@ -76,6 +85,10 @@ a {
 
 .div-sm {
   padding: 30px;
+}
+
+.pr {
+  padding-right: 80px;
 }
 
 ::selection {
@@ -148,6 +161,34 @@ a {
   color: #fff;
 }
 
+.btn-green,
+.btn-green:hover,
+.btn-green:active {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 25px 35px;
+  color: #fff;
+  background: #88c425;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 270ms;
+  -moz-transition: all 270ms;
+  -ms-transition: all 270ms;
+  -o-transition: all 270ms;
+  transition: all 270ms;
+}
+
+.btn-green:hover {
+  color: #fff;
+  background: #99cc45;
+}
+
+
 .btn-c2a {
   margin: 10px 5px 0;
 }
@@ -179,6 +220,214 @@ a {
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
+}
+
+
+/*
+ * Crowdsale
+ */
+
+#crowdsale {
+  background: url('../img/bg-white.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+#crowdsale .cover-logo {
+  color: #999;
+  font-size: 18px;
+}
+#crowdsale .cover-logo:hover {
+  color: #555;
+  font-size: 18px;
+}
+
+#crowdsale .cover-logo-icon {
+  display: block;
+  margin: 0 auto 10px;
+  opacity: 0.6;
+  -webkit-transition: all 270ms;
+  -moz-transition: all 270ms;
+  -ms-transition: all 270ms;
+  -o-transition: all 270ms;
+  transition: all 270ms;
+}
+#crowdsale .cover-logo:hover .cover-logo-icon {
+  opacity: 1;
+}
+
+#crowdsale .navbar-menu {
+  text-align: center;
+  margin-top: 10px;
+  left: -17px;
+}
+
+#crowdsale .navbar-link {
+  color: #999;
+}
+#crowdsale .navbar-link:hover {
+  color: #107fc9;
+  border-bottom: 2px solid #107fc9;
+}
+
+#crowdsale span {
+  font-family: 'Lato', sans-serif;
+}
+
+.cover-heading.stats-total {
+  display:inline-block;
+  margin-bottom: 0;
+  color: #88c425;
+}
+.stats-total-btc {
+  display:inline-block;
+  color: #88c425;
+  font-size: 32px;
+}
+.cover-description.stats-goal {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #999;
+}
+
+.progress {
+  height: 30px;
+  width: 74%;
+  margin: 0 auto;
+}
+
+.progress-bar-success {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: #88c425;
+  line-height: 28px;
+}
+
+.stats-description {
+  text-transform: uppercase;
+  color: #C7C7C7;
+  display: block;
+  margin: 22px 0;
+  font-size: 14px;
+}
+
+.stats-transactions {
+  padding-left: 30px;
+}
+
+.stats-list {
+  list-style: none;
+  color: #777;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  padding-left:0;
+}
+
+.stats-list li {
+  border-bottom: 1px dashed #E0E0E0;
+  line-height: 42px;
+}
+
+.stats-amount {
+  color: #555;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.stats-time {
+  float: right;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+}
+
+.stats-amount-btc {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding-left: 2px;
+  color: #888;
+}
+
+.stats-days {
+  font-size: 14px;
+  color: #999;
+}
+
+.stats-title {
+  font-size: 21px;
+  color: #777;
+  border-bottom: 1px dashed #E0E0E0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+}
+
+.stats-c2a {
+  background: white;
+  border-radius: 4px;
+  padding: 10px 10px 20px;
+  border: 1px solid #E2E2E2;
+}
+
+.thumbs {
+  border: 1px solid #cecece;
+  border-radius: 2px;
+  width: 290px;
+  height: 181px;
+}
+
+.step-1 {
+  background: url('../img/crowdsale-step1.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.step-2 {
+  background: url('../img/crowdsale-step2.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.step-3 {
+  background: url('../img/crowdsale-step3.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.reward-1 {
+  background: url('../img/crowdsale-reward1.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.reward-2 {
+  background: url('../img/crowdsale-reward2.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.reward-3 {
+  background: url('../img/crowdsale-reward3.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.rate-1 {
+  background: url('../img/crowdsale-rate1.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.rate-2 {
+  background: url('../img/crowdsale-rate2.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.rate-3 {
+  background: url('../img/crowdsale-rate3.jpg') no-repeat;
+  background-size: 290px 181px;
+}
+
+.phase-sjcx {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 20px;
 }
 
 /*
@@ -426,7 +675,7 @@ a {
 */
 
 .press-section {
-  padding: 50px 0;
+  padding: 60px 0;
   border-top: 1px solid #f6f6f6;
   text-align: center;
 }
@@ -714,8 +963,8 @@ a {
   .cover-feature {
     padding: 26px 0 20px;
   }
-  .description {
-    padding:5px 20px 5px 0;
+  .pr {
+    padding-right: 20px;
   }
   .separator {
     margin: 60px 0 30px;
@@ -826,6 +1075,8 @@ a {
   .description {
     font-size: 16px;
     line-height: 28px;
+  }
+  .pr {
     padding-right: 0;
   }
   .apps-metadisk {
@@ -970,10 +1221,12 @@ a {
     margin-bottom: 10px;
   }
   .description {
-    padding: 5px 10px 5px 0;
     font-size: 14px;
     margin-top: 10px;
     line-height: 28px;
+  }
+  .pr {
+    padding-right: 10px;
   }
   .apps-section {
     padding: 20px 10px 60px;
