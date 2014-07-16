@@ -1168,6 +1168,9 @@ a {
     padding-bottom: 0;
     background: rgba(16, 127, 201, 0.5);
   }
+  #crowdsale .cover-wrapper-inner {
+    background: none;
+  }
   .cover-logo {
     width: 100%;
   }
