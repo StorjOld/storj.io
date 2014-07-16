@@ -185,7 +185,7 @@
           <div class="col-sm-4">
             <div class="thumbs rate-1"></div>
             <h3 class="subtitle">Phase 1</h3>
-            <h4>200 - 2,000 BTC</h4>
+            <h4>0 - 2,000 BTC</h4>
             <span class="phase-sjcx">38,500 SJCX per Bitcoin.</span>
             <p class="description">Participants in this round receive a 10% increase over standard rates.</p>
           </div>
@@ -311,9 +311,9 @@
           ga('send', 'event', 'SignUp', 'Newsletter', 'Footer', 1);
         });
 
-        // $.getJSON("http://btc.blockr.io/api/v1/address/info/1GfMDF551k9QwYUcNuV81rp8wV5X4U11G4" + "?callback=?", function(json) {
+        // $.getJSON("http://btc.blockr.io/api/v1/address/info/" + "?callback=?", function(json) {
         //   var statsBTC = parseFloat(parseInt(json.data.totalreceived));
-        //   var statsPercent = parseFloat(parseInt(statsBTC) * 100 / 200);
+        //   var statsPercent = parseFloat(parseInt(statsBTC) * 100 / 10000);
 
         //   $('.stats-total').html('<span>' + statsBTC + '</span>');
         //   $('.progress-bar').html(statsPercent + '%');
@@ -321,23 +321,22 @@
         //   $('.progress-bar').css('width',statsPercent + '%');
         // });
 
-        $.getJSON("http://btc.blockr.io/api/v1/address/txs/1GfMDF551k9QwYUcNuV81rp8wV5X4U11G4" + "?callback=?", function(json) {
-          var total = json.data.txs.length;
-          var count = 0;
-          for (var i = 0; i < total; i++) {
-             var current = json.data.txs[i]
-             if(current && current.amount > 0 && count < 7){
-                var amount = current.amount;
-                var time = current.time_utc;
-                $(".stats-list").append('<li><span class="stats-amount">' + amount + '</span> <span class="stats-amount-btc">BTC</span> <time class="stats-time" datetime="' + time + '"></time></li>');
-                count++;
-             }
-          };
-          $(".stats-time").timeago();
-        });
+        // $.getJSON("http://btc.blockr.io/api/v1/address/txs/" + "?callback=?", function(json) {
+        //   var total = json.data.txs.length;
+        //   var count = 0;
+        //   for (var i = 0; i < total; i++) {
+        //      var current = json.data.txs[i]
+        //      if(current && current.amount > 0 && count < 7){
+        //         var amount = current.amount;
+        //         var time = current.time_utc;
+        //         $(".stats-list").append('<li><span class="stats-amount">' + amount + '</span> <span class="stats-amount-btc">BTC</span> <time class="stats-time" datetime="' + time + '"></time></li>');
+        //         count++;
+        //      }
+        //   };
+        //   $(".stats-time").timeago();
+        // });
 
         $.timeago.settings.allowFuture = true;
-        $.timeago.settings.suffixFromNow = "left";
         $(".stats-days").timeago();
 
       });
