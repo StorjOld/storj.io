@@ -33,6 +33,23 @@ a {
     position: relative;
 }
 
+.link {
+  border-bottom: 1px dashed;
+  padding-bottom: 2px;
+}
+
+.link:hover {
+  border-bottom: 1px solid;
+}
+
+.section {
+  padding: 80px 0 100px;
+}
+
+.grey {
+  background: #f2f2f2;
+}
+
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 34px;
@@ -273,6 +290,11 @@ a {
 
 #crowdsale span {
   font-family: 'Lato', sans-serif;
+}
+
+.countdown-time {
+  margin: 10px 0 20px;
+  display: inline-block;
 }
 
 .cover-heading.stats-total {
@@ -805,20 +827,6 @@ a {
    color: #999;  
 }
 
-.contact-questions .description a {
-  border-bottom: 1px dashed;
-  padding-bottom: 2px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.contact-questions .description a:hover {
-  border-bottom: 1px solid;
-}
-
 .social-links {
   margin-top: 20px;
 }
@@ -1018,6 +1026,18 @@ a {
   }
 }
 
+@media only screen and (max-width: 990px) {
+  .thumbs-wrapper {
+    text-align:center;
+  }
+  .thumbs {
+    margin: 25px auto;
+  }
+  .section {
+    padding: 50px 0 70px;
+  }
+}
+
 @media only screen and (min-width: 560px) and (max-width: 990px) {
   .cover-heading {
     font-size: 38px;
@@ -1110,6 +1130,9 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+  .section {
+    padding: 40px 0 60px;
+  }
   .cover-heading {
     font-size: 52px;
     line-height: 52px;
@@ -1161,6 +1184,9 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
+  .section {
+    padding: 20px 20px 40px;
+  }
   .cover-container {
     margin: 40px auto 0;
   }
