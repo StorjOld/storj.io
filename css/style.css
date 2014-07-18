@@ -347,6 +347,7 @@ a {
   letter-spacing: 1px;
   background-color: #88c425;
   line-height: 28px;
+  min-width: 25px;
 }
 
 .stats-description {
