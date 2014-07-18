@@ -244,6 +244,18 @@ a {
  * Crowdsale
  */
 
+ .crowdsale-info {
+  padding: 30px 0 20px;
+  background: url('../img/bg-white.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+ }
+
+ .crowdsale-info p {
+  margin-top: 10px;
+ }
+
 #crowdsale {
   background: url('../img/bg-white.jpg');
   background-size: cover;
