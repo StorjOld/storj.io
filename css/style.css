@@ -256,6 +256,16 @@ a {
   margin-top: 10px;
  }
 
+.crowdsale-address { 
+  font-size: 22px;
+  color: #107fc9;
+  font-weight: 700;
+}
+
+.crowdsale-address-terms {
+  font-size: 14px;
+}
+
 #crowdsale {
   background: url('../img/bg-white.jpg');
   background-size: cover;
