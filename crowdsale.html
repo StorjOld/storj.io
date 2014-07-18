@@ -313,8 +313,8 @@
         });
 
         $.getJSON("http://btc.blockr.io/api/v1/address/info/132aBrspLgL54cm9eQfGNFLGqXwBRQrugc" + "?callback=?", function(json) {
-          var statsBTC = parseFloat(parseInt(json.data.totalreceived));
-          var statsPercent = parseFloat(parseInt(statsBTC) * 100 / 10000);
+          var statsBTC = parseInt(json.data.totalreceived);
+          var statsPercent = Math.round(parseInt(statsBTC) * 100 / 9800);
 
           $('.stats-total').html('<span>' + statsBTC + '</span>');
           $('.progress-bar').html(statsPercent + '%');
