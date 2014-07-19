@@ -1321,4 +1321,14 @@ a {
   .footer-link {
     display: block;
   }
+  .crowdsale-address { 
+    font-size: 16px;
+  }
+  .btn-blue {
+    font-size: 14px;
+    padding: 20px 25px;
+  }
+  .stats-transactions {
+    padding: 20px 25px;
+  }
 }
