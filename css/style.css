@@ -680,8 +680,10 @@ a {
 }
 
 .video {
-  height: 315px;
-  margin-top: 25px;
+  height: 330px;
+  margin-top: 55px;
+  padding: 0;
+  border: 2px solid #fff;
 }
 
 
@@ -1157,6 +1159,9 @@ a {
   .footer {
     padding: 50px 20px;
   }
+  .video {
+    margin-top: 15px;
+  }
 }
 
 
@@ -1214,6 +1219,9 @@ a {
   }
   .footer {
     padding: 50px 25px;
+  }
+  .video {
+    margin-top: 20px;
   }
 }
 
