@@ -537,20 +537,21 @@ a {
   margin-top: 30px;
 }
 
-.cover-features {
-  margin-top: 5px;
+.features {
+  padding: 30px 0;
 }
 
 .cover-feature {
-  color: #fff;
-  padding: 20px 0 20px 40px;
+  color: #9a9a9a;
+  padding: 20px 0;
 }
 
 .cover-feature-heading {
   text-transform: uppercase;
   font-size: 23px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  line-height: 30px;
 }
 
 .cover-feature-subheading {
@@ -670,12 +671,17 @@ a {
 }
 
 .users-earn-money {
-  color: #fff;
-  border-bottom: 2px dashed #fff;
+  color: #9a9a9a;
+  border-bottom: 2px dashed #9a9a9a;
 }
 .users-earn-money:hover {
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: #107fc9;
+  border-bottom: 2px solid #107fc9;
+}
+
+.video {
+  height: 315px;
+  margin-top: 25px;
 }
 
 
@@ -1007,7 +1013,8 @@ a {
     margin-top: 30px;
   }
   .cover-feature {
-  padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 10px;
+    text-align: left;
   }
   .navbar {
     margin: 0;
@@ -1091,6 +1098,7 @@ a {
   }
   .cf-icon {
     margin-right: 10px;
+    margin-top: 15px;
   }
   .cover-feature-heading {
     font-size: 14px;
@@ -1178,6 +1186,9 @@ a {
   }
   .cover-feature {
     padding: 5px 0 0;
+  }
+  .cf-icon {
+    margin: 15px 15px 5px 0;
   }
   .input-group {
     width: 90%;
@@ -1330,5 +1341,9 @@ a {
   }
   .stats-transactions {
     padding: 20px 25px;
+  }
+  .video {
+    margin-bottom: 30px;
+    height: 245px;
   }
 }
