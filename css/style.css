@@ -706,8 +706,8 @@ a {
   margin-bottom: 30px;
 }
 
-.apps-driveminer {
-  background: url('../img/preview-driveminer.png');
+.apps-driveshare {
+  background: url('../img/preview-driveshare.png');
   background-size: 484px 432px;
   background-repeat: no-repeat;
   height: 432px;
@@ -971,8 +971,8 @@ a {
     background-size: 461px 290px;
     background-repeat: no-repeat;
   }
-  .apps-driveminer {
-    background: url('../img/preview-driveminer@2x.png');
+  .apps-driveshare {
+    background: url('../img/preview-driveshare@2x.png');
     background-size: 484px 432px;
     background-repeat: no-repeat;
   } 
@@ -1037,7 +1037,7 @@ a {
     background-size: contain;
     height: 250px;
   }
-  .apps-driveminer {
+  .apps-driveshare {
     background-size: contain;
     height: 440px;
     margin-top: 40px;
@@ -1135,7 +1135,7 @@ a {
   .apps-metadisk {
     background-size: contain;
   }
-  .apps-driveminer {
+  .apps-driveshare {
     background-size: contain;
     height: 420px;
   }
@@ -1312,7 +1312,7 @@ a {
     background-size: contain;
     height: 220px;
   }
-  .apps-driveminer {
+  .apps-driveshare {
     background-size: contain;
     height: 300px;
   }
