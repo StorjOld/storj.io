@@ -341,6 +341,7 @@ a {
   margin-top: 0;
   margin-bottom: 25px;
   color: #999;
+  padding-right: 0;
 }
 
 .progress {
