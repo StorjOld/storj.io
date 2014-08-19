@@ -689,10 +689,26 @@ a {
 }
 
 .video {
-  height: 330px;
   margin-top: 30px;
   padding: 0;
   border: 2px solid #fff;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -1020,9 +1036,6 @@ a {
   .input-group {
     width: 94%;
   }
-  .video {
-    height: 284px;
-  } 
 }
 
 @media only screen and (max-width: 989px) {
@@ -1367,6 +1380,5 @@ a {
   }
   .video {
     margin-bottom: 30px;
-    height: 245px;
   }
 }
