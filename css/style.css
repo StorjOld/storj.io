@@ -1027,11 +1027,14 @@ a {
 }
 
 .team-member {
+  width: 25%;
   text-align: center;
   background: #F5F5F5;
-  margin: 0 10px 60px;
   padding: 30px;
-  border-radius: 4px;
+  border: 10px solid #fff;
+  border-radius: 15px;
+  display: block;
+  float: left;
 }
 .team-member-image {
   border-radius: 50%;
@@ -1043,9 +1046,11 @@ a {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   color: #107fc9;
+  height: 25px;
 }
 .team-member-title {
   color: #888;
+  height: 40px;
 }
 
 .get-in-touch {
@@ -1103,6 +1108,9 @@ a {
   .input-group {
     width: 94%;
   }
+  .team-member {
+    padding: 30px 0;
+  }
 }
 
 @media only screen and (max-width: 989px) {
@@ -1151,9 +1159,6 @@ a {
   .separator {
     margin: 40px 0 20px;
   }
-}
-
-@media only screen and (max-width: 990px) {
   .thumbs-wrapper {
     text-align:center;
   }
@@ -1162,6 +1167,12 @@ a {
   }
   .section {
     padding: 50px 0 70px;
+  }
+  .team {
+    padding-top: 120px !important;
+  }
+  .team-member {
+    width: 50%;
   }
 }
 
@@ -1318,6 +1329,9 @@ a {
   .video {
     margin-top: 20px;
   }
+  .team-member {
+    padding: 30px 8px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1447,5 +1461,8 @@ a {
   }
   .video {
     margin-bottom: 30px;
+  }
+  .team-member {
+    width: 100%;
   }
 }
