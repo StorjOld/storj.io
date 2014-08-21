@@ -42,6 +42,10 @@ a {
   border-bottom: 1px solid;
 }
 
+.page {
+  padding-top: 70px;
+}
+
 .section {
   padding: 80px 0 100px;
 }
@@ -237,6 +241,34 @@ a {
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
+}
+
+.navbar-page {
+  border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.96);
+  z-index: 9;
+}
+
+.navbar-page .navbar {
+  margin: 20px 0;
+}
+
+.navbar-page .navbar-link {
+  color: #3498DB;
+}
+.navbar-page .navbar-link:hover {
+  color: #107fc9;
+  border-bottom: 2px solid #107fc9;
+}
+
+.navbar-page .cover-logo {
+  color: #107fc9;
+}
+.navbar-page .cover-logo:hover {
+  color: #107fc9;
 }
 
 
@@ -983,6 +1015,41 @@ a {
 
 .footer-logo:hover .footer-logo-icon {
   opacity: 1;
+}
+
+
+/*
+ * Team
+*/
+
+.team {
+  padding-top: 140px;
+}
+
+.team-member {
+  text-align: center;
+  background: #F5F5F5;
+  margin: 0 10px 60px;
+  padding: 30px;
+  border-radius: 4px;
+}
+.team-member-image {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 70%;
+}
+.team-member-name {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #107fc9;
+}
+.team-member-title {
+  color: #888;
+}
+
+.get-in-touch {
+  margin-top: 20px;
 }
 
 
