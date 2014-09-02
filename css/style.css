@@ -793,7 +793,7 @@ a {
 .press-icons {
   display: inline-block;
   cursor: pointer;
-  margin: 20px;
+  margin: 20px 35px;
   vertical-align: middle;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -802,61 +802,36 @@ a {
   transition: all 0.4s;
 } 
 
-  .press-bitscan {
-    background: url('../img/press-bitscan.jpg') no-repeat top left;
-    background-size: 166px 50px;
-    width: 166px;
-    height: 50px;
+  .press-coindesk {
+    background: url('../img/press-coindesk.jpg') no-repeat top left;
+    background-size: 180px 40px;
+    width: 180px;
+    height: 40px;
   } 
-  .press-bitscan:hover {
-    background: url('../img/press-bitscan-hover.jpg') no-repeat top left;
-    background-size: 166px 50px;
+  .press-ltb {
+    background: url('../img/press-ltb.jpg') no-repeat top left;
+    background-size: 104px 76px;
+    width: 104px;
+    height: 76px;
   } 
-
-  .press-backupreview {
-    background: url('../img/press-backupreview.jpg') no-repeat top left;
-    background-size: 221px 50px;
-    width: 221px;
-    height: 50px;
-  } 
-  .press-backupreview:hover {
-    background: url('../img/press-backupreview-hover.jpg') no-repeat top left;
-    background-size: 221px 50px;
-  } 
-
   .press-cointelegraph {
     background: url('../img/press-cointelegraph.jpg') no-repeat top left;
     background-size: 150px 100px;
     width: 150px;
     height: 100px;
   } 
-  .press-cointelegraph:hover {
-    background: url('../img/press-cointelegraph-hover.jpg') no-repeat top left;
-    background-size: 150px 100px; 
-  } 
-
-  .press-infoworld {
-    background: url('../img/press-infoworld.jpg') no-repeat top left;
-    background-size: 162px 50px;
-    width: 162px;
-    height: 50px;
-  } 
-  .press-infoworld:hover {
-    background: url('../img/press-infoworld-hover.jpg') no-repeat top left;
-    background-size: 162px 50px;
-  } 
-
   .press-ccnews {
     background: url('../img/press-ccnews.jpg') no-repeat top left;
     background-size: 189px 50px;
     width: 189px;
     height: 50px;
   } 
-  .press-ccnews:hover {
-    background: url('../img/press-ccnews-hover.jpg') no-repeat top left;
-    background-size: 189px 50px;
-  }  
-
+  .press-bmag {
+    background: url('../img/press-bmag.jpg') no-repeat top left;
+    background-size: 180px 40px;
+    width: 180px;
+    height: 40px;
+  } 
 
 /*
  * Contact
@@ -1111,6 +1086,9 @@ a {
   }
   .team-member {
     padding: 30px 0;
+  }
+.press-icons {
+    margin: 20px 15px;
   }
 }
 
