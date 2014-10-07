@@ -523,10 +523,6 @@ a {
   display: table;
   width: 100%;
   background: #107fc9;
-  background-image: url("../img/bg-header.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
   text-align:left;
 }
 .cover-wrapper-inner {
@@ -577,6 +573,11 @@ a {
   line-height: 30px;
   margin-bottom: 34px;
   margin-top: 20px;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
 }
 
 .features {
