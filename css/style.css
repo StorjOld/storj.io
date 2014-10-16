@@ -1,4 +1,13 @@
 /*
+ * Import Fonts
+ */
+ 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic);
+
+
+/*
  * Base
  */
 
@@ -11,14 +20,27 @@ body {
   color: #495760;
 }
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #636a7a;
+  line-height: 26px;
+  letter-spacing: 0;
 }
-
+h1, h2, h3, h4, h5, h6, p, span, blockquote, footer {
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -ms-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  text-rendering: optimizelegibility;
+  font-kerning: normal;
+}
 a,
 a:focus,
 a:hover {
   color: #107fc9;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   position: relative;
   -webkit-transition: all 270ms;
@@ -27,10 +49,12 @@ a:hover {
   -o-transition: all 270ms;
   transition: all 270ms;
 }
-
 a {
     text-decoration: none;
     position: relative;
+}
+a:hover {
+  color: #005d8c;
 }
 
 .link {
@@ -51,19 +75,27 @@ a {
 }
 
 .grey {
-  background: #f2f2f2;
+  background: #f7f7f7;
+}
+.blue {
+  background: #003366;
 }
 
 .title {
   font-family: "Montserrat", sans-serif;
-  font-size: 34px;
+  font-size: 48px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-  line-height: 34px;
-  color: #555;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  line-height: 46px;
+  letter-spacing: -3px;
+  color: #107fc9;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  position: relative;
+  left: -2px;
+}
+
+.blue .title {
+  color: #fff;
 }
 
 .subtitle {
@@ -76,28 +108,22 @@ a {
   line-height: 28px;
 }
 
-.description {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #9a9a9a;
-  line-height: 36px;
-}
-
 .section-heading {
   font-family: "Montserrat", sans-serif;
-  font-size: 64px;
-  text-transform: uppercase;
-  color: #cbcccc;
+  font-size: 48px;
+  color: #677380;
+  line-height: 38px;
+  margin-bottom: 40px;
 }
-
 .section-subheading {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #cbcccc;
+  color: #777;
   margin-top: 0;
-  letter-spacing: 1px;
+}
+.blue .section-subheading {
+  color: #A5B9CB;
 }
 
 .div-lg {
@@ -109,7 +135,8 @@ a {
 }
 
 .pr {
-  padding-right: 80px;
+  max-width: 400px;
+  text-align: justify;
 }
 
 ::selection {
@@ -158,15 +185,13 @@ a {
 .btn-blue:hover,
 .btn-blue:active {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 14px;
+  /* font-weight: 700; */
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 25px 35px;
-  color: #fff;
-  background: #3498DB;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  padding: 25px 40px;
+  color: #107fc9;
+  border-color: #107fc9;
   border-radius: 3px;
   outline: none;
   position: relative;
@@ -180,6 +205,7 @@ a {
 .btn-blue:hover {
   background: #107fc9;
   color: #fff;
+  border-radius: 3px;
 }
 
 .btn-green,
@@ -219,7 +245,7 @@ a {
  */
 
 .navbar {
-  margin: 20px 0 70px;
+    margin: 0 0 30px;
 }
 
 .navbar-menu {
@@ -227,7 +253,7 @@ a {
 }
 
 .navbar-link {
-  color: #EEE;
+  color: #E4F1FF;
   display: inline-block;
   text-transform: uppercase;
   padding: 20px 5px;
@@ -343,7 +369,7 @@ a {
 }
 
 #crowdsale span {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 .crowdsale-disclaimer {
@@ -382,7 +408,7 @@ a {
 }
      
 .progress-bar-success {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   background-color: #88c425;
@@ -425,7 +451,7 @@ a {
 .stats-time {
   float: right;
   font-weight: 300;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 .stats-amount-btc {
@@ -511,7 +537,7 @@ a {
 
 .phase-sjcx {
   display: block;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -522,7 +548,7 @@ a {
 .cover-wrapper {
   display: table;
   width: 100%;
-  background: #107fc9;
+  background: #003366;
   text-align:left;
 }
 .cover-wrapper-inner {
@@ -555,67 +581,82 @@ a {
   margin-top: -4px;
 }
 .cover-heading {
-  font-family: 'Lato', sans-serif;
-  font-size: 58px;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 71px;
+  font-weight: 700;
   color: #fff;
-  margin: 20px 0;
+  margin: 45px 0 25px;
   line-height: 62px;
-  letter-spacing: -0.5px;
+  letter-spacing: -3px;
 }
 .cover-description{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: 300;
-  color: #fff;
-  font-size: 20px;
-  padding-right: 60px;
+  color: #C8DDF4;
+  font-size: 18px;
+  max-width: 480px;
   line-height: 30px;
-  margin-bottom: 34px;
-  margin-top: 20px;
+  margin-bottom: 40px;
 }
+
+h2.cover-description {}
 
 .cover-image {
   width: 100%;
   height: auto;
+  margin-top: 15px;
+}
+
+.cloud {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin: 30px auto;
+
 }
 
 .features {
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
+.cover-features {
+   margin-top: 40px;
+   padding: 40px;
+}
 .cover-feature {
   color: #9a9a9a;
   padding: 20px 0;
 }
 
 .cover-feature-heading {
-  text-transform: uppercase;
-  font-size: 23px;
+  font-size: 16px;
   margin-top: 0;
-  margin-bottom: 10px;
+  color: #f7f7f7;
+  margin-bottom: 5px;
+  text-transform: uppercase;
   line-height: 30px;
 }
-
 .cover-feature-subheading {
-  font-family: "Lato", sans-serif;
+  font-family: "Muli", sans-serif;
   font-weight: 300;
-  line-height: 28px;
-  font-size: 20px;
-  margin-top: 5px;
+  color: #dedede;
+  line-height: 24px;
+  font-size: 16px;
+  margin-top: 0px;
+}
+.blue .cover-feature-subheading {
+  color: #A5B9CB;
 }
 
 .email {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 20px;
-  color: #fff !important;
-  height: 72px;
-  background: #107fc9;
-  background: rgba(0, 0, 0, 0.15);
-  border: 2px solid #fff;
-  border-right: 0;
+  color: #494949 !important;
+  height: 70px;
+  padding-left: 1.3em;
+  background: #FFFFFF;
+  border: 1px solid #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -625,72 +666,84 @@ a {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
 }
 .email:hover {
-  background: #107fc9;
-  background: rgba(0, 0, 0, 0.30);
+    border-radius: 4px;
 }
 .email:active, .email:focus {
-  background: #107fc9;
-  background: rgba(0, 0, 0, 0.50);
 }
+
+input#mce-EMAIL {}
 .email:focus {
-  border-color: #fff;
   outline: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  border-color: #fff;
 }
 .email::-webkit-input-placeholder {
-   color: #fff;
+   color: #999;
 }
 .email:-moz-placeholder { /* Firefox 18- */
-   color: #fff;  
+   color: #999;  
 }
 .email::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff;  
+   color: #999;  
 }
 .email:-ms-input-placeholder {  
-   color: #fff;  
+   color: #999;  
 }
 .promise {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 12px;
   font-weight: 300;
-  color: #f9f9f9;
+  color: #7f99b2;
   display: block;
   margin: 15px 0;
 }
 
 .input-group {
-  width: 85%;
+  width: 86%;
 }
 
 .btn-signup {
-  background: #fff;
-  color: #107fc9;
+  background: #ffdd00;
+  color: #025D8C;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  padding: 23px 0;
+  padding: 24px 10px;
+  height: 70px;
   width: 100%;
-  border: 2px solid #fff;
-  margin-left: 0 !important;
-  -webkit-transition: all 0.3s;
+  border: 0;
+  z-index: 2;
+  border-left: 1px solid #EFB309;
+  display: block;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .btn-signup:hover {
-  color: #3498DB;
+  color: #003366;
+  background: #FFCB00;
+  border-radius: 3px;
+}
+.btn-signup:active {
+  background: #EFB309;
 }
 
 .cf-icon {
   width: 48px;
   height: 48px;
-  margin-right: 20px;
   display: inline-block;
+  text-align: left;
+  margin: 0 15px 0 10px;
+  opacity: 0.5;
+  top: 3px;
+  position: relative;
 }
 .cf-icon-0 {
   background: url('../img/cover-feature-0.png') no-repeat;
@@ -703,6 +756,8 @@ a {
 .cf-icon-2 {
   background: url('../img/cover-feature-2.png') no-repeat;
   background-size: 48px 48px;
+  position: relative;
+  left: 3px;
 }
 .cf-icon-3 {
   background: url('../img/cover-feature-3.png') no-repeat;
@@ -714,18 +769,24 @@ a {
 }
 
 .users-earn-money {
-  color: #9a9a9a;
-  border-bottom: 2px dashed #9a9a9a;
+  color: #f7f7f7;
+  border-bottom: 1px dashed #107fc9;
 }
 .users-earn-money:hover {
-  color: #107fc9;
-  border-bottom: 2px solid #107fc9;
+  color: #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
 }
 
+.video-wrapper {
+  background-image: url('../img/bg-white.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}
 .video {
   margin-top: 30px;
   padding: 0;
-  border: 2px solid #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.23);
 }
 
 .embed-container {
@@ -747,40 +808,143 @@ a {
 
 
 /*
+ * Quotes
+ */
+
+.quotes {
+    padding: 0;
+    background: #012F5C; 
+    height: auto;
+    min-height: 360px;
+}
+
+.cbp-qtrotator {
+  position: relative;
+  height: auto;               
+  transition: 1s all;     overflow:hidden;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+  position: absolute;
+  min-height: 250px;
+  padding: 4em 1em 3em;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  border-bottom: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  position: relative; 
+  z-index: 100;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+  content: " ";
+  display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent:after {
+  clear: both;
+}
+
+.cbp-qtprogress {
+  position: relative;
+  background: #004993;
+  height: 1px;
+  position: absolute;
+  z-index: 999999999 !important;
+  width: 0%;
+  top: 0;
+  display: block;
+  z-index: 1000;
+}
+
+.cbp-qtrotator blockquote {
+  display: inline-block;
+  max-width: 700px;
+  vertical-align: top;
+  border-left: 0;
+}
+.cbp-qtrotator blockquote p {
+  color: #EAEAEA;
+  font-family: "Merriweather", "Muli", sans-serif;
+  font-style: italic;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.cbp-qtrotator blockquote p:before {
+  content: open-quote;
+}
+.cbp-qtrotator blockquote p:after {
+  content: close-quote;
+}
+.cbp-qtrotator footer {
+  color: #fff;
+  font-size: 1em;
+  margin-top: 1em;
+  font-family: "Merriweather", "Muli", sans-serif;
+  font-style: italic;
+}
+.cbp-qtrotator footer:before {
+  content: "";
+} 
+.cbp-qtrotator .cbp-qtcontent img {
+  width: 120px;
+  border-radius: 50%;
+  height: auto;
+  display: inline-block;
+  margin: 18px 30px;
+  float: left;
+  border: 1px solid #fff;
+}
+ 
+
+
+/*
  * Apps
  */
 
 .apps-section {
   padding: 80px 20px 120px;
-  background: #f2f2f2;
+  background: #f7f7f7;
   text-align: left;
 }
 
 .apps-metadisk {
-  background: url('../img/preview-metadisk.png');
-  background-size: 461px 290px;
+  background: url('../img/metadisk.png');
+  background-size: 483px 427px;
   background-repeat: no-repeat;
-  height: 290px;
+  height: 430px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .apps-driveshare {
-  background: url('../img/preview-driveshare.png');
-  background-size: 484px 432px;
+  background: url('../img/driveshare.png');
+  background-size: 491px 504px;
   background-repeat: no-repeat;
-  height: 432px;
-  margin-top: 40px;
+  height: 508px;
+  margin-top: -20px;
 }
 
 .apps-section .btn {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .separator {
   margin: 100px 0 70px;
   border-bottom: 1px dashed #ccc;
 }
+
 
 /*
  * Press
@@ -830,7 +994,7 @@ a {
   .press-bmag {
     background: url('../img/press-bmag.jpg') no-repeat top left;
     background-size: 180px 40px;
-    width: 180px;
+    width: 170px;
     height: 40px;
   } 
 
@@ -840,15 +1004,11 @@ a {
 
 .contact {
   padding: 100px 20px;
-  background: #f2f2f2;
-}
-
-.contact .section-heading {
-  letter-spacing: -4px;
+  background: #f7f7f7;
 }
 
 .contact .promise {
-  color: #999;
+  color: #dedede;
 }
 
 .contact form {
@@ -857,26 +1017,27 @@ a {
 
 .contact .btn-signup {
   color: #fff;
-  background: #3498DB;
-  border: 0;
-  padding: 25px 0;
-}
-
-.contact .btn-signup:hover {
   background: #107fc9;
-}
-
-.contact .email {
-  color: #333 !important;
-  background: #e1e1e1;
   border: 0;
+}
+.contact .btn-signup:hover {
+  background: #0D73B6;
+}
+.contact .btn-signup:active {
+  background: #0A649E;
+}
+.contact .email {
+  color: #107fc9 !important;
+  background: none;
   box-shadow: none;
+  border-color: #dedede;
+  border-right: 0;
 }
 .contact .email:hover {
-  background: #e5e5e5;
+  border-color: #677380;
 }
 .contact .email:active, .contact .email:focus {
-  background: #e9e9e9;
+  border-color: #107fc9;
 }
 
 .contact .email::-webkit-input-placeholder {
@@ -893,7 +1054,7 @@ a {
 }
 
 .social-links {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .social {
@@ -947,7 +1108,8 @@ a {
 */
 
 .footer {
-  padding: 80px 20px;
+  padding: 50px 20px;
+  background: #FFFFFF;
 }
 
 .footer-menu {
@@ -1002,7 +1164,9 @@ a {
 .team {
   padding-top: 140px;
 }
-
+.team p {
+  text-align: center;
+}
 .team-member {
   width: 25%;
   text-align: center;
@@ -1022,12 +1186,15 @@ a {
 .team-member-name {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #107fc9;
   height: 25px;
 }
 .team-member-title {
   color: #888;
   height: 40px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .get-in-touch {
@@ -1041,13 +1208,13 @@ a {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-device-pixel-ratio: 2) {
   .apps-metadisk {
-    background: url('../img/preview-metadisk@2x.png');
-    background-size: 461px 290px;
+    background: url('../img/metadisk@2x.png');
+    background-size: 483px 427px;
     background-repeat: no-repeat;
   }
   .apps-driveshare {
-    background: url('../img/preview-driveshare@2x.png');
-    background-size: 484px 432px;
+    background: url('../img/driveshare@2x.png');
+    background-size: 491px 504px;
     background-repeat: no-repeat;
   } 
 }
@@ -1058,7 +1225,9 @@ a {
 
 @media only screen and (min-width: 990px) and (max-width: 1200px) {
   .cover-heading {
-    font-size: 52px;
+    font-size: 64px;
+    margin-top: 40px;
+    line-height: 54px;
   }
   .cover-subheading {
     font-size: 26px;
@@ -1070,11 +1239,29 @@ a {
     font-size: 16px;
   }
   .cover-description {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    max-width: 425px;
+    margin-bottom: 30px;
+  }
+  .btn-signup {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+  .email, .contact .email {
+    min-width: 150px !important;
+  }
+  .cover-image {
+    margin-top: 30px;
+  }
+  .cover-features {
+    margin-top: 60px;
+    padding: 10px;
   }
   .cover-feature {
-    padding: 26px 0 20px;
+    padding: 16px 0 10px;
+  }
+  .apps-driveshare {
+    background-size: contain;
   }
   .pr {
     padding-right: 20px;
@@ -1083,7 +1270,7 @@ a {
     margin: 60px 0 30px;
   }
   .input-group {
-    width: 94%;
+    width: 93%;
   }
   .team-member {
     padding: 30px 0;
@@ -1094,8 +1281,11 @@ a {
 }
 
 @media only screen and (max-width: 989px) {
+  .container {
+    width: 90%;
+  }
   .cover-features {
-    margin-top: 30px;
+    padding: 20px;
   }
   .cover-feature {
     padding: 10px 0 10px 10px;
@@ -1112,18 +1302,19 @@ a {
     padding: 23px 30px;
   }
   .contact .btn-signup {
-    padding: 25px 30px;
+    padding: 23px 20px;
   }
   .apps-metadisk {
-    margin-top: 40px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     background-size: contain;
-    height: 250px;
+    height: 420px;
+    background-position: center center;
   }
   .apps-driveshare {
     background-size: contain;
     height: 440px;
-    margin-top: 40px;
+    margin-bottom: 40px;
+    background-position: center center;
   }  
   .contact-newsletter {
     margin-top: 70px;
@@ -1154,19 +1345,31 @@ a {
   .team-member {
     width: 50%;
   }
+  .cover-image {
+    /* margin-top: 30px; */
+  }
+  .cloud {
+    margin-top: 80px;
+  }
+  .social {
+    margin-right: 0;
+  }
+  .promise {
+    font-size: 9px;
+  }
 }
 
-@media only screen and (min-width: 560px) and (max-width: 990px) {
+@media only screen and (min-width: 769px) and (max-width: 990px) {
   .cover-heading {
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 48px;
+    line-height: 42px;
+    margin-bottom: 0;
   }
   .cover-description {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 28px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
     padding-right: 10px;
   }
   .input-group {
@@ -1174,10 +1377,10 @@ a {
   }
   .email {
     font-size: 14px;
-    height: 71px;
+    width: auto;
   }
   .btn-signup {
-    padding: 25px 25px;
+    padding: 23px 20px;
     font-size: 12px;
   }
   .cf-text {
@@ -1199,7 +1402,7 @@ a {
     margin-bottom: 0;
   }
   .apps-section {
-    padding: 40px 20px 80px;
+    padding: 60px 20px 80px;
   }
   .div-sm {
     padding: 10px;
@@ -1208,12 +1411,13 @@ a {
     padding: 30px;
   }
   .title {
-    margin-bottom: 10px;
-    font-size: 28px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 36px;
   }
-  .description {
-    font-size: 16px;
-    line-height: 28px;
+  p {
+    font-size: 14px;
+    line-height: 24px;
   }
   .pr {
     padding-right: 0;
@@ -1239,31 +1443,41 @@ a {
     margin-top: 0;
   }
   .contact .btn-signup {
-    padding: 27px 10px;
+    padding: 23px 10px;
     font-size: 12px;
   }
   .footer {
     padding: 50px 20px;
   }
   .video {
-    margin-top: 15px;
+    margin-top: 35px;
   }
 }
 
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }
+  .navbar-menu {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+  }
   .section {
     padding: 40px 0 60px;
   }
   .cover-heading {
-    font-size: 52px;
-    line-height: 52px;
+    font-size: 72px;
+    line-height: 68px;
+    text-align: center;
+    margin-top: 10px;
   }
   .cover-description {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    text-align: center;
+    margin: 20px auto 35px;
   }
   .cover-subheading {
     font-size: 26px;
@@ -1274,31 +1488,77 @@ a {
   }
   .cover-feature-subheading {
     font-size: 16px;
+    text-align: center;
   }
   .cover-feature {
     padding: 5px 0 0;
+    text-align: center;
   }
   .cf-icon {
     margin: 15px 15px 5px 0;
+    display: block;
+    margin: 20px auto;
   }
   .input-group {
-    width: 90%;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .promise {
+    text-align: center;
+  }
+  .title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    letter-spacing: -1px;
+  }
+  .apps-section .btn {
+    margin-top: 20px;
+  }
+  .cloud {
+    margin: 0 auto;
+    padding: 30px;
+    padding-right: 40px;
+  }
+  .cover-features {
+     margin-top: 0;
+  }
+  .div-lg {
+    padding: 30px;
   }
   .footer-menu {
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
   }
-  .description {
+  .footer-logo {
+    text-align: center;
+  }
+  p {
     padding: 5px 10px 5px 0;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
-    line-height: 28px;
+    line-height: 22px;
+    text-align: justify;
+  }
+  .pr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quotes {
+    text-align: center;
+  }
+  .cbp-img img {
+    float: none !important;
   }
   .apps-section {
-    padding: 20px 10px 60px;
+    padding: 70px 10px;
+    text-align: center;
   }
   .contact {
     padding: 50px 10px;
+  }
+  .contact p {
+    text-align: center;
   }
   .div-sm {
     padding: 15px;
@@ -1307,10 +1567,16 @@ a {
     padding: 50px 25px;
   }
   .video {
-    margin-top: 20px;
+    margin-top: 35px;
+  }
+  .team {
+    padding-top: 210px !important;
   }
   .team-member {
     padding: 30px 8px;
+  }
+  .contact {
+    text-align: center;
   }
 }
 
@@ -1322,8 +1588,7 @@ a {
     margin: 40px auto 0;
   }
   .cover-wrapper-inner {
-    padding-bottom: 0;
-    background: rgba(16, 127, 201, 0.5);
+    text-align: center;
   }
   #crowdsale .cover-wrapper-inner {
     background: none;
@@ -1332,20 +1597,26 @@ a {
     width: 100%;
   }
   .cover-heading {
-    font-size: 32px;
+    font-size: 42px;
     margin-bottom: 0;
     margin-top: 5px;
-    line-height: 42px;
+    line-height: 46px;
+    letter-spacing: -1px;
   }
   .cover-subheading {
     font-size: 21px;
     line-height: 26px;
   }
+  .section-subheading {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
   .cover-description {
     font-size: 15px;
   }
-  .cover-features {
-    padding-bottom: 20px;
+  .features {
+    padding: 50px 0;
   }
   .cover-feature {
     padding: 5px 0 5px;
@@ -1361,8 +1632,8 @@ a {
     height: 61px;
   }
   .btn-signup {
-    padding: 20px 10px;
     font-size: 12px;
+    height: 61px;
   }
  .input-group {
     width: 100%;
@@ -1370,15 +1641,18 @@ a {
   .promise {
     font-size: 10px;
   }
-  .cf-icon {
-    margin-right: 10px;
+  .press-icons {
+    display: block;
+    margin: 25px auto;
   }
   .cf-text {
     vertical-align: top;
     padding-top: 5px;
   }
   .title {
-    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
   }
   .description {
     font-size: 14px;
@@ -1389,7 +1663,7 @@ a {
     padding-right: 10px;
   }
   .apps-section {
-    padding: 20px 10px 60px;
+    padding: 40px 10px 60px;
   }
   .apps-section .btn {
     margin-top: 5px;
@@ -1399,7 +1673,7 @@ a {
   }
   .apps-metadisk {
     background-size: contain;
-    height: 220px;
+    height: 300px;
   }
   .apps-driveshare {
     background-size: contain;
