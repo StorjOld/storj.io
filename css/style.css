@@ -74,6 +74,10 @@ a:hover {
   padding: 80px 0 100px;
 }
 
+.page {
+  padding-top: 50px;
+}
+
 .grey {
   background: #f7f7f7;
 }
@@ -566,13 +570,14 @@ a:hover {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
   padding: 4px;
 }
 .cover-logo:hover, .cover-logo:focus, .cover-logo:active {
   color: #fff;
+  font-weight: 700;
 }
 .cover-logo-icon {
   width: 54px;
