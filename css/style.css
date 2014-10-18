@@ -299,6 +299,7 @@ a:hover {
 }
 .navbar-page .cover-logo:hover {
   color: #107fc9;
+  font-weight: 700;
 }
 
 
@@ -342,6 +343,7 @@ a:hover {
 #crowdsale .cover-logo:hover {
   color: #555;
   font-size: 18px;
+  font-weight: 700;
 }
 
 #crowdsale .cover-logo-icon {
@@ -573,7 +575,7 @@ a:hover {
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  padding: 4px;
+  padding: 4px 4px 4px 0;
 }
 .cover-logo:hover, .cover-logo:focus, .cover-logo:active {
   color: #fff;
