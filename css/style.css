@@ -251,7 +251,6 @@ a:hover {
 .navbar {
     margin: 0 0 30px;
 }
-
 .navbar-menu {
   text-align: right;
 }
@@ -266,11 +265,18 @@ a:hover {
   font-size: 14px;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
-
 .navbar-link:hover {
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
+}
+
+.early-access-link {
+  color: #ffdd00;
+}
+.early-access-link:hover {
+  color: #FFCB00;
+  border-bottom-color: #ffcb00;
 }
 
 .navbar-page {
@@ -281,11 +287,9 @@ a:hover {
   background: rgba(255, 255, 255, 0.96);
   z-index: 9;
 }
-
 .navbar-page .navbar {
   margin: 20px 0;
 }
-
 .navbar-page .navbar-link {
   color: #3498DB;
 }
@@ -293,7 +297,6 @@ a:hover {
   color: #107fc9;
   border-bottom: 2px solid #107fc9;
 }
-
 .navbar-page .cover-logo {
   color: #107fc9;
 }
