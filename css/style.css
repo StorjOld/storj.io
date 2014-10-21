@@ -66,16 +66,12 @@ a:hover {
   border-bottom: 1px solid;
 }
 
-.page {
-  padding-top: 70px;
-}
-
 .section {
   padding: 80px 0 100px;
 }
 
 .page {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .grey {
@@ -83,6 +79,9 @@ a:hover {
 }
 .blue {
   background: #003366;
+}
+.blue p {
+  color: #fff;
 }
 
 .title {
@@ -126,7 +125,8 @@ a:hover {
   color: #777;
   margin-top: 0;
 }
-.blue .section-subheading {
+.blue .section-subheading,
+.blue .section-heading {
   color: #A5B9CB;
 }
 
@@ -136,6 +136,11 @@ a:hover {
 
 .div-sm {
   padding: 30px;
+}
+
+.separator {
+  border-bottom: 1px dashed #ccc;
+  margin: 25px auto;
 }
 
 .pr {
@@ -918,7 +923,6 @@ input#mce-EMAIL {}
 }
  
 
-
 /*
  * Apps
  */
@@ -948,11 +952,6 @@ input#mce-EMAIL {}
 
 .apps-section .btn {
   margin-top: 35px;
-}
-
-.separator {
-  margin: 100px 0 70px;
-  border-bottom: 1px dashed #ccc;
 }
 
 
@@ -1211,6 +1210,36 @@ input#mce-EMAIL {}
   margin-top: 20px;
 }
 
+
+/*
+ * Early Access
+*/
+
+.apps-early {
+  width: 300px !important;
+  height: 300px !important;
+  background-size: contain !important;
+  background-position: center center;
+  margin: 20px auto 40px;
+}
+
+.test-group {
+  padding: 0 40px;
+}
+
+.test-group .section-heading {
+  background: #f7f7f7;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  color: #003366;
+  font-size: 40px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
 
 /*
  * Retina
