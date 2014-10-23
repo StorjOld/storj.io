@@ -869,16 +869,17 @@ input#mce-EMAIL {}
  */
 
 .quotes {
-    padding: 0;
-    background: #012F5C; 
-    height: auto;
-    min-height: 290px;
+  padding: 0;
+  background: #012F5C; 
+  height: auto;
+  min-height: 290px;
 }
 
 .cbp-qtrotator {
   position: relative;
   height: auto;               
-  transition: 1s all;     overflow:hidden;
+  transition: 1s all;
+  overflow:hidden;
 }
 
 .cbp-qtrotator .cbp-qtcontent {
@@ -958,7 +959,6 @@ input#mce-EMAIL {}
   display: inline-block;
   margin: 18px 30px;
   float: left;
-  border: 1px solid #fff;
 }
  
 
