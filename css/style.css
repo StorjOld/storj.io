@@ -668,6 +668,7 @@ h2.cover-description {}
   display: block;
   height: auto;
   width: 100%;
+  max-width: 680px;
   margin: 30px auto;
 
 }
