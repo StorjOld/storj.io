@@ -917,15 +917,7 @@ input#mce-EMAIL {}
 }
 
 .cbp-qtprogress {
-  position: relative;
-  background: #004993;
-  height: 1px;
-  position: absolute;
-  z-index: 999999999 !important;
-  width: 0%;
-  top: 0;
-  display: block;
-  z-index: 1000;
+  display: none;
 }
 
 .cbp-qtrotator blockquote {
