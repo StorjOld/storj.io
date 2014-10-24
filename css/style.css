@@ -889,7 +889,7 @@ input#mce-EMAIL {}
   top: 0;
   z-index: 0;
   opacity: 0;
-  width: 100%;
+  width: auto;
   vertical-align: middle;
 }
 
@@ -960,7 +960,9 @@ input#mce-EMAIL {}
   margin: 18px 30px;
   float: left;
 }
- 
+.cbp-img {
+  display: inline-block;
+}
 
 /*
  * Apps
@@ -1442,6 +1444,12 @@ input#mce-EMAIL {}
   .promise {
     font-size: 9px;
   }
+  .quotes {
+    text-align: center;
+  }
+  .cbp-img img {
+    float: none !important;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
@@ -1628,12 +1636,6 @@ input#mce-EMAIL {}
   .pr {
     margin-left: auto;
     margin-right: auto;
-  }
-  .quotes {
-    text-align: center;
-  }
-  .cbp-img img {
-    float: none !important;
   }
   .apps-section {
     padding: 70px 10px;
