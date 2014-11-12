@@ -1046,6 +1046,9 @@ input#mce-EMAIL {}
  * Press Page
  */
 
+.press-page-title {
+  margin-bottom: 0;
+}
 .press-title {
   line-height: 32px;
   font-size: 18px;
