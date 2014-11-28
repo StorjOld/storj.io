@@ -295,8 +295,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery.cbpQTRotator.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.cbpQTRotator.min.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -310,6 +310,16 @@
 
     <script>
       $(function() {
+        // Animations
+        var wow = new WOW(
+          {
+            boxClass:     'wow',
+            mobile:       false
+          }
+        );
+        wow.init();
+
+        // Smooth Page Scroll
         $('.page-scroll').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
@@ -317,9 +327,8 @@
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
-        $(".read-more").on("click",function(){
-          $(".text-more").fadeIn();
-        });
+
+        // Analytics Goals
         $('#signup-header').on('click', function() {
           ga('send', 'event', 'SignUp', 'Newsletter', 'Header', 1);
         });
@@ -329,9 +338,6 @@
 
         // Call Quotes Rotator
         $('#cbp-qtrotator').cbpQTRotator({interval:12000});
-
-        // Animations
-        new WOW().init();
       });
     </script>
  
