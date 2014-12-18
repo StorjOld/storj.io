@@ -283,6 +283,15 @@
 
     <script>
       $(function() {
+      	// Smooth Page Scroll
+        $('.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+        // Analytics Goals
         $('#signup-footer').on('click', function() {
           ga('send', 'event', 'SignUp', 'Newsletter', 'Footer', 1);
         });
