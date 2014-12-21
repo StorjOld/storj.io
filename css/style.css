@@ -1173,7 +1173,9 @@ input#mce-EMAIL {}
   margin-top: 8px;
   display: block;
 }
-
+.footer-logo:focus {
+  color: #cbcccc;
+}
 .footer-logo:hover {
   color: #999;
 }
