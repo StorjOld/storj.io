@@ -742,9 +742,8 @@ input#mce-EMAIL {}
 .btn-signup {
   background: #ffdd00;
   color: #025D8C;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  padding: 24px 10px;
+  padding: 10px;
+  letter-spacing: 1px;
   height: 70px;
   width: 100%;
   border: 0;
@@ -752,16 +751,12 @@ input#mce-EMAIL {}
   border-left: 1px solid #EFB309;
   display: block;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .btn-signup:hover {
   color: #003366;
   background: #FFCB00;
-  border-radius: 3px;
+  padding: 16px;
+  letter-spacing: 1px;
 }
 .btn-signup:active {
   background: #EFB309;
