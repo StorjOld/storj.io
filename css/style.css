@@ -1293,6 +1293,13 @@ input#mce-EMAIL {}
   margin-bottom: 20px;
 }
 
+.test-group-a .section-heading {
+  background: #ffdd00 !important;
+}
+.test-group-a .subtitle {
+  color: #ffdd00;
+}
+
 .exchange-logo {
   width: 180px;
   height: 180px;
