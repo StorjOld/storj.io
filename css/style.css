@@ -127,6 +127,9 @@ a:hover {
 .blue .section-heading {
   color: #A5B9CB;
 }
+.section-subheading b {
+  color: #222;
+}
 
 .div-lg {
   padding: 60px;
