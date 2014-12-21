@@ -207,16 +207,16 @@ img.grayscale:hover {
   outline: none;
 }
 
-.btn-blue,
-.btn-blue:hover,
-.btn-blue:active {
+.btn,
+.btn:hover,
+.btn:active {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 25px 40px;
-  color: #107fc9;
-  border-color: #107fc9;
+  border-width: 2px;
   border-radius: 3px;
   outline: none;
   position: relative;
@@ -225,65 +225,38 @@ img.grayscale:hover {
   -ms-transition: all 270ms;
   -o-transition: all 270ms;
   transition: all 270ms;
+}
+
+.btn-blue,
+.btn-blue:hover,
+.btn-blue:active {
+  color: #107fc9;
+  border-color: #107fc9;
+}
+
+.btn-blue:visited {
+  color: #107fc9;
 }
 
 .btn-blue:hover {
   background: #107fc9;
   color: #fff;
-  border-radius: 3px;
-}
-
-.btn-green,
-.btn-green:hover,
-.btn-green:active {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 25px 35px;
-  color: #fff;
-  background: #88c425;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 270ms;
-  -moz-transition: all 270ms;
-  -ms-transition: all 270ms;
-  -o-transition: all 270ms;
-  transition: all 270ms;
-}
-
-.btn-green:hover {
-  color: #fff;
-  background: #99cc45;
 }
 
 .btn-yellow,
 .btn-yellow:hover,
 .btn-yellow:active {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 25px 40px;
   color: #ffdd00;
   border-color: #ffdd00;
-  border-radius: 3px;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 270ms;
-  -moz-transition: all 270ms;
-  -ms-transition: all 270ms;
-  -o-transition: all 270ms;
-  transition: all 270ms;
+}
+
+.btn-yellow:visited {
+  color: #ffdd00;
 }
 
 .btn-yellow:hover {
   background: #ffdd00;
   color: #003366;
-  border-radius: 3px;
 }
 
 
