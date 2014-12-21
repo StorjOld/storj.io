@@ -209,7 +209,8 @@ img.grayscale:hover {
 
 .btn,
 .btn:hover,
-.btn:active {
+.btn:active,
+.btn:focus {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
