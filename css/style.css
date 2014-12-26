@@ -130,6 +130,9 @@ a:hover {
 .section-subheading b {
   color: #222;
 }
+.blue .section-subheading b {
+  color: #fff;
+}
 
 .div-lg {
   padding: 60px;
@@ -655,6 +658,7 @@ h2.cover-description {}
 
 .features {
   padding: 80px 0;
+  border-bottom: 1px solid #002345;
 }
 
 .cover-features {
@@ -1287,6 +1291,28 @@ input#mce-EMAIL {}
   box-shadow: 0 3px 6px rgba(16, 127, 201, 0.1);
 }
 
+
+/*
+ * Notification Bar
+*/
+
+.notification-bar {
+  background: #012F5C;
+  padding: 15px 0 10px;
+  border-bottom: 1px solid #002345;
+}
+.notification-bar p {
+  color: #fff;
+}
+.notification-bar a {
+  margin: 0 6px;
+}
+.notification-bar b {
+  margin-right: 12px;
+}
+.notification-bar .red {
+  color: #f44336 !important;
+}
 
 
 /*
