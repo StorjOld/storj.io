@@ -1315,6 +1315,50 @@ input#mce-EMAIL {}
 }
 
 
+
+/*
+ * FAQ Page
+*/
+
+.panel-title {
+  font-size: 15px;
+  margin: 10px 0 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background: #107fc9;
+  line-height: 32px;
+}
+.panel-title a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  color: #fff;
+}
+.panel-title [data-toggle="collapse"].collapsed {
+  background: #eee;
+}
+.panel-title a.collapsed {
+  color: #107fc9 !important;
+}
+.panel-body {
+  padding: 20px 30px 15px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.panel-body p {
+  line-height: 32px;
+}
+.panel-body ul {
+  color: #107fc9;
+}
+.panel-body li p {
+  font-weight: bold;
+}
+
 /*
  * Retina
 */
