@@ -1101,6 +1101,12 @@
         $('#signup-footer').on('click', function() {
           ga('send', 'event', 'SignUp', 'Newsletter', 'Footer', 1);
         });
+		$('.panel-heading').on('click', function() {
+		  var hash = $(this).attr('id');
+		  var scr = document.body.scrollTop;
+		  location.hash = hash;
+		  document.body.scrollTop = scr;
+		});
       });
     </script>
   </body> 
