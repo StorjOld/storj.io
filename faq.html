@@ -876,9 +876,14 @@
 			    </div>
 			    <div id="collapse-6-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-6-6">
 			      <div class="panel-body">
-			        <p>Using SJCX as a unit of account allows us to raise BTC for development in a crowdsale, generate interest in the project, and exercise control on the money supply to protect the early network. Storj is among the first projects to demonstrate how cryptographic tokens can be used in support of decentralized applications and infrastructure. In addition to leveraging the blockchain’s open and transparent ledger, projects that create these “metacoins” using cryptocurrency are able to easily record, track usage and distribute tokens on a global scale. This means that at any point in time, a project can confirm how many tokens are being used, which address is holding them, and where it originated from. It’s a new form of user interaction where the tokens represent market interest in the project and user activity itself.</p>
-					<p>To ensure security, bitcoin was developed using a series of algorithms that give all cryptocurrencies, including bitcoin and tokens, their ability to validate information secured by the laws of mathematics. For online commerce, where the use of traditional payment methods are easily faked, proving authenticity is valuable to many, including those who need to verify things quickly and easily. The use of cryptocurrency itself results in a new form of commercial interaction where the issue of counterfeit money is nonexistent.</p>
-					<p>Storj’s token is used to purchase storage space on its cloud network. Conversely, users are also able to earn these tokens by renting out their extra computer hard drive space for use by DriveShare, an application part of the Storj network. All tokens are transferable to other users, and every transaction is traceable. Based on the transaction flows of the token itself, the Storj team could determine how people are using the network and analyze how better to direct network resources based on user activity.
+			        <p>Many users coming from the Bitcoin space ask us why we created a new token named Storjcoin or SJCX. There is a mix of technical and economic reason why we felt a new token was needed. SJCX is built with CounterParty which uses the Bitcoin blockchain. We have plans to implement Bitcoin in the future when Storj is more stable.</p>
+					<p><b>Economics</b></p>
+					<ul>
+						<li><p><b>No Mining</b> - Doesn’t make sense to use a mined coin for a network designed for the concept of resource “farming.”</p></li>
+						<li><p><b>Economic Isolation</b> - Bitcoin price fluctuates heavily. If the price drops by half in a few weeks it may become unprofitable for users to offer their resources. While demand would remain the same, supply of resources would drop significantly causing problems. By using an another token we isolated ourselves from price fluctuations completely unrelated to the Storj service.</p></li>
+						<li><p><b>Balance Supply</b> - As the demand for storage space grows the token price should rise, and vice versa. This will allow us to economically balance capacity in the network.</p></li>
+					</ul>
+					<p>These are just some of the economical reasons. A paper is currently being written to address those and more technical reasons in more detail. 
 					</p>
 			      </div>
 			    </div>
@@ -893,8 +898,8 @@
 			    </div>
 			    <div id="collapse-6-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-6-7">
 			      <div class="panel-body">
-			        <p>Storj isn't a coin, it's a cloud storage platform. It happens to run on Storjcoin X, which individuals can speculate on freely. It makes perfect sense that the vast majority of the coins are held by Storj at this point and we have spoken to exactly why this is. First and foremost it is so that Storj can raise more money in the future to continue development and to pay early farmers for contribution to testing the system. We need to keep these coins in reserve, there are relatively few people using SJCX and no one farming yet (for a reward). Not even a company sells 100% share of itself to the open market.</p>
-					<p>Not all the coins have been distributed via crowdsales and early farming. As you can see from our regular updates and docs there was always going to be 500 million. So we decided it would be best to create all the coins, then lock the asset. That means that it’s impossible for anyone to create more than 500 million coins. It also means that a ton of coins are on a single address. Basically what we would like to do is "lock" the coins to be accessed later using some form of LOCK_TIME. This exists on Bitcoin, but not on Counterparty. We are pushing the Counterparty devs to write something like that into the protocol, but we may have do it ourselves.</p>
+			        <p>We are using the CounterParty protocol which means coins must be created not mined. We created the specified 500M SJCX, the locked the token so no more could ever be created. These will be distributed according the the crowdsale distribution plan, including crowdsales and farming.</p>
+					<p>We are currently looking at options to timelock the funds until then, which is currently not supported by the Counterparty protocol.</p>
 			      </div>
 			    </div>
 			  </div>
