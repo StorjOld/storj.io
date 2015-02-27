@@ -1222,6 +1222,7 @@ input#mce-EMAIL {}
   margin-bottom: 20px;
   width: 70%;
   height: 70%;
+  border: 4px solid #eee;
 }
 .team-member-name {
   text-transform: uppercase;
@@ -1229,6 +1230,7 @@ input#mce-EMAIL {}
   font-weight: 700;
   color: #107fc9;
   height: 25px;
+  margin-bottom: 10px;
 }
 .team-member-title {
   color: #888;
