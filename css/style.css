@@ -814,7 +814,6 @@ input#mce-EMAIL {}
 
 .video-wrapper {
   background-image: url('../img/bg-white.jpg');
-  background-attachment: fixed;
   background-size: cover;
   background-position: center top;
 }
@@ -841,6 +840,30 @@ input#mce-EMAIL {}
   height: 100%;
 }
 
+.whitepaper {
+  padding: 0 0 60px;
+  background: #012F5C;
+  border-bottom: 1px solid #002345;
+}
+.whitepaper p,
+.whitepaper a {
+  display: inline-block;
+}
+.whitepaper a {
+  font-weight: bold;
+}
+.whitepaper-icon {
+  display: inline-block;
+  width: 93px;
+  height: 94px;
+  margin: 0 30px;
+  position: relative;
+  top: 40px;
+  background: url('../img/whitepaper-icon.png');
+  background-size: 80px 82px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /*
  * Quotes
@@ -1743,6 +1766,18 @@ input#mce-EMAIL {}
   }
   .early-apps {
     padding: 20px;
+  }
+  .whitepaper {
+    padding: 35px 0;
+  }
+  .whitepaper p,
+  .whitepaper-icon {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .whitepaper-icon {
+    top: 0;
   }
 }
 
