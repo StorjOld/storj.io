@@ -1383,6 +1383,39 @@ input#mce-EMAIL {}
   font-weight: bold;
 }
 
+
+/*
+ * Translation
+*/
+
+
+#tx-live-lang-container {
+  position: absolute;
+  background: none;
+  box-shadow: none;
+}
+#tx-live-lang-toggle {
+  border-top: 0;
+  border-left: 1px solid #002345;
+  line-height: 56px;
+}
+.txlive-langselector-marker {
+  margin-top: 27px;
+}
+.txlive-langselector-topright > .txlive-langselector-list {
+  top: 62px;
+  box-shadow: none;
+  background: #002345;
+  border-radius: 0 !important;
+  border-bottom: 0;
+  color: #f9f9f9;
+}
+.txlive-langselector-list > li:hover {
+  background-color: #107fc9;
+}
+
+
+
 /*
  * Retina
 */
