@@ -1411,7 +1411,7 @@ input#mce-EMAIL {}
   color: #f9f9f9;
 }
 .txlive-langselector-list > li:hover {
-  background-color: #107fc9;
+  background-color: #107fc9 !important;
 }
 
 
