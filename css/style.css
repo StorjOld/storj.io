@@ -1393,6 +1393,12 @@ input#mce-EMAIL {}
   position: absolute;
   background: none;
   box-shadow: none;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+#tx-live-lang-container:hover {
+  background: #107fc9;
 }
 #tx-live-lang-toggle {
   border-top: 0;
