@@ -1398,16 +1398,16 @@ input#mce-EMAIL {}
   border-top: 0;
   border-left: 1px solid #002345;
   line-height: 56px;
+  height: 62px;
 }
 .txlive-langselector-marker {
-  margin-top: 27px;
+  margin-top: 27px !important;
 }
 .txlive-langselector-topright > .txlive-langselector-list {
-  top: 62px;
+  top: 62px !important;
   box-shadow: none;
   background: #002345;
   border-radius: 0 !important;
-  border-bottom: 0;
   color: #f9f9f9;
 }
 .txlive-langselector-list > li:hover {
