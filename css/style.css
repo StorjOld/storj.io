@@ -1406,7 +1406,7 @@ input#mce-EMAIL {}
 .txlive-langselector-topright > .txlive-langselector-list {
   top: 62px !important;
   box-shadow: none;
-  background: #002345;
+  background: #002345 !important;
   border-radius: 0 !important;
   color: #f9f9f9;
 }
