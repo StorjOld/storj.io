@@ -1180,18 +1180,19 @@ input#mce-EMAIL {}
 
 .footer-menu {
   text-align: right;
+  padding: 0;
 }
 
 .footer-link {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 1px;
   color: #cccccc;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
-  padding: 20px 25px;
+  padding: 20px;
 }
 
 .footer-logo {
@@ -1500,7 +1501,8 @@ input#mce-EMAIL {}
     margin-top: 70px;
   }
   .footer-link {
-    padding: 20px 15px;
+    padding: 20px 12px;
+    font-size: 12px;
   }
   .navbar-link {
     padding: 20px 5px;
