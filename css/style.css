@@ -1391,7 +1391,8 @@ input#mce-EMAIL {}
 
 #tx-live-lang-container {
   position: absolute;
-  background: none;
+  background: #012F5C;
+  border-bottom: 1px solid #002345;
   box-shadow: none;
   -webkit-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -1586,6 +1587,7 @@ input#mce-EMAIL {}
   }
   .notification-bar {
     padding-right: 120px;
+    min-height: 63px;
   }
 }
 
@@ -1822,6 +1824,13 @@ input#mce-EMAIL {}
   }
   .whitepaper-icon {
     top: 0;
+  }
+  .notification-bar {
+    margin-top: 62px;
+    padding: 10px 0;
+  }
+  #tx-live-lang-container {
+    width: 100%;
   }
 }
 
