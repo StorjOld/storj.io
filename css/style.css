@@ -1584,6 +1584,9 @@ input#mce-EMAIL {}
   .cbp-img img {
     float: none !important;
   }
+  .notification-bar {
+    padding-right: 120px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
