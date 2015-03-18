@@ -1561,14 +1561,8 @@ input#mce-EMAIL {}
   .section {
     padding: 50px 0 70px;
   }
-  .team {
-    padding-top: 120px !important;
-  }
   .team-member {
     width: 50%;
-  }
-  .cover-image {
-    /* margin-top: 30px; */
   }
   .cloud {
     margin-top: 80px;
@@ -1795,9 +1789,6 @@ input#mce-EMAIL {}
   .video {
     margin-top: 35px;
   }
-  .team {
-    padding-top: 210px !important;
-  }
   .team-member {
     padding: 30px 8px;
   }
@@ -1971,7 +1962,11 @@ input#mce-EMAIL {}
   .video {
     margin-bottom: 30px;
   }
+  .team {
+    padding-top: 50px !important;
+  }
   .team-member {
     width: 100%;
+    padding: 10px 20px;
   }
 }
