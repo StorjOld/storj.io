@@ -1298,10 +1298,10 @@ input#mce-EMAIL {}
   margin-bottom: 20px;
 }
 
-.test-group-a .section-heading {
+.test-group-yellow .section-heading {
   background: #ffdd00 !important;
 }
-.test-group-a .subtitle {
+.test-group-yellow .subtitle {
   color: #ffdd00;
 }
 
