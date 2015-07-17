@@ -1423,6 +1423,24 @@ input#mce-EMAIL {}
 }
 
 
+/*
+ * Presskit Page
+*/
+
+.presskit-logo {
+  border: 1px solid #ddd;
+  margin: 2em auto;
+}
+.presskit-logo img {
+  max-width: 250px;
+  max-height: 250px;
+  margin: 3em auto;
+  display: block;
+  text-align: center;
+}
+.presskit-blue {
+  background: #107fc9;
+}
 
 /*
  * Retina
