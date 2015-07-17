@@ -1430,15 +1430,16 @@ input#mce-EMAIL {}
 .presskit-logo {
   border: 1px solid #ddd;
   margin: 2em auto;
+  padding: 1em 2em;
 }
 .presskit-logo img {
   max-width: 250px;
   max-height: 250px;
-  margin: 3em auto;
+  margin: 2em auto;
   display: block;
   text-align: center;
 }
-.presskit-blue {
+.presskit .blue {
   background: #107fc9;
 }
 
