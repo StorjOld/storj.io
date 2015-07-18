@@ -1430,7 +1430,7 @@ input#mce-EMAIL {}
 .presskit-logo {
   border: 1px solid #ddd;
   margin: 2em auto;
-  padding: 1em 2em;
+  padding: 1.5em 2em 1em;
   background: #fff;
 }
 .presskit-logo img {
@@ -1442,6 +1442,15 @@ input#mce-EMAIL {}
 }
 .presskit-logo.blue {
   background: #107fc9;
+}
+.presskit-logo.gold {
+  background: #ffdd00;
+}
+.presskit-logo.darkblue {
+  background: #003366;
+}
+.presskit-logo.darkblue p{
+  color: #fff;
 }
 
 /*
