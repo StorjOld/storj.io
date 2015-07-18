@@ -1440,6 +1440,9 @@ input#mce-EMAIL {}
   display: block;
   text-align: center;
 }
+.presskit-logo .link {
+  margin-left: 1em;
+}
 .presskit-logo.blue {
   background: #107fc9;
 }
