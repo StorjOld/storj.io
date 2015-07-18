@@ -1431,6 +1431,7 @@ input#mce-EMAIL {}
   border: 1px solid #ddd;
   margin: 2em auto;
   padding: 1em 2em;
+  background: #fff;
 }
 .presskit-logo img {
   max-width: 250px;
