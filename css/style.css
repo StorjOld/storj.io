@@ -274,17 +274,58 @@ img.grayscale:hover {
  */
 
 .navbar {
-    margin: 0 0 30px;
+  margin: 0 0 30px;
+  background: none;
+  border: 0;
 }
 .navbar-menu {
   text-align: right;
 }
-
+.navbar-brand {
+  color: #fff;
+}
+.navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #fff;
+}
+.navbar-brand>img {
+  display: inline-block;
+}
+.navbar-collapse.collapse {
+  float: none;
+}
+.navbar-nav>li>a {
+  color: #E4F1FF;
+  padding: 5px;
+}
+.navbar-toggle {
+  border-color: #fff;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-toggle:hover, .navbar-toggle:focus {
+  background-color: #fff;
+}
+.navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar {
+  background-color: #003366;
+}
+.navbar-toggle {
+  margin-top: 12px;
+}
+.navbar-collapse, .navbar-form {
+  overflow: hidden;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #fff;
+}
 .navbar-link {
   color: #E4F1FF;
   display: inline-block;
   text-transform: uppercase;
-  padding: 20px 5px;
+  padding: 20px 5px !important;
   margin: 0 20px;
   vertical-align: top;
   font-size: 14px;
@@ -294,22 +335,21 @@ img.grayscale:hover {
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
+  background: none !important;
 }
 
 .early-access-link {
-  color: #ffdd00;
+  color: #ffdd00 !important;
 }
 .early-access-link:hover {
-  color: #FFCB00;
+  color: #FFCB00 !important;
   border-bottom-color: #ffcb00;
 }
 
 .navbar-page {
-  border-bottom: 1px solid #f1f1f1;
   position: static;
   width: 100%;
   background: #fff;
-  background: rgba(255, 255, 255, 0.96);
   z-index: 9;
 }
 .navbar-page .navbar {
@@ -329,7 +369,21 @@ img.grayscale:hover {
   color: #107fc9;
   font-weight: 700;
 }
-
+.navbar-page .navbar-toggle {
+  border: 1px solid #107fc9;
+}
+.navbar-page .navbar-toggle.collapsed {
+    border: 1px solid #107fc9;
+}
+.navbar-page .navbar-toggle .icon-bar {
+    background: #107fc9;
+}
+.navbar-page .navbar-toggle:hover {
+    background: #107fc9;
+}
+.navbar-page .navbar-toggle:hover .icon-bar {
+    background: #FFF;
+}
 
 /*
  * Crowdsale
@@ -604,6 +658,7 @@ img.grayscale:hover {
   display: inline-block;
   text-transform: uppercase;
   padding: 4px 4px 4px 0;
+  z-index: 10;
 }
 .cover-logo:focus:visited {
   color: #107fc9;
@@ -1872,9 +1927,6 @@ input#mce-EMAIL {}
   }
   #crowdsale .cover-wrapper-inner {
     background: none;
-  }
-  .cover-logo {
-    width: 100%;
   }
   .cover-heading {
     font-size: 42px;

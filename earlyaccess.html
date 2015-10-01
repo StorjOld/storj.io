@@ -54,18 +54,28 @@
 
     <div class="navbar-page">
       <div class="container">
-        <nav class="navbar row" role="navigation">
-          <a href="index.html" class="cover-logo col-xs-12 col-sm-4"><img src="img/logo-blue.png" alt="Storj" class="cover-logo-icon">Storj.io</a>
-          <div class="navbar-menu col-sm-8 col-xs-12">
-            <a class="navbar-link" href="index.html#apps">Apps</a>
-            <a class="navbar-link" href="http://blog.storj.io">Blog</a>
-            <a class="navbar-link" href="http://slack.storj.io">Slack</a>
-            <a class="navbar-link" href="http://storj.io/faq.html">FAQ</a>
+        <nav class="navbar menu row" role="navigation">
+          <div class="col-xs-12 col-sm-4">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+             <a href="index.html" class="navbar-brand cover-logo"><img src="img/logo-blue.png" alt="Storj" class="cover-logo-icon">Storj.io</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-menu col-sm-8 col-xs-12" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-link page-scroll" href="index.html#apps">Apps</a></li>
+                <li><a class="navbar-link" href="http://blog.storj.io">Blog</a></li>
+                <li><a class="navbar-link" href="faq.html">FAQ</a></li>
+                <li><a class="navbar-link" href="http://slack.storj.io">Slack</a></li>
+            </ul>
           </div>
         </nav>
       </div>
     </div>
-
+  
     <div class="page">
       <div class="section blue">
         <div class="container">
