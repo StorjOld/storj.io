@@ -291,7 +291,7 @@ img.grayscale:hover {
   display: inline-block;
 }
 .navbar-collapse.collapse {
-  float: none;
+  float: right;
 }
 .navbar-nav>li>a {
   color: #E4F1FF;
@@ -659,9 +659,10 @@ img.grayscale:hover {
   text-transform: uppercase;
   padding: 4px 4px 4px 0;
   z-index: 10;
+  margin-left: -10px;
 }
 .cover-logo:focus:visited {
-  color: #107fc9;
+  color: #fff;
 }
 .cover-logo:hover, .cover-logo:focus, .cover-logo:active {
   color: #fff;
