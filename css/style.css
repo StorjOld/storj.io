@@ -22,7 +22,6 @@ p {
   font-family: "Muli", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #636a7a;
   line-height: 26px;
   letter-spacing: 0;
 }
@@ -118,9 +117,8 @@ a:hover {
 }
 .section-subheading {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
-  color: #777;
   margin-top: 0;
 }
 .blue .section-subheading,
