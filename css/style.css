@@ -750,13 +750,12 @@ input#mce-EMAIL {}
 .btn-signup {
   background: #ffdd00;
   color: #025D8C;
-  letter-spacing: 1px;
+  letter-spacing: 1px !important;
   height: 70px;
   width: 100%;
-  padding: 10px;
+  padding: 10px !important;
   border: 0;
   z-index: 2;
-  border-left: 1px solid #EFB309;
   display: block;
   overflow: hidden;
 }
@@ -765,10 +764,14 @@ input#mce-EMAIL {}
   background: #FFCB00;
   letter-spacing: 1px;
   padding: 10px;
-  border-left-width: 1px;
 }
 .btn-signup:active {
   background: #EFB309;
+  padding: 10px;
+}
+.btn-signup:focus {
+  background: #EFB309;
+  padding: 10px;
 }
 
 .cf-icon {
