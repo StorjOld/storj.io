@@ -750,10 +750,10 @@ input#mce-EMAIL {}
 .btn-signup {
   background: #ffdd00;
   color: #025D8C;
-  padding: 10px;
   letter-spacing: 1px;
   height: 70px;
   width: 100%;
+  padding: 10px;
   border: 0;
   z-index: 2;
   border-left: 1px solid #EFB309;
@@ -763,8 +763,9 @@ input#mce-EMAIL {}
 .btn-signup:hover {
   color: #003366;
   background: #FFCB00;
-  padding: 16px;
   letter-spacing: 1px;
+  padding: 10px;
+  border-left-width: 1px;
 }
 .btn-signup:active {
   background: #EFB309;
