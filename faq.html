@@ -663,6 +663,369 @@
 
         <div class="div-sm"></div>
 
+        <div class="row" id="test-groups">
+          <div class="col-xs-12 text-center">
+            <h3 class="title">Test Groups</h3>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <div class="panel-group" id="accordion-t" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+
+			    <div class="panel-heading" role="tab" id="faq-t-1">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-1" aria-expanded="false" aria-controls="collapse-t-1">
+			          What is the most recent release of the test client?  Where can I find it?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-1">
+			      <div class="panel-body">
+			        <p>You can find the latest client release and more details on <a href="https://github.com/Storj/dataserv-client/releases/" class="link">https://github.com/Storj/dataserv-client/releases/</a>.</p>
+			        <p>Please follow the instructions provided on <a href="http://driveshare.org/dataserv.html" class="link">http://driveshare.org/dataserv.html</a>.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-2">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-2" aria-expanded="false" aria-controls="collapse-t-2">
+			          What is Config? Farm? Register? Build? Poll?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-2">
+			      <div class="panel-body">
+			        <p><strong>CONFIG:</strong>  The config command is currently only run once when you first run dataserv-client (ie, starting from 0 without previous build).  Currently only one argument, --set_payout_address is necessary.  Config will create your config.json file which will include your payout address, your private key/wallet address and the version of the client under which is was created.</p>
+
+					<p><strong>FARM:</strong> The farm command is a compilation of multiple commands and currently serves as the primary command in the dataserv-client application.  Farm includes the functions register, build and poll, run in that order.</p>
+
+					<p>dataserv-client --store_path <your path> --max_size <your max size> farm</p>
+
+					<p><strong>REGISTER:</strong> The register command is no longer used in dataserv-client except as a component of the farm command.  Register communicates with the server your payout address and authentication address, linking the two together and setting the date that your build started.  This is the point where you payout address is linked to your auth address and you wallet address.  Your payout address and wallet are the seeds for you auth address (ie a single config.json will always create the same auth address)</p>
+
+					<p><strong>BUILD:</strong> The build command is a testing command and will likely play no role once peer-to-peer data transfers begin.  In the tests, build is the engine that creates shards (SHA 256 hashes).  Build includes periodic pinging of the server with your current height.  By default, build pings the server every 25 shards with your current height.  Once the build is finished (reaches --max_size) build will report your final height to the server.</p>
+
+					<p><strong>POLL:</strong> The poll command is a simple ping of the server to tell it that your build is live and being shared on the network.  Poll does not tell the server your height but reports that you are live.  The height that is reported is the last height reported by build.  Poll can be run independently when desired to stay live on the status page during farm command with high –set_height_interval</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-3">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-3" aria-expanded="false" aria-controls="collapse-t-3">
+			          What are rewards? (and what they are not)
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-3">
+			      <div class="panel-body">
+			        <p>Rewards have been implemented during the testing process of the Storj applications.  Rewards will be advertised but the breakdown and rules governing are subject to change as the project evolves.  Rewards are present to provide motivation/incentive for participation in the tests.  Rewards are NOT payment for testing.  Rewards are NOT equivalent to mining rewards.</p>
+
+					<p>At the present time each payout address must have a minimum of 10,000 SJCX to qualify for rewards and upon request any address that was not affiliated with the crowdsale, will have to have 10,000 SJCX donated to the rewards pool to qualify for future rewards.  There is NO guarantee of rewards equaling or exceeding the 10,000 SJCX donation.</p>
+
+					<p>Rewards are calculated using a fair methodology that looks at available data at the time of snapshots such as capacity and SJCX holdings and via server tracking of data such as duration of registered address, uptime and audit success.  The criteria and timing of rewards snapshots or tracking will be advertised in advance.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-4">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-4" aria-expanded="false" aria-controls="collapse-t-4">
+			          What is a Shard? Height? Capacity?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-4">
+			      <div class="panel-body">
+			        <p>At this stage in testing and until peer-to-peer data transfers are tested, dataserv-client locally generates empty containers, inflated to 128MB (friendly size) each. These empty containers are “shards”.  The build portion of the farm command will create a predetermined number of  shards based on your --max_size setting.  Shards are encrypted using SHA 256 hashes.  Each shared hash is created determinalistically based on the seed.  At the present time that seed is your payout address.  In the future, there may be an option to create shards using your auth address as the seed (please stay tuned for that option and how to utilize it). </p>
+
+					<p>What deterministic shard/hash creation means is that any build using a specific payout address will create the same shards in the same order.  While not tested, multiple builds to the same payout address may pose issues with the audit function.  It is therefore advised that multiple builds be created to different payout addresses.</p>
+
+					<p>Your height, as reported at <a href="http://switch.driveshare.org/api/online/json" class="link">http://switch.driveshare.org/api/online/json</a> is based on the number of shards that you are reporting live to the server (read build and poll definitions).  Only the shards that have been reported to the server by the build function and then reported as live by the poll function will appear in your height.</p>
+
+					<p>The capacity reported on <a href="http://driveshare.org/status.html" class="link">http://driveshare.org/status.html</a> is a derivative of your height. The current calculation uses the friendly 8000 shards per TB (800 shards per 100GB, 8 shards per GB).</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-5">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-5" aria-expanded="false" aria-controls="collapse-t-5">
+			         Friendly VS Actual Sizes
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-5">
+			      <div class="panel-body">
+			        <p>The friendly method of determining drive size or file size is by multiplying by 1000 (ie 1KB = 1000 bytes).  In actuality, the real multiplier is 1024 (ie 1KB = 1024 bytes).  The same ratio is always present.  1TB =1024 GB, 1GB =1024MB, 1MB = 1024KB.  The confusion that often happens is when both friendly and actual sizes are referenced together, or when a friendly size is referenced and the means of checking said size use actual bytes.</p>
+
+					<p>For the purposes of Storj and the DriveShare test groups, both have been used.  128MB, the size of a shard, is referenced with a friendly file size (actual size is 134,2117,728 bytes = 128*1024*1024).  The current display on the status page also uses the friendly method to display capacity.  Formerly, the status page did display actual capacity.  As mentioned above the number of shards divided by 8000 will give your friendly size, however, number of shards divided by 8192 will give you your actual size.</p>
+
+					<p>Further complicating this file size/drive capacity issue is the fact that many OSs and external drive devices will hold a certain amount of drive space in reserve (buffers, error protection, etc).  This space isn’t visible to the user and should not be utilized (it is there for drive health).</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-6">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-6" aria-expanded="false" aria-controls="collapse-t-6">
+			         What is a Payout Address?  Auth Address?  Wallet Address?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-6">
+			      <div class="panel-body">
+			        <p><strong>PAYOUT ADDRESS:</strong> A payout address is an address that you set and should be your counterwallet address <a href="https://counterwallet.io" class="link">https://counterwallet.io</a>.  While it is possible to use other sites to hold/donate your SJCX from, it is not advisable to do so from larger exchanges.</p>
+
+					<p>Your payout address is currently the seed for the SHA 256 hashes/shards.</p>  
+
+					<p>It is your payout address that will be tracked for rewards purposes and should be an address that you control. Your payout address is what you will see on the status pages and how you can track your progress/standings <a href="http://driveshare.org/status.html" class="link">http://driveshare.org/status.html</a> or <a href="http://switch.driveshare.org/api/online" class="link">http://switch.driveshare.org/api/online</a></p>
+
+					<p><strong>AUTH ADDRESS:</strong> An auth address (authentication address) is your public key and how dataserv-client identifies you to the server.  This is your identification to the server.  It is tied to your payout address as is evident on  <a href="http://switch.driveshare.org/api/online/json" class="link">http://switch.driveshare.org/api/online/json</a>. It is possible to have multiple auth addresses tied to a single payout address, but NOT possible to have a single auth address tied to multiple payout address (based on the method of auth address creation (see register definition).</p>
+
+					<p>During regular operations of dataserv-client, you will see your auth address during each ping of the server (QUERY). This ping tells the server that you are at a certain height or reporting as live.  Because this address is tied to your payout address, the server-side application links this ping to your payout address as well.</p>
+
+					<p><strong>IMPORTANT NOTICE: DO NOT SEND SJCX OR ANY CRYPTOCURRENCY TO YOUR AUTH ADDRESS.  THIS IS NOT AN ADDRESS FOR TRANSACTIONS BUT ONE FOR IDENTIFYING YOU WITH THE SERVER.</strong></p>
+
+					<p><strong>WALLET ADDRESS:</strong> The wallet address is created during --config --set_payout_address <your payout address> and is stored in the config.json.  This is your private key and should not be shared.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-7">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-7" aria-expanded="false" aria-controls="collapse-t-7">
+			         How do I qualify for rewards?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-7">
+			      <div class="panel-body">
+			        <p>Rewards are an incentive provided by the developers of the Storj project to encourage participation in the testing process and should NOT be considered a form of payment or a form of return on investment.  Rewards are NOT guaranteed.  The structure of, timing of and amount of rewards are subject to change during the testing.</p>
+
+					<p><strong>Qualifying for Rewards – Step 1:</strong></p>
+					<p>To qualify for rewards the first step is to possess 10,000 SJCX in your payout address.  Compliance with this requirement will be tracked through <a href="http://blockscan.com" class="link">http://blockscan.com</a> and in order to ensure that you are compliant it is advised that any transactions be made 24 hours prior to any deadlines, snapshot or donations request to ensure that the transaction will appear on the blockchain.</p>
+
+					<p><strong>Qualifying for Rewards – Step 2a: Crowdsale Participants</strong></p>
+					<p>For that that participated in the Crowdsale, simply holding 10,000 SJCX in your payout address will qualify you for full rewards.  Holding &gt;0 but &ls;10,000 SJCX will qualify a Crowdsale participant for partial rewards.  The fraction of full rewards will be determined by the developers, but will be a maximum of the percentage of 10,000 SJCX held.</p>
+
+					<p><strong>Qualifying for Rewards – Step 2b: Non-Crowdsale Participants</strong></p>
+					<p>For non-crowdsale participants there will be a request for donations prior to TGB M3-2 (test group b, milestone 3, part 2).  Prior to this request, qualification for rewards is the same as for crowdsale participants.  Once the request is made, qualification for rewards is dependent on a donation of 10,000 SJCX to the rewards pool.  There will be a window to donate prior to the commencement of TGB M3-2 testing & tracking.  There is NO partial rewards for non-crowdsale members.  A donation entitles a non-crowdsale participant to full rewards based on their stats.</p>
+
+					<p>A non-crowdsale participant does not need to both donate and hold 10K SJCX during TGB M3-2 to qualify for rewards.  Only the donation is required for rewards qualification.</p>
+
+					<p>There is NO guarantee that any participant, crowdsale or otherwise, will receive 10,000 SJCX (or any amount for that matter) in rewards during TGB M3-2</p>
+
+					<p>Policies have not been announced at the present time as to requirements for holding or donations for future test groups.  Once announced, this information will be updated.  Any statements about these policies are unofficial or speculative until announced officially.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-8">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-8" aria-expanded="false" aria-controls="collapse-t-8">
+			         When will I get “paid”?  How much can I make?  
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-8">
+			      <div class="panel-body">
+			        <p>There is no payment or earnings at the present time.  Storj and its component programs are currently under development and the test groups have been created to allow “live” testing of the component features.  </p>
+					<ul>
+						<li><p>Rewards are NOT a form of payment.</p></li>
+						<li><p>Rewards are not on a defined schedule but will be announced as each stage of testing progresses.</p></li>
+						<li><p>The amounts, schedule of distribution and criteria for determining rewards will be made public prior to testing, snapshots or reward distribution.</p></li>
+						<li><p>All rewards distributions will be accompanied by a complete breakdown.</p></li>
+					</ul>
+					<p>With an ever increasing number of participants it can take time to both calculate and verify rewards distributions.  All efforts will be made to keep participants informed of timing of rewards distributions.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-9">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-9" aria-expanded="false" aria-controls="collapse-t-9">
+			         What is an audit?  
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-9">
+			      <div class="panel-body">
+			        <p>An audit is a validation process that looks at the shards you have in your --store_path and ensures that A.) the SHA 256 hashes match the payout address (seed) and B.) all the hashes that should be present are present (read build definition).  To be a valid build, shards/hashes must pass audits.  Audits will be a part of TGB M3-2 and moving forward.</p>
+					<p>Once live peer-to-peer data transfers start, audits will be used to verify that all data a given address is “contracted” to hold is present.  Failed audits may lead to loss of contract and profit in a live launch scenario.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-10">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-10" aria-expanded="false" aria-controls="collapse-t-10">
+			         Where do I check to see if my shared space is actually being “shared”?  
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-10">
+			      <div class="panel-body">
+			        <p>First, during the testing process, data is locally generated and the only network traffic is from your client to the server (pings). That means that you need to be actively running farm (or farm with high --set_interval_value and a separate terminal running poll) to show up on the status pages.</p>
+					<p>Once live peer-to-peer data transfers start, audits will be used to verify that all data a given address is “contracted” to hold is present.  Failed audits may lead to loss of contract and profit in a live launch scenario.</p>
+					<ul>
+						<li>
+							<p><a href="http://driveshare.org/status.html" class="link">http://driveshare.org/status.html</a> - shows payout address, when you last pinged the server & capacity in TB (height/8000) - User Friendly Version</p>
+						</li>
+						<li>
+							<p><a href="http://switch.driveshare.org/api/online" class="link">http://switch.driveshare.org/api/online</a> - shows payout address, when you last pinged the server & your height (number of shards)</p>
+						</li>
+						<li>
+							<p><a href="http://switch.driveshare.org/api/online/json" class="link">http://switch.driveshare.org/api/online/json</a> - shows payout address, auth address, when you last pinged the server & your height (this json actually drives the information of the other sites)</p>
+						</li>
+						<li>
+							<p><a href="http://storjtracker.com" class="link">http://storjtracker.com</a> - shows your payout address, when you last pinged the server, your verified SJCX holdings & your capacity in GB (this page was created by linuxman21)</p>
+						</li>
+					</ul>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-11">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-11" aria-expanded="false" aria-controls="collapse-t-11">
+			         How can I keep my build online?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-11">
+			      <div class="panel-body">
+			        <p>Efforts have been made within the dataserv-client to automatically restart build and poll functions, but there are times when an error causes the program to stop completely.</p>
+					<p>Unsanctioned approaches can be used to restart the dataserv-client in these cases.  They include batch files with repeating loops (there is currently a set of windows batch files pinned to #test_group_b on Slack), including either batch file or fully arguemented command string in your operating system startup, StorjTrackr which can help you to monitor your build(s) <a href="https://github.com/jaylagorio/StorjTrackr/releases" class="link">https://github.com/jaylagorio/StorjTrackr/releases</a> and a GUI currently in early testing <a href="https://github.com/Storj/driveshare-gui" class="link">https://github.com/Storj/driveshare-gui</a></p>
+					<p>In the future some of these features may be added to the client, but at this time, you use such unsanctioned approaches at your own risk/benefit.  Storj Labs and the developers will not guarantee the functionality of any approach and base all rewards distributions on available and verifiable data (ie, saying you were online or had SJCX is not verifiable and will not be considered proof).</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-12">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-12" aria-expanded="false" aria-controls="collapse-t-12">
+			         I get HTTP Error 401: Unauthorized errors all the time.  How can I fix this?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-12">
+			      <div class="panel-body">
+			        <p>WARNING dataserv_client.messaging 57: HTTP Error 401: UNAUTHORIZED</p>
+					<p>INFO dataserv_client.messaging 78: Query retry in 30 seconds.</p>
+					<p>While not always the case, many of these 401 Unauthorized errors are associated with your local clock being out of sync with the server clock.  For security reasons, the current server-side application only allows a 15 second offset from the ping time to the time that ping is received.  In typical situations, pings should take only milliseconds, but if clocks are not synced, this time can appear much larger.</p>
+					<p>To resolve this issue, you should take measures to sync your clock with internet time (methods vary and you should research your specific operating system to ensure that your clock is synced).  It is possible, over time, for a synced clock to fall out of sync with internet time, so either this process will need to be repeated or periodic syncing done via software.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-13">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-13" aria-expanded="false" aria-controls="collapse-t-13">
+			         Is my farm command running right?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-13">
+			      <div class="panel-body">
+			        <p>There are two different sets of communications you should be looking for to check for proper functionality.  If you are seeing this, then you are running properly.</p>
+					<p>During build portion of farm (hashes vary at each step):</p>
+					<p>INFO dataserv_client.builder 108: Resuming from height 116977</p>
+					<p>INFO dataserv_client.builder 131: Saving seed 56793d6abb4598Udjec379d65f1dfb1d352d11d3111358a35b99cbd9f94f35 with SHA-256 hash 636a241bcf263f91e63739523dc6cd6abb45b8735466e0b1885f1dec15abea.</p>
+					<p>INFO dataserv_client.builder 131: Saving seed e207af815ca541cd6abb45e832806f6c4128f9ed2a5230616a581d300d29e32a0 with SHA-256 hash a66d648dc69afb01bda363c1cd6abb45b2f62110a0c15468cbafc4780b2c827d.</p>
+					<p>During poll portion of farm:</p>
+					<p>INFO dataserv_client.api 200: Build finished</p>
+					<p>INFO dataserv_client.api 135: Pinging server 'http://switch.driveshare.org' at 2015-09-20 21:16:16.</p>
+					<p>INFO dataserv_client.messaging 43: Query: http://switch.driveshare.org/api/ping/&lt;auth address appears here&gt></p>
+					<p>INFO dataserv_client.api 135: Pinging server 'http://switch.driveshare.org' at 2015-09-20 21:17:17.</p>
+					<p>INFO dataserv_client.messaging 43: Query: http://switch.driveshare.org/api/ping/&lt;auth address appears here&gt></p>
+					<p>Many errors will not cause the program to stop but will timeout for 30 seconds and try again.  If your terminal returns to the command prompt, you should check the last error and either find a resolution at one of the available resources <a href="https://github.com/Storj/dataserv-client" class="link">Github</a> or <a href="http://slack.storj.io/">Slack</a>.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-14">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-14" aria-expanded="false" aria-controls="collapse-t-14">
+			         Do I need redundancy on my drives?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-14">
+			      <div class="panel-body">
+			        <p>During testing, the simple answer is no.  Since we aren’t dealing with any real data and network traffic is minimal (outbound pings only), adding redundancy such as RAID 1 or 5, will only reduce your capacity and not provide any real benefits to you.  All files are locally generated during testing (to-date) and once your build is complete, drive activity will be drastically reduced.</p>
+					<p>Once testing progresses to a point where there is actual data being shared, the question become a bit murky, but redundancy still may not be worth the loss of capacity.  Depending on the structure and network activity expected during later testing phases, you might want to start considering local redundancy.</p>
+					<p>Once Storj does go live, there will be redundancy at a network level, with multiple farmers holding each shard.  That redundancy protects the user’s data but doesn’t protect the farmer from drive failures or data corruption.  At that point, local redundancy may be appealing but is a decision that must be weighed against storage capacity loss, likelihood of drive failure, drive activity, and many other variables.  For those with large amount of storage and high demand clients, it might be beneficial to have local redundancy to protect your investment.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-15">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-15" aria-expanded="false" aria-controls="collapse-t-15">
+			         Can I build to multiple paths with the same payout address?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-15">
+			      <div class="panel-body">
+			        <p>The easy answer here is yes, it is possible to farm/build to multiple paths using a single payout address?  The caveat to that statement is that at the present time, only the largest of those builds counts toward your rewards (this may change in the near future).</p>
+					<p>In order to build to multiple paths, you will need to create two separate builds.  There are two basic methods for doing this.</p>
+					<ol>
+						<li><p>Farm/build from two separate computers to two unique file paths</p></li>
+						<ul>
+							<li><p>Run datasev-client normally from both computers, starting with:</p></li>
+							<ol>
+								<li><p>‘dataserv-client config --set_payout_address &lt;your counterwallet address&gt;’ (first time only) then;</p></li>
+								<li><p>‘dataserv-client --store_path &lt;your path&gt; --max_size &lt;your size&gt; farm’</p></li>
+							</ol>
+						</ul>
+						<li><p>Farm/build from the same computer to two unique file paths (not on the same drive)</p></li>
+						<ul>
+							<li><p><strong>NOTE: This is the same method you would use if you wanted multiple builds from the same computer but pointing to different payout addresses.</strong></p></li>
+							<li><p>Run dataserv-client with --config_path &lt;your complete path including file name&gt; as the first argument in ALL command lines</p></li>
+							<ol>
+								<li><p>In Windows:  C:\users\&lt;username&gt;\.storj\</p></li>
+								<li><p>In Linux: $HOME/.storj (e.g. /home/&lt;username&gt;/.storj)</p></li>
+								<li><p>In Mac: home/.storj/config.json (e.g. &lt;username&gt;/.storj/ (.storj may be a hidden folder)</p></li>
+							</ol>
+							<li><p>You path should end with something like configX.json, where “X” is a unique identifier for each build. You can use the same folder path for all .json files, but to avoid overwriting, the “X” must be different.</p></li>
+							<li><p>Run through each config and farm command separately and run them simultaneously</p></li>
+							<ol>
+								<li><p>FIRST PATH X: ‘dataserv-client --config_path &lt;your full path/configX.json&gt; config --set_payout_address &lt;your counterwallet address&gt;’ (first time only) then;</p></li>
+								<li><p>FIRST PATH X: ‘dataserv-client --config_path &lt;your full path/configX.json&gt; --store_path &lt;your path X&gt; --max_size &lt;your size&gt; farm’</p></li>
+								<li><p>SECOND PATH Y: ‘dataserv-client --config_path &lt;your full path/configY.json&gt; config --set_payout_address &lt;your counterwallet address&gt;’ (first time only) then;</p></li>
+								<li><p>SECOND PATH Y: ‘dataserv-client --config_path &lt;your full path/configY.json&gt; --store_path &lt;your path Y&gt; --max_size &lt;your size&gt; farm’</p></li>
+							</ol>
+							<li><p>The use of a batch file our other automated method can be beneficial to avoid leaving something out or accidentally running the wrong configuration to the wrong folder.</p></li>
+						</ul>
+					</ol>
+					<p>Either method you use, each build will have the same payout address, but unique auth and wallet addresses.  Each build will show up separately on the stats page.  Each build will have exactly the same files in the same order per the deterministic build method used in the client (payout address is the seed).</p>
+					<p>There is currently no support for a single farm/build command to multiple paths.  To utilize multiple physical drives on a single build, you will want to use JBOD (spanning), RAID or other multi-drive implementations in your OS prior to starting dataserv-client.</p>
+			      </div>
+			    </div>
+
+			    <div class="panel-heading" role="tab" id="faq-t-16">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-16" aria-expanded="false" aria-controls="collapse-t-16">
+			         My client isn’t working, do I need to rebuild everything?
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse-t-16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-16">
+			      <div class="panel-body">
+			        <p>Deleting all of your shards and starting from scratch is a last resort measure.  Unless it is absolutely needed, you shouldn’t do it.  It takes time and you would just be recreating the exact same files that you already created once.</p>
+					<p>There are some instances when rebuilding from 0 is absolutely necessary, some obvious but some are specific to the way farm works.</p>
+					<ol>
+						<li><p><strong>MOST IMPORTANT REASON:</strong> If you change your payout address for ANY reason (want to use different counterwallet, didn’t use your payout address to start with, forgot to set payout address, etc), you will need to farm/build from zero shards.  Your payout address is currently the seed for all hash creation and if you switch this number, the shards you have won’t match the seed and will be ignored, wasting drive space.</p></li>
+						<li><p>If you drive fails and you no longer have access to all the shards that you created, you may need to start over on a new drive.  A shard repair function is scheduled to be in the next release and this may assist with missing shards, allowing you to continue without rebuilding.</p></li>
+					</ol>
+					<p>There are more often situations that DON’T require a complete rebuild.  The following are issues and scenarios that do not (typically) require a complete rebuild.</p>
+					<ol>
+						<li><p>Your farm/build crashes in mid-process</p></li>
+						<li><p>You change your store_path (you can just copy the files in the old location to the new one before you restart farm)</p></li>
+						<li><p>You get errors. (the vast majority of errors will not require a rebuild)</li>
+						<li><p>You change your max_size.</p></li>
+						<li><p>You aren’t showing up on the status page.</p></li>
+						<li><p>You upgrade your client to the newest release (recommended). EXCEPTION:  If there is a request/recommendation that you rebuild from zero.</p></li>
+						<li><p>You have shards that aren’t 128MB.  The next release of the client will have a repair function built into farm.</p></li>
+					</ol>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
+          </div>
+        </div>
+
+        <div class="div-sm"></div>
+
         <div class="row">
           <div class="col-xs-12 text-center">
             <h3 class="title">Early Access Beta</h3>
