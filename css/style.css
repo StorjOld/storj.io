@@ -251,17 +251,14 @@ img.grayscale:hover {
 .btn-yellow,
 .btn-yellow:hover,
 .btn-yellow:active {
-  color: #ffdd00;
+  background: #ffdd00;
   border-color: #ffdd00;
-}
-
-.btn-yellow:visited {
-  color: #ffdd00;
+  color: #003366 !important;
+  margin-top: 1em;
 }
 
 .btn-yellow:hover {
-  background: #ffdd00;
-  color: #003366;
+  background: gold;
 }
 
 
