@@ -261,7 +261,6 @@ img.grayscale:hover {
   background: gold;
 }
 
-
 .btn-c2a {
   margin: 10px 5px 0;
 }
@@ -1361,6 +1360,10 @@ input#mce-EMAIL {}
   color: #ffdd00;
 }
 
+#testgroups .btn-yellow {
+  margin: 0;
+}
+
 .exchange-logo {
   width: 180px;
   height: 180px;
@@ -1589,9 +1592,6 @@ input#mce-EMAIL {}
   .pr {
     padding-right: 20px;
   }
-  .separator {
-    margin: 60px 0 30px;
-  }
   .input-group {
     width: 93%;
   }
@@ -1779,6 +1779,9 @@ input#mce-EMAIL {}
   }
   .video {
     margin-top: 35px;
+  }
+  .test-group {
+    padding: 40px 100px;
   }
 }
 
