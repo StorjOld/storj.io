@@ -675,7 +675,7 @@ img.grayscale:hover {
   font-size: 71px;
   font-weight: 700;
   color: #fff;
-  margin: 45px 0 25px;
+  margin: 40px 0 28px;
   line-height: 62px;
   letter-spacing: -3px;
 }
@@ -683,9 +683,9 @@ img.grayscale:hover {
   font-family: 'Muli', sans-serif;
   font-weight: 300;
   color: #C8DDF4;
-  font-size: 18px;
-  max-width: 480px;
-  line-height: 30px;
+  font-size: 21px;
+  max-width: 455px;
+  line-height: 34px;
   margin-bottom: 40px;
 }
 
