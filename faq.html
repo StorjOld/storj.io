@@ -748,7 +748,7 @@
 			    <div class="panel-heading" role="tab" id="faq-t-3">
 			      <h4 class="panel-title">
 			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-3" aria-expanded="false" aria-controls="collapse-t-3">
-			          What are rewards? (and what they are not)
+			          What are rewards?
 			        </a>
 			      </h4>
 			    </div>
@@ -756,9 +756,9 @@
 			      <div class="panel-body">
 			        <p>Rewards have been implemented during the testing process of the Storj applications.  Rewards will be advertised but the breakdown and rules governing are subject to change as the project evolves.  Rewards are present to provide motivation/incentive for participation in the tests.  Rewards are NOT payment for testing.  Rewards are NOT equivalent to mining rewards.</p>
 
-					<p>At the present time each payout address must have a minimum of 10,000 SJCX to qualify for rewards and upon request any address that was not affiliated with the crowdsale, will have to have 10,000 SJCX donated to the rewards pool to qualify for future rewards.  There is NO guarantee of rewards equaling or exceeding the 10,000 SJCX donation.</p>
+                    <p>At the present time each payout address must have a minimum of 10,000 SJCX to qualify for rewards and upon request any address that was not affiliated with the crowdsale, will have to have 10,000 SJCX donated to the rewards pool to qualify for future rewards.  There is NO guarantee of rewards equaling or exceeding the 10,000 SJCX donation.</p>
 
-					<p>Rewards are calculated using a fair methodology that looks at available data at the time of snapshots such as capacity and SJCX holdings and via server tracking of data such as duration of registered address, uptime and audit success.  The criteria and timing of rewards snapshots or tracking will be advertised in advance.</p>
+                    <p>Rewards are calculated using a fair methodology that looks at available data at the time of snapshots such as capacity and SJCX holdings and via server tracking of data such as duration of registered address, uptime and audit success.  The criteria and timing of rewards snapshots or tracking will be advertised in advance.</p>
 			      </div>
 			    </div>
 
@@ -815,27 +815,19 @@
 			    <div class="panel-heading" role="tab" id="faq-t-6">
 			      <h4 class="panel-title">
 			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-6" aria-expanded="false" aria-controls="collapse-t-6">
-			         What is a Payout Address?  Auth Address?  Wallet Address?
+			         What is a Payout Address?
 			        </a>
 			      </h4>
 			    </div>
 			    <div id="collapse-t-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-6">
 			      <div class="panel-body">
 			        <p><strong>PAYOUT ADDRESS:</strong> A payout address is an address that you set in the client and should be your counterwallet address (<a href="https://counterwallet.io" class="link">https://counterwallet.io</a> or <a href="https://counterwallet.coindaddy.io" class="link">https://counterwallet.coindaddy.io</a>).  You will need to transfer your funds from any exchange to your counterwallet address.</p>
-					
-					<p><strong>IMPORTANT NOTICE: TO ENSURE ACCESS, SJCX HOLDINGS MUST BE HELD IN AN ADDRESS FOR WHICH YOU HOLD THE PRIVATE KEY. COUNTERWALLET IS THE RECOMMENDED SITE AND EXCHANGE ADDRESSES ARE STRONGLY DISCOURAGED.  STORJ LABS IS NOT LIABLE IF YOU LOSE ACCESS TO YOUR FUNDS OR THE DRIVESHARE CLIENT/SERVER.</strong></p>
-					
-					<p>Your payout address is currently the seed for the SHA 256 hashes/shards.</p>  
+                    
+                    <p><strong>IMPORTANT NOTICE: TO ENSURE ACCESS, SJCX HOLDINGS MUST BE HELD IN AN ADDRESS FOR WHICH YOU HOLD THE PRIVATE KEY. COUNTERWALLET IS THE RECOMMENDED SITE AND EXCHANGE ADDRESSES ARE STRONGLY DISCOURAGED.  STORJ LABS IS NOT LIABLE IF YOU LOSE ACCESS TO YOUR FUNDS OR THE DRIVESHARE CLIENT/SERVER.</strong></p>
+                    
+                    <p>Your payout address is currently the seed for the SHA 256 hashes/shards.</p>  
 
-					<p>It is your payout address that will be tracked for rewards purposes and should be an address that you control. Your payout address is what you will see on the status pages and how you can track your progress/standings <a href="http://driveshare.org/status.html" class="link">http://driveshare.org/status.html</a> or <a href="http://switch.driveshare.org/api/online" class="link">http://switch.driveshare.org/api/online</a></p>
-
-					<p><strong>AUTH ADDRESS:</strong> An auth address (authentication address) is your public key and how dataserv-client identifies you to the server.  This is your identification to the server.  It is tied to your payout address as is evident on  <a href="http://switch.driveshare.org/api/online/json" class="link">http://switch.driveshare.org/api/online/json</a>. It is possible to have multiple auth addresses tied to a single payout address, but NOT possible to have a single auth address tied to multiple payout address (based on the method of auth address creation (see register definition).</p>
-
-					<p>During regular operations of dataserv-client, you will see your auth address during each ping of the server (QUERY). This ping tells the server that you are at a certain height or reporting as live.  Because this address is tied to your payout address, the server-side application links this ping to your payout address as well.</p>
-
-					<p><strong>IMPORTANT NOTICE: DO NOT SEND SJCX OR ANY CRYPTOCURRENCY TO YOUR AUTH ADDRESS.  THIS IS NOT AN ADDRESS FOR TRANSACTIONS BUT ONE FOR IDENTIFYING YOU WITH THE SERVER.</strong></p>
-
-					<p><strong>WALLET ADDRESS:</strong> The wallet address is created during --config --set_payout_address <your payout address> and is stored in the config.json.  This is your private key and should not be shared.</p>
+                    <p>It is your payout address that will be tracked for rewards purposes and should be an address that you control. Your payout address is what you will see on the status pages and how you can track your progress/standings <a href="http://driveshare.org/status.html" class="link">http://driveshare.org/status.html</a> or <a href="http://switch.driveshare.org/api/online" class="link">http://switch.driveshare.org/api/online</a></p>
 			      </div>
 			    </div>
 
@@ -850,40 +842,36 @@
 			      <div class="panel-body">
 			        <p>Rewards are an incentive provided by the developers of the Storj project to encourage participation in the testing process and should NOT be considered a form of payment or a form of return on investment.  Rewards are NOT guaranteed.  The structure of, timing of and amount of rewards are subject to change during the testing.</p>
 
-					<p><strong>Qualifying for Rewards – Step 1:</strong></p>
-					<p>To qualify for rewards the first step is to possess 10,000 SJCX in your payout address.  Compliance with this requirement will be tracked through <a href="http://blockscan.com" class="link">http://blockscan.com</a> and in order to ensure that you are compliant it is advised that any transactions be made 24 hours prior to any deadlines, snapshot or donations request to ensure that the transaction will appear on the blockchain.</p>
+                    <p><strong>Qualifying for Rewards – Step 1:</strong></p>
+                    <p>To qualify for rewards the first step is to possess 10,000 SJCX in your payout address.  Compliance with this requirement will be tracked through <a href="http://blockscan.com" class="link">http://blockscan.com</a> and in order to ensure that you are compliant it is advised that any transactions be made 24 hours prior to any deadlines, snapshot or donations request to ensure that the transaction will appear on the blockchain.</p>
 
-					<p><strong>Qualifying for Rewards – Step 2a: Crowdsale Participants</strong></p>
-					<p>For that that participated in the Crowdsale, simply holding 10,000 SJCX in your payout address will qualify you for full rewards.  Holding &gt;0 but &lt;10,000 SJCX will qualify a Crowdsale participant for partial rewards.  The fraction of full rewards will be determined by the developers, but will be a maximum of the percentage of 10,000 SJCX held.</p>
+                    <p><strong>Qualifying for Rewards – Step 2a: Crowdsale Participants</strong></p>
+                    <p>For those that participated in the Crowdsale, simply holding 10,000 SJCX in your payout address will qualify you for full rewards.  Holding &gt;0 but &lt;10,000 SJCX will qualify a Crowdsale participant for partial rewards.  The fraction of full rewards will be determined by the developers, but will be a maximum of the percentage of 10,000 SJCX held.</p>
 
-					<p><strong>Qualifying for Rewards – Step 2b: Non-Crowdsale Participants</strong></p>
-					<p>For non-crowdsale participants there will be a request for donations prior to TGB M3-2 (test group b, milestone 3, part 2).  Prior to this request, qualification for rewards is the same as for crowdsale participants.  Once the request is made, qualification for rewards is dependent on a donation of 10,000 SJCX to the rewards pool.  There will be a window to donate prior to the commencement of TGB M3-2 testing & tracking.  There is NO partial rewards for non-crowdsale members.  A donation entitles a non-crowdsale participant to full rewards based on their stats.</p>
+                    <p><strong>Qualifying for Rewards – Step 2b: Non-Crowdsale Participants</strong></p>
+                    <p>For non-crowdsale participants there will be a request for donations prior to TGB M3-2 (test group b, milestone 3, part 2).  Prior to this request, qualification for rewards is the same as for crowdsale participants.  Once the request is made, qualification for rewards is dependent on a donation of 10,000 SJCX to the rewards pool.  There will be a window to donate prior to the commencement of TGB M3-2 testing & tracking.  There is NO partial rewards for non-crowdsale members.  A donation entitles a non-crowdsale participant to full rewards based on their stats.</p>
 
-					<p>A non-crowdsale participant does not need to both donate and hold 10K SJCX during TGB M3-2 to qualify for rewards.  Only the donation is required for rewards qualification.</p>
+                    <p>A non-crowdsale participant does not need to both donate and hold 10K SJCX during TGB M3-2 to qualify for rewards.  Only the donation is required for rewards qualification.</p>
 
-					<p>There is NO guarantee that any participant, crowdsale or otherwise, will receive 10,000 SJCX (or any amount for that matter) in rewards during TGB M3-2</p>
+                    <p>There is NO guarantee that any participant, crowdsale or otherwise, will receive 10,000 SJCX (or any amount for that matter) in rewards during TGB M3-2</p>
 
-					<p>Policies have not been announced at the present time as to requirements for holding or donations for future test groups.  Once announced, this information will be updated.  Any statements about these policies are unofficial or speculative until announced officially.</p>
+                    <p>Policies have not been announced at the present time as to requirements for holding or donations for future test groups.  Once announced, this information will be updated.  Any statements about these policies are unofficial or speculative until announced officially.</p>
 			      </div>
 			    </div>
 
 			    <div class="panel-heading" role="tab" id="faq-t-8">
 			      <h4 class="panel-title">
 			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-t" href="#collapse-t-8" aria-expanded="false" aria-controls="collapse-t-8">
-			         When will I get “paid”?  How much can I make?  
+			         How much will I get paid?  
 			        </a>
 			      </h4>
 			    </div>
 			    <div id="collapse-t-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-t-8">
 			      <div class="panel-body">
-			        <p>There is no payment or earnings at the present time.  Storj and its component programs are currently under development and the test groups have been created to allow “live” testing of the component features.  </p>
-					<ul>
-						<li><p>Rewards are NOT a form of payment.</p></li>
-						<li><p>Rewards are not on a defined schedule but will be announced as each stage of testing progresses.</p></li>
-						<li><p>The amounts, schedule of distribution and criteria for determining rewards will be made public prior to testing, snapshots or reward distribution.</p></li>
-						<li><p>All rewards distributions will be accompanied by a complete breakdown.</p></li>
-					</ul>
-					<p>With an ever increasing number of participants it can take time to both calculate and verify rewards distributions.  All efforts will be made to keep participants informed of timing of rewards distributions.</p>
+			        <p>We are not paying farmers at the current time. Storj is currently in development, and running Test Group B, which issues rewards in SJCX. When Storj and its component programs are live, each farmer will be able to decide how much to charge for their services, creating a competitive marketplace.</p>
+                    <p>The rewards given to people who participate in testing are NOT a form of payment, and no guarantee of earnings can be given at this time.</p>
+                    <p>One million SJCX will be distributed for Test Group B. As of January 21st, 2016, 600,000 of these had already been granted. You can look at the data of the rewards to Test Group B <a href="https://docs.google.com/spreadsheets/d/1dZYzMrW0i4qtonDIjk3pfwkKv6rHCOuUc7rUurIRPqU/" class="link">here</a>. (All rewards data will be made publicly available like this.)</p>
+                    <p>You can inspect the mathematical formula used to compute rewards <a href="https://github.com/Storj/sjcx-payments/blob/master/README.rst" class="link">here</a>.</p>
 			      </div>
 			    </div>
 
