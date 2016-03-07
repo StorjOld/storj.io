@@ -664,6 +664,9 @@ img.grayscale:hover {
   color: #fff;
   font-weight: 700;
 }
+.navbar-page .cover-logo:hover, .navbar-page .cover-logo:focus, .navbar-page .cover-logo:active {
+  color: #107fc9;
+}
 .cover-logo-icon {
   width: 54px;
   height: 59px;
