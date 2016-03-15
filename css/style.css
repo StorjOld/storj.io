@@ -1,9 +1,9 @@
 /*
  * Import Fonts
  */
- 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Muli:300,400);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Muli:300,400);
 
 
 /*
@@ -397,7 +397,7 @@ img.grayscale:hover {
   margin-top: 10px;
  }
 
-.crowdsale-address { 
+.crowdsale-address {
   font-size: 22px;
   color: #107fc9;
   font-weight: 700;
@@ -490,7 +490,7 @@ img.grayscale:hover {
   width: 74%;
   margin: 0 auto;0
 }
-     
+
 .progress-bar-success {
   font-family: 'Muli', sans-serif;
   font-size: 16px;
@@ -779,13 +779,13 @@ input#mce-EMAIL {}
    color: #999;
 }
 .email:-moz-placeholder { /* Firefox 18- */
-   color: #999;  
+   color: #999;
 }
 .email::-moz-placeholder {  /* Firefox 19+ */
-   color: #999;  
+   color: #999;
 }
-.email:-ms-input-placeholder {  
-   color: #999;  
+.email:-ms-input-placeholder {
+   color: #999;
 }
 .promise {
   font-family: 'Muli', sans-serif;
@@ -928,14 +928,14 @@ input#mce-EMAIL {}
 
 .quotes {
   padding: 0;
-  background: #012F5C; 
+  background: #012F5C;
   height: auto;
   min-height: 290px;
 }
 
 .cbp-qtrotator {
   position: relative;
-  height: auto;               
+  height: auto;
   transition: 1s all;
   overflow:hidden;
 }
@@ -957,7 +957,7 @@ input#mce-EMAIL {}
 
 .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
 .no-js .cbp-qtrotator .cbp-qtcontent {
-  position: relative; 
+  position: relative;
   z-index: 100;
   pointer-events: auto;
   opacity: 1;
@@ -1001,7 +1001,7 @@ input#mce-EMAIL {}
 }
 .cbp-qtrotator footer:before {
   content: "";
-} 
+}
 .cbp-qtrotator .cbp-qtcontent img {
   width: 120px;
   border-radius: 50%;
@@ -1065,38 +1065,38 @@ input#mce-EMAIL {}
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-} 
+}
 
   .press-coindesk {
     background: url('../img/press-coindesk.jpg') no-repeat top left;
     background-size: 180px 40px;
     width: 180px;
     height: 40px;
-  } 
+  }
   .press-ltb {
     background: url('../img/press-ltb.jpg') no-repeat top left;
     background-size: 104px 76px;
     width: 104px;
     height: 76px;
-  } 
+  }
   .press-cointelegraph {
     background: url('../img/press-cointelegraph.jpg') no-repeat top left;
     background-size: 150px 100px;
     width: 150px;
     height: 100px;
-  } 
+  }
   .press-ccnews {
     background: url('../img/press-ccnews.jpg') no-repeat top left;
     background-size: 189px 50px;
     width: 189px;
     height: 50px;
-  } 
+  }
   .press-bmag {
     background: url('../img/press-bmag.jpg') no-repeat top left;
     background-size: 180px 40px;
     width: 170px;
     height: 40px;
-  } 
+  }
 
 
 /*
@@ -1167,13 +1167,13 @@ input#mce-EMAIL {}
    color: #999;
 }
 .contact .email:-moz-placeholder { /* Firefox 18- */
-   color: #999;  
+   color: #999;
 }
 .contact .email::-moz-placeholder {  /* Firefox 19+ */
-   color: #999;  
+   color: #999;
 }
-.contact .email:-ms-input-placeholder {  
-   color: #999;  
+.contact .email:-ms-input-placeholder {
+   color: #999;
 }
 
 .social-links {
@@ -1541,7 +1541,7 @@ input#mce-EMAIL {}
     background: url('../img/driveshare@2x.png');
     background-size: 491px 504px;
     background-repeat: no-repeat;
-  } 
+  }
 }
 
 /*
@@ -1637,7 +1637,7 @@ input#mce-EMAIL {}
     height: 440px;
     margin-bottom: 40px;
     background-position: center center;
-  }  
+  }
   .contact-newsletter {
     margin-top: 70px;
   }
@@ -1984,7 +1984,7 @@ input#mce-EMAIL {}
   }
  .input-group {
     width: 100%;
-  } 
+  }
   .promise {
     font-size: 10px;
   }
@@ -2050,7 +2050,7 @@ input#mce-EMAIL {}
   .footer-link {
     display: block;
   }
-  .crowdsale-address { 
+  .crowdsale-address {
     font-size: 16px;
   }
   .btn-blue {
