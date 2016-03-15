@@ -24,28 +24,25 @@ The current message is here:
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-As of 2/25/2016, Storj Labs Inc. has never received a National Security Letter, an order under the
-Foreign Intelligence Surveillance Act, or any other classified request for user information. If we ever
-receive such a request, we would seek to let the public know it existed.
+As of 3/15/2016, Storj Labs Inc. has never received a National Security Letter, an order under the Foreign Intelligence Surveillance Act, or any other classified request for user information. If we ever receive such a request, we would seek to let the public know it existed.
 
-(from https://www.washingtonpost.com)
-- - 8 in 10 Hispanics have unfavorable view of Trump, poll says
-- - Diplomatic war over migrants escalates in Europe
-- - Republican governor bows out of Supreme Court consideration
-- - Scalia spent his last hours with members of a secretive society of elite hunters
-- - Astronomers pinpoint source of mysterious radio burst
+- - Races in 5 states could breathe life into lagging campaigns
+- - Will Rubio, Kasich still be in the race after today?
+- - How Sanders is hijacking the Democratic Party to be elected as an independent
+- - Trump just hit a critical threshold for the nomination
+- - Rose’s lawyer: 'We do not know how Mr. Trump got the ball’
 -----BEGIN PGP SIGNATURE-----
 Version: Mailvelope v1.3.6
 Comment: https://www.mailvelope.com
 
-wsBcBAEBCAAQBQJWz2ZDCRDA5Ck6vGbuXAAAtgsH/1cArWUB7fw423TjoJFR
-g+8WoOF+sneUl+BLs7muZRAgdRaxyBeT7t7eFnPn9IaPQ0NBdOqxrB/cneAY
-C1qEIB4/+OYIyhv+snA+tzU5WFfSr1po1B5FXFxwGFcWYqUFJ9LVLk4Vqc4R
-9rbdrt0Hu/VnEqaoVMtkxSSCTbb5bZYp+KqQN76Fp7mCgOybx+oDdfPjdPKF
-87UJAP2j/c/Auat6siUfp5nDnAyKyUZmxsvk2BBQWNplhIl7opSbzH1F467u
-gOgEwN7yX2k4QudanvXRZ82VkNr3Bv8+JnNisJYZwnWCK/2f+hmhF9YpVsHX
-B7kkDwwKomVuw1c+aGs8dCk=
-=OOH6
+wsBcBAEBCAAQBQJW6GxTCRDA5Ck6vGbuXAAAl+0H/jy7+0TaAaqeGK6R3qqL
+6pGuSQV66N9wPVPXp94SR9xSGUApZHXKkk1c9tseEPGF8T1YH4gexIsKHgjq
+DtzMiGbLoy3oYKI9hESvE9v6+Rz1AAPi4M8rNzbSOpTvlABEKCYMI81Oceql
+76zPfIZ0EqdPUBeDVxvL6jz3LlvgCYK9oe313dViyet3XyIZ0qXYL+KTGBQv
+PJVRS1hER7j2xTktwP01RQmzi/5Wsbalwvmcd/tmUSJ6e5FnWvto4pJVl5KL
+uN9mxWSZL1ARjEG3wZlyC7GNtWVIJ3xNjUgw5V+IMIdUeDfEog5m69qrh16l
+AaqXUy9Pv8p3iU7X3lACKXk=
+=zRiu
 -----END PGP SIGNATURE-----
 
 This scheme is not infallible.  Although signing the declaration makes it impossible for a third party to produce
