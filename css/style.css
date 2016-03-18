@@ -1526,6 +1526,37 @@ input#mce-EMAIL {}
 }
 
 
+/*
+ * 404
+*/
+
+.not-found {
+  background: url('../img/404.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0 120px;
+}
+.not-found .title,
+.not-found .lead {
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+.not-found .btn {
+  box-shadow: 0 0 10px #000;
+}
+.not-found .artwork {
+  color: #fff;
+  font-weight: normal;
+  opacity: 0.5;
+  display: block;
+  margin-top: 40px;
+}
+.not-found .artwork:hover {
+  opacity: 1;
+}
+
 
 /*
  * Retina
